@@ -19,10 +19,15 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Install Pandoc and dependencies
+    - name: Install dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y pandoc texlive-xetex texlive-fonts-recommended texlive-lang-chinese fonts-noto-cjk
+        sudo apt-get install -y wget texlive-xetex texlive-fonts-recommended texlive-lang-chinese fonts-noto-cjk
+
+    - name: Install Pandoc
+      run: |
+        wget https://github.com/jgm/pandoc/releases/download/3.2/pandoc-3.2-1-amd64.deb
+        sudo dpkg -i pandoc-3.2-1-amd64.deb
 
     - name: Concatenate Markdown files
       run: |
@@ -96,6 +101,7 @@ jobs:
           --toc-depth=2 \
           -V mainfont="Noto Sans CJK SC" \
           -V geometry:margin=1in \
+          -V hyperrefoptions:linktoc=all \
           --listings \
           --metadata title="智能体设计模式" \
           --metadata author="Antonio Gulli" \
@@ -109,6 +115,7 @@ jobs:
           -o agentic-design-patterns-chinese.epub \
           --toc \
           --toc-depth=2 \
+          --split-level=1 \
           --metadata title="智能体设计模式" \
           --metadata author="Antonio Gulli" \
           --metadata translator="xindoo" \
@@ -197,6 +204,7 @@ jobs:
           --toc-depth=2 \
           -V mainfont="DejaVu Serif" \
           -V geometry:margin=1in \
+          -V hyperrefoptions:linktoc=all \
           --listings \
           --metadata title="Agentic Design Patterns" \
           --metadata author="Antonio Gulli" \
@@ -209,6 +217,7 @@ jobs:
           -o agentic-design-patterns-en.epub \
           --toc \
           --toc-depth=2 \
+          --split-level=1 \
           --metadata title="Agentic Design Patterns" \
           --metadata author="Antonio Gulli" \
           --metadata publisher="GitHub: https://github.com/xindoo/agentic-design-patterns" \
