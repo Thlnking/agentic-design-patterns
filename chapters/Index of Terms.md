@@ -14,7 +14,7 @@
 ### 零样本、单样本和少样本提示（Zero-Shot, One-Shot, & Few-Shot Prompting）：这些是提示技术，其中向模型提供零个、一个或几个任务示例来指导其响应。提供更多示例通常有助于模型更好地理解用户意图，并提高特定任务的准确性。
 
 
-### 多模态性（Multimodality）：多模态性是 AI 理解和处理多种数据类型（如文本、图像和音频）信息的能力。这允许更多样化和类人的交互，例如描述图像或回答口头问题。
+### 多模态（Multimodality）：多模态是 AI 理解和处理多种数据类型（如文本、图像和音频）信息的能力。这允许更多样化和类人的交互，例如描述图像或回答口头问题。
 
 
 ### 基础化（Grounding）：基础化是将模型输出连接到可验证的真实世界信息源的过程，以确保事实准确性并减少幻觉。这通常通过 RAG 等技术实现，使 AI 系统更值得信赖。
@@ -190,7 +190,7 @@
 * 少样本提示(Few-Shot Prompting) - 附录 A
 * 微调(Fine-tuning) - 术语表
 * 正式化合同(Formalized Contract) - 第 19 章：评估与监控
-* 函数调用(Function Calling) - 第 5 章：工具使用，附录 A
+* 工具调用(Tool Calling) - 第 5 章：工具使用，附录 A
 
 **G**
 
@@ -267,7 +267,7 @@
 * 监控(Monitoring) - 第 11 章：目标设定与监控，第 19 章：评估与监控
 * 多智能体协作(Multi-Agent Collaboration) - 第 7 章：多智能体协作
 * 多智能体搜索(Multi-Agent System Search, MASS) - 第 17 章：推理技术
-* 多模态性(Multimodality) - 术语表
+* 多模态(Multimodality) - 术语表
 * 多模态提示(Multimodal Prompting) - 附录 A
 
 **N**
