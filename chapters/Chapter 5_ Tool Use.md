@@ -2,9 +2,9 @@
 
 ## 工具使用模式概述
 
-截至目前，我们探讨的智能体主要聚焦于语言模型间的交互编排及智能智能体流的信息管理（链式、路由、并行化、反思）。然而，要让智能体真智能体并与现实世界或外部系统互动，它们需要具备工具使用能力。
+截至目前，我们探讨的智能体模式主要聚焦于语言模型间的交互编排及智能体工作流的信息管理（链式、路由、并行化、反思）。然而，要让智能体真正有用并与现实世界或外部系统互动，它们需要具备工具使用能力。
 
-工具使用模式通常通过工具调用机制实现，使智能体接外部 API、数据库、服务，甚至执行代码。该机制让位于智能智能体语言模型（LLM）能基于用户请求或任务状态，决策何时以及如何调用特定外部函数。
+工具使用模式通常通过工具调用机制实现，使智能体接入外部 API、数据库、服务，甚至执行代码。该机制让位于智能体核心的语言模型（LLM）能基于用户请求或任务状态，决策何时以及如何调用特定外部函数。
 
 该过程通常包括：
 
@@ -17,11 +17,11 @@
 
 此模式是基础性的，因为它打破了 LLM 训练数据的限制，允许它访问最新信息、执行它内部无法完成的计算、与用户特定数据交互或触发现实世界的行动。工具调用是连接 LLM 推理能力与可用的大量外部功能之间差距的技术机制。
 
-虽然"工具调用"精确描述了调用预定义代码函数的过程，但采用更广泛的"工具调用"概念更具实践价值。这一概念承认智能体力远超简单函数执行范畴——"工具"既可以是传统函数，也可以是复杂的 API 端点、数据库查询请求，甚至是向其他专业智能智能体令。这种视角帮助我们构建更复杂的系统，例如主智能体可智能体任务委托给专用"分析师智能体"，或通过 API 查询外部知识库。以"工具调用"的思维方式，能更全面把握智能体作为跨智能体智能实体生态系统的编排者潜力。
+虽然"工具调用"精确描述了调用预定义代码函数的过程，但采用更广泛的"工具调用"概念更具实践价值。这一概念承认智能体的能力远超简单函数执行范畴——"工具"既可以是传统函数，也可以是复杂的 API 端点、数据库查询请求，甚至是向其他专业智能体发出的指令。这种视角帮助我们构建更复杂的系统，例如主智能体可以将任务委托给专用"分析师智能体"，或通过 API 查询外部知识库。以"工具调用"的思维方式，能更全面把握智能体作为跨多样化数字资源和其他智能体生态系统的编排者潜力。
 
-像 LangChain、LangGraph 和 Google 智能体开发工具包 (ADK) 这样的框架为定义工具并将它们集成到智能智能体提供了强大的支持，通常利用现代 LLM（如 Gemini 或 OpenAI 系列中的那些）的原生工具调用能力。在这些框架的"画布"上，您定义工具，然后配置智能体（通常是 LLM 智能体）以意识到并能够使用这些工具。
+像 LangChain、LangGraph 和 Google 智能体开发工具包 (ADK) 这样的框架为定义工具并将它们集成到智能体框架提供了强大的支持，通常利用现代 LLM（如 Gemini 或 OpenAI 系列中的那些）的原生工具调用能力。在这些框架的"画布"上，您定义工具，然后配置智能体（通常是 LLM 智能体）以意识到并能够使用这些工具。
 
-工具使用是构建强大、交互式且具环境感知能力智能体础模式。
+工具使用是构建强大、交互式且具环境感知能力的智能体的基础模式。
 
 ## 实际应用与用例
 
@@ -130,9 +130,9 @@ def search_information(query: str) -> str:
 
 tools = [search_information]
 
-## --- 创建工具调用智能体-
+## --- 创建工具调用智能体 ---
 if llm:
-    # 此提示词模板需要一个 `agent_scratchpad` 占位符用于智能体部步骤。
+    # 此提示词模板需要一个 `agent_scratchpad` 占位符用于智能体的内部步骤。
     agent_prompt = ChatPromptTemplate.from_messages([
         ("system", "你是一个有用的助手。"),
         ("human", "{input}"),
@@ -142,19 +142,19 @@ if llm:
     # 创建智能体，将 LLM、工具和提示词绑定在一起。
     agent = create_tool_calling_agent(llm, tools, agent_prompt)
     
-    # AgentExecutor 是调用智能体行所选工具的运行时。
+    # AgentExecutor 是调用智能体并执行所选工具的运行时。
     # 这里不需要 'tools' 参数，因为它们已经绑定到智能体。
     agent_executor = AgentExecutor(agent=agent, verbose=True, tools=tools)
 
 async def run_agent_with_tool(query: str):
-    """使用查询调用智能体器并打印最终响应。"""
+    """使用查询调用智能体执行器并打印最终响应。"""
     print(f"\n--- 🏃 使用查询运行智能体：'{query}' ---")
     try:
         response = await agent_executor.ainvoke({"input": query})
         print("\n--- ✅ 最终智能体 ---")
         print(response["output"])
     except Exception as e:
-        print(f"\n🛑智能体期间发生错误：{e}")
+        print(f"\n🛑智能体执行期间发生错误：{e}")
 
 async def main():
     """并发运行所有智能体。"""
@@ -169,7 +169,7 @@ nest_asyncio.apply()
 asyncio.run(main())
 ```
 
-代码使用 LangChain 库和 Google Gemini 模型设置了一个工具调用智能体。它定义了一个 search_information 工具，模拟为特定查询提供事实答案。该工具对"weather in london"、"capital of france"和"population of earth"有预定义的响应，以及其他查询的默认响应。初始化了一个 ChatGoogleGenerativeAI 模型，确保其具有工具调用能力。创建了一个 ChatPromptTemplate 来指导智能体互。使用 create_tool_calling_agent 函数将语言模型、工具和提示词组合成一个智能体。然后设置一个 AgentExecutor 来管理智能智能体工具调用。定义了 run_agent_with_tool 异步函数以使用给定查询调用智能体并智能体main 异步函数准备多个要并发运行的查询。这些查询旨在测试 search_information 工具的特定和默认响应。最后，asyncio.run(main()) 调用执行所有智能体任务。智能体继续智能体设置和执行智能体LLM 初始化的检查。
+代码使用 LangChain 库和 Google Gemini 模型设置了一个工具调用智能体。它定义了一个 search_information 工具，模拟为特定查询提供事实答案。该工具对"weather in london"、"capital of france"和"population of earth"有预定义的响应，以及其他查询的默认响应。初始化了一个 ChatGoogleGenerativeAI 模型，确保其具有工具调用能力。创建了一个 ChatPromptTemplate 来指导智能体互。使用 create_tool_calling_agent 函数将语言模型、工具和提示词组合成一个智能体。然后设置一个 AgentExecutor 来管理智能体的工具调用。定义了 run_agent_with_tool 异步函数以使用给定查询调用智能体并打印main 异步函数准备多个要并发运行的查询。这些查询旨在测试 search_information 工具的特定和默认响应。最后，asyncio.run(main()) 调用执行所有智能体任务。代码包括对 LLM 初始化的检查。
 
 ## 实操代码示例（CrewAI）
 
@@ -216,7 +216,7 @@ def get_stock_price(ticker: str) -> float:
         return price
     else:
         # 引发特定错误比返回字符串更好。
-        #智能体了处理异常的能力，可以决定下一步行动。
+        # 智能体具备处理异常的能力，可以决定下一步行动。
         raise ValueError(f"未找到代码 '{ticker.upper()}' 的模拟价格。")
 
 ## --- 2. 定义智能体-
@@ -280,11 +280,11 @@ if __name__ == "__main__":
     main()
 ```
 
-此代码演示了使用 CrewAI 库模拟财务分析任务的简单应用程序。它定义了一个自定义工具 get_stock_price，模拟查找预定义股票代码的价格。该工具设计为对有效代码返回浮点数，或对无效代码引发 ValueError。创建了一个名为 financial_analyst_agent 的 CrewAI Agent，角色为高级财务分析师。该智能体予 get_stock_price 工具进行交互。定义了一个任务 analyze_aapl_task，专门指示智能智能体查找 AAPL 的模拟股票价格。任务描述包括关于使用工具时如何处理成功和失败情况的明确说明。组建了一个团队，包含 financial_analyst_agent 和 analyze_aapl_task。为智能体和智能体详细设置，以在执行期间提供详细日志。脚本的主要部分在标准 if __name__ == "__main__": 块中使用 kickoff() 方法运行团队的任务。在启动团队之前，它会检查是否设置了 OPENAI_API_KEY 环境变量，这是智能体运行所智能体后将团队执行的结果（即任务的输出）打印到控制台。代码还包括基本日志配置，以更好地跟踪团队的行动和工具调用。它使用环境变量进行 API 密钥管理，尽管它指出对于生产环境建议使用更安全的方法。简而言之，核心逻辑展示了如何定义工具、Agent 和任务，以在 CrewAI 中创建协作工作流。
+此代码演示了使用 CrewAI 库模拟财务分析任务的简单应用程序。它定义了一个自定义工具 get_stock_price，模拟查找预定义股票代码的价格。该工具设计为对有效代码返回浮点数，或对无效代码引发 ValueError。创建了一个名为 financial_analyst_agent 的 CrewAI Agent，角色为高级财务分析师。该智能体被赋予 get_stock_price 工具进行交互。定义了一个任务 analyze_aapl_task，专门指示智能体查找 AAPL 的模拟股票价格。任务描述包括关于使用工具时如何处理成功和失败情况的明确说明。组建了一个团队，包含 financial_analyst_agent 和 analyze_aapl_task。为智能体和团队设置详细日志，以在执行期间提供详细日志。脚本的主要部分在标准 if __name__ == "__main__": 块中使用 kickoff() 方法运行团队的任务。在启动团队之前，它会检查是否设置了 OPENAI_API_KEY 环境变量，这是智能体运行所必需的后将团队执行的结果（即任务的输出）打印到控制台。代码还包括基本日志配置，以更好地跟踪团队的行动和工具调用。它使用环境变量进行 API 密钥管理，尽管它指出对于生产环境建议使用更安全的方法。简而言之，核心逻辑展示了如何定义工具、Agent 和任务，以在 CrewAI 中创建协作工作流。
 
 ## 实操代码（Google ADK）
 
-## Google 智能体开发工具包 (ADK) 提供原生集成工具库，可直接扩展智能智能体
+## Google 智能体开发工具包 (ADK) 提供原生集成工具库，可直接扩展智能体的能力
 
 ## **Google 搜索：** 此类组件的主要示例是 Google 搜索工具。此工具作为 Google 搜索引擎的直接接口，为智能体执行网络搜索和检索外部信息的功能。
 
@@ -303,7 +303,7 @@ USER_ID="user1234"
 SESSION_ID="1234"
 
 ## 使用搜索工具定义智能体
-root_agent = ADKAgent(
+root_agent = Agent(
   name="basic_search_agent",
   model="gemini-2.0-flash-exp",
   description="使用 Google 搜索回答问题的智能体。",
@@ -333,7 +333,7 @@ nest_asyncio.apply()
 asyncio.run(call_agent("最新的 AI 新闻是什么？"))
 ```
 
-此代码演示了如何使用 Python 的 Google ADK 创建和使用由 Google ADK 驱动的基本智能体。该智能体为通过利用 Google 搜索作为工具来回答问题。首先，从 IPython、google.adk 和 google.genai 导入必要的库。定义了应用程序名称、用户 ID 和会话 ID 的常量。创建了一个名为"basic_search_agent"的智能智能体有描述和说明指示其目的。它被配置为使用 Google 搜索工具，这是 ADK 提供的预构建工具。初始化 InMemorySessionService（见第 8 章）以管理智能体的智能体定的应用程序、用户和会话 ID 创建新会话。实例化 Runner，将创建的智能体与会话智能体此运行器负责在会话中执行智能体的交互。定智能体数 call_agent 以简化向智能体发送查询和处理智能体。在 call_agent 内部，用户的查询被格式化为具有角色"user"的 types.Content 对象。使用用户 ID、会话 ID 和新消息内容调用 runner.run 方法。runner.run 方法返回表示智能体操作和响应的事件列智能体历这些事件以查找最终响应。如果事件被识别为最终响应，则提取该响应的文本内容。提取的智能体响应然后打印到控制台。智能体查询"最新的 AI 新闻是什么？"调用 call_agent 函数以演示智能体的运行情况。智能体
+此代码演示了如何使用 Python 的 Google ADK 创建和使用由 Google ADK 驱动的基本智能体。该智能体为通过利用 Google 搜索作为工具来回答问题。首先，从 IPython、google.adk 和 google.genai 导入必要的库。定义了应用程序名称、用户 ID 和会话 ID 的常量。创建了一个名为"basic_search_agent"的智能体，具有描述和说明指示其目的。它被配置为使用 Google 搜索工具，这是 ADK 提供的预构建工具。初始化 InMemorySessionService（见第 8 章）以管理智能体的会话。为指定的应用程序、用户和会话 ID 创建新会话。实例化 Runner，将创建的智能体与会话服务链接此运行器负责在会话中执行智能体的交互。定义了一个名为 call_agent 的函数 以简化向智能体发送查询和处理响应。在 call_agent 内部，用户的查询被格式化为具有角色"user"的 types.Content 对象。使用用户 ID、会话 ID 和新消息内容调用 runner.run 方法。runner.run 方法返回表示智能体操作和响应的事件列表。遍历这些事件以查找最终响应。如果事件被识别为最终响应，则提取该响应的文本内容。提取的智能体响应然后打印到控制台。最后，使用查询"最新的 AI 新闻是什么？"调用 call_agent 函数以演示智能体的运行情况。
 
 **代码执行：** Google ADK 包含专为动态代码执行设计的组件。built_in_code_execution 工具提供沙盒化 Python 解释器，让模型能编写运行代码执行计算、操作数据结构及运行脚本。此功能对需要确定性逻辑和精确计算的任务至关重要，弥补了概率性语言生成的不足。
 
@@ -432,9 +432,9 @@ except RuntimeError as e:
         raise e # 重新引发其他运行时错误
 ```
 
-此脚本使用 Google 的智能体开发工具包 (ADK) 创建一个通过编写和执行 Python 代码解决数学问题的智能体。它定义了一个 LlmAgent，专门指示其充当计算器，为其配备 built_in_code_execution 工具。主要逻辑位于 call_agent_async 函数中，该函数向智能智能体发送用户查询并处理结果事件。在此函数内部，异步循环遍历事件，打印生成的 Python 代码及其执行结果以进行调试。代码仔细区分这些中间步骤和包含数值答案的最终事件。最后，main 函数使用两个不同的数学表达式运行智能体，以演示其执行计算的能力。
+此脚本使用 Google 的智能体开发工具包 (ADK) 创建一个通过编写和执行 Python 代码解决数学问题的智能体。它定义了一个 LlmAgent，专门指示其充当计算器，为其配备 built_in_code_execution 工具。主要逻辑位于 call_agent_async 函数中，该函数向智能体发送用户查询并处理结果事件。在此函数内部，异步循环遍历事件，打印生成的 Python 代码及其执行结果以进行调试。代码仔细区分这些中间步骤和包含数值答案的最终事件。最后，main 函数使用两个不同的数学表达式运行智能体，以演示其执行计算的能力。
 
-**企业搜索：** 此代码使用 Python 中的 google.adk 库定义了一个 Google ADK 应用程序。它专门使用 VSearchAgent，该智能体通过搜索指定的 Vertex AI 搜索数据存储来回答问题。代码初始化一个名为"q2_strategy_vsearch_agent"的 VSearchAgent，提供描述、要使用的模型（"gemini-2.0-flash-exp"）和 Vertex AI 搜索数据存储的 ID。DATASTORE_ID 预期设置为环境变量。然后为智能智能体unner，使用 InMemorySessionService 管理对话历史。定义了异步函数 call_vsearch_agent_async 以与智能体交智能体接受查询，构造消息内容对象，并调用运行器的 run_async 方法将查询发送到智能体。然后该函数将智能体的响应智能体控制台。它还打印有关最终响应的信息，包括来自数据存储的任何源归因。包含错误处理以捕获智能体执行期间的智能体有关潜在问题（如数据存储 ID 不正确或缺少权限）的信息性消息。提供了另一个异步函数 run_vsearch_example 以演示如何使用示例查询调用智能体。主执行块检查 DATASTORE_ID 是否已设置，然后使用 asyncio.run 运行示例。它包括检查以处理在已有运行事件循环的环境（如 Jupyter 笔记本）中运行代码的情况。
+**企业搜索：** 此代码使用 Python 中的 google.adk 库定义了一个 Google ADK 应用程序。它专门使用 VSearchAgent，该智能体通过搜索指定的 Vertex AI 搜索数据存储来回答问题。代码初始化一个名为"q2_strategy_vsearch_agent"的 VSearchAgent，提供描述、要使用的模型（"gemini-2.0-flash-exp"）和 Vertex AI 搜索数据存储的 ID。DATASTORE_ID 预期设置为环境变量。然后为智能体设置 Runner，使用 InMemorySessionService 管理对话历史。定义了异步函数 call_vsearch_agent_async 以与智能体交互。它接受查询，构造消息内容对象，并调用运行器的 run_async 方法将查询发送到智能体。然后该函数将智能体的响应流式传输到控制台。它还打印有关最终响应的信息，包括来自数据存储的任何源归因。包含错误处理以捕获智能体执行期间的异常，并提供有关潜在问题（如数据存储 ID 不正确或缺少权限）的信息性消息。提供了另一个异步函数 run_vsearch_example 以演示如何使用示例查询调用智能体。主执行块检查 DATASTORE_ID 是否已设置，然后使用 asyncio.run 运行示例。它包括检查以处理在已有运行事件循环的环境（如 Jupyter 笔记本）中运行代码的情况。
 
 ```python
 import asyncio
@@ -558,7 +558,7 @@ if __name__ == "__main__":
 
 ## 结论
 
-工具使用模式是将大型语言模型的功能范围扩展到其固有文本生成能力之外的关键架构原则。通过为模型配备与外部软件和数据源交互的能力，此范式允许智能体操作、进行计算并从其他系统检索信息。此过程涉及模型在确定满足用户查询需要时生成调用外部工具的结构化请求。LangChain、Google ADK 和 CrewAI 等框架提供结构化抽象和组件，促进这些外部工具的集成。这些框架管理向模型公开工具规范并解析其后续工具使用请求的过程。这简化了可以与外部数字环境交互并在其中采取行动的复杂智能智能体发。
+工具使用模式是将大型语言模型的功能范围扩展到其固有文本生成能力之外的关键架构原则。通过为模型配备与外部软件和数据源交互的能力，此范式允许智能体操作、进行计算并从其他系统检索信息。此过程涉及模型在确定满足用户查询需要时生成调用外部工具的结构化请求。LangChain、Google ADK 和 CrewAI 等框架提供结构化抽象和组件，促进这些外部工具的集成。这些框架管理向模型公开工具规范并解析其后续工具使用请求的过程。这简化了可以与外部数字环境交互并在其中采取行动的复杂智能体系统的开发。
 
 ## 参考文献
 
