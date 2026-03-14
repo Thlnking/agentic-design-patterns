@@ -154,7 +154,7 @@ This sequential processing methodology is particularly applicable to data extrac
 
 这种顺序处理方法特别适用于从表单、发票或电子邮件等非结构化来源进行数据提取和分析。例如，解决复杂的光学字符识别（OCR）问题，如处理 PDF 表单，通过分解的多步方法能更有效地处理。
 
-Initially, a large language model is employed to perform the primary text extraction from the document image. Following this, the model processes the raw output to normalize the data, a step where it might convert numeric text, such as "one thousand and fifty," into its numerical equivalent, 1050\. A significant challenge for LLMs is performing precise mathematical calculations. Therefore, in a subsequent step, the system can delegate any required arithmetic operations to an external calculator tool. The LLM identifies the necessary calculation, feeds the normalized numbers to the tool, and then incorporates the precise result. This chained sequence of text extraction, data normalization, and external tool use achieves a final, accurate result that is often difficult to obtain reliably from a single LLM query.
+Initially, a large language model is employed to perform the primary text extraction from the document image. Following this, the model processes the raw output to normalize the data, a step where it might convert numeric text, such as "one thousand and fifty," into its numerical equivalent, 1050. A significant challenge for LLMs is performing precise mathematical calculations. Therefore, in a subsequent step, the system can delegate any required arithmetic operations to an external calculator tool. The LLM identifies the necessary calculation, feeds the normalized numbers to the tool, and then incorporates the precise result. This chained sequence of text extraction, data normalization, and external tool use achieves a final, accurate result that is often difficult to obtain reliably from a single LLM query.
 
 首先，使用大型语言模型从文档图像执行主要文本提取。随后，模型处理原始输出以规范化数据，在这一步中，它可能会将数字文本（如"一千零五十"）转换为其数字等价形式 1050。LLM 面临的一个重大挑战是执行精确的数学计算。因此，在后续步骤中，系统可以将任何所需的算术运算委托给外部计算器工具。LLM 识别所需的计算，将规范化后的数字输入该工具，然后整合精确的结果。这种文本提取、数据规范化和外部工具使用的链式序列，实现了通常难以通过单个 LLM 查询可靠获得的最终准确结果。
 
@@ -321,8 +321,6 @@ Context Engineering (see Fig.1) is the systematic discipline of designing, const
 
 Fig.1: Context Engineering is the discipline of building a rich, comprehensive informational environment for an AI, as the quality of this context is a primary factor in enabling advanced Agentic performance.
 
-![][image1]
-
 图 1：上下文工程是为 AI 构建丰富、全面的信息环境的学科，因为此上下文的质量是实现高级智能体性能的主要因素。
 
 It represents a significant evolution from traditional prompt engineering, which focuses primarily on optimizing the phrasing of a user's immediate query. Context Engineering expands this scope to include several layers of information, such as the **system prompt**, which is a foundational set of instructions defining the AI's operational parameters—for instance, *"You are a technical writer; your tone must be formal and precise."* The context is further enriched with external data. This includes retrieved documents, where the AI actively fetches information from a knowledge base to inform its response, such as pulling technical specifications for a project. It also incorporates tool outputs, which are the results from the AI using an external API to obtain real-time data, like querying a calendar to determine a user's availability. This explicit data is combined with critical implicit data, such as user identity, interaction history, and environmental state. The core principle is that even advanced models underperform when provided with a limited or poorly constructed view of the operational environment.
@@ -364,8 +362,6 @@ This structured approach is what differentiates a rudimentary AI tool from a mor
 ![][image2]
 
 Fig. 2: Prompt Chaining Pattern: Agents receive a series of prompts from the user, with the output of each agent serving as the input for the next in the chain.
-
-![][image2]
 
 图 2：提示词链模式：智能体从用户接收一系列提示词，每个智能体的输出作为链中下一个智能体的输入
 

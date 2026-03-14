@@ -20,13 +20,19 @@ The evolution of AI from conversational partners to active, task-oriented agents
 AI 从对话伙伴向主动式任务导向型智能体演进，正由智能体-计算机界面（Agent-Computer Interfaces，ACIs）技术驱动。这些界面使 AI 能够直接与计算机的图形用户界面（Graphical User Interface，GUI）交互，使其能像人类一样感知并操作图标、按钮等视觉元素。这种新范式超越了依赖 API 和系统调用的传统自动化方法——后者往往受限于僵化的、依赖开发人员编写的脚本。通过利用软件的视觉"前门"，AI 现能以更灵活、更强大的方式自动化复杂数字任务，该过程涉及以下关键阶段：
 
 * **Visual Perception:** The agent first captures a visual representation of the screen, essentially taking a screenshot.  
-* **GUI Element Recognition:** It then analyzes this image to distinguish between various GUI elements. It must learn to "see" the screen not as a mere collection of pixels, but as a structured layout with interactive components, discerning a clickable "Submit" button from a static banner image or an editable text field from a simple label.  
-* **Contextual Interpretation:** The ACI module, acting as a bridge between the visual data and the agent's core intelligence (often a Large Language Model or LLM), interprets these elements within the context of the task. It understands that a magnifying glass icon typically means "search" or that a series of radio buttons represents a choice. This module is crucial for enhancing the LLM's reasoning, allowing it to form a plan based on visual evidence.  
-* **Dynamic Action and Response:** The agent then programmatically controls the mouse and keyboard to execute its plan—clicking, typing, scrolling, and dragging. Critically, it must constantly monitor the screen for visual feedback, dynamically responding to changes, loading screens, pop-up notifications, or errors to successfully navigate multi-step workflows.
 
 * **视觉感知**：智能体首先捕获屏幕的视觉呈现，本质上相当于截屏操作。
+
+* **GUI Element Recognition:** It then analyzes this image to distinguish between various GUI elements. It must learn to "see" the screen not as a mere collection of pixels, but as a structured layout with interactive components, discerning a clickable "Submit" button from a static banner image or an editable text field from a simple label.  
+
 * **GUI 元素识别**：随后分析该图像以区分各类 GUI 元素。它必须学会将屏幕"解读"为具有交互组件的结构化布局，而非单纯的像素集合，能够辨别可点击的"提交"按钮与静态横幅广告，或区分可编辑文本框与普通标签。
+
+* **Contextual Interpretation:** The ACI module, acting as a bridge between the visual data and the agent's core intelligence (often a Large Language Model or LLM), interprets these elements within the context of the task. It understands that a magnifying glass icon typically means "search" or that a series of radio buttons represents a choice. This module is crucial for enhancing the LLM's reasoning, allowing it to form a plan based on visual evidence.  
+
 * **上下文理解**：ACI 模块作为视觉数据与智能体核心智能（通常为大型语言模型 LLM）间的桥梁，在任务背景下解析这些元素。它能理解放大镜图标通常代表"搜索"，或一组单选按钮表示选项。此模块对增强 LLM 推理能力至关重要，使其能基于视觉证据制定行动计划。
+
+* **Dynamic Action and Response:** The agent then programmatically controls the mouse and keyboard to execute its plan—clicking, typing, scrolling, and dragging. Critically, it must constantly monitor the screen for visual feedback, dynamically responding to changes, loading screens, pop-up notifications, or errors to successfully navigate multi-step workflows.
+
 * **动态执行与响应**：智能体随后通过程序化控制鼠标和键盘执行计划——包括点击、输入、滚动和拖拽。关键在于，它必须持续监控屏幕以获取视觉反馈，动态响应界面变化、加载状态、弹窗通知或错误信息，从而成功驾驭多步骤工作流。
 
 This technology is no longer theoretical. Several leading AI labs have developed functional agents that demonstrate the power of GUI interaction:
@@ -51,7 +57,7 @@ Fig.1: Interaction between and Agent and the Web Browser
 
 **Anthropic 的计算机使用功能**：该特性使 Anthropic 的 AI 模型 Claude 能够成为计算机桌面环境的直接操作用户。通过截屏感知界面并以程序化方式控制鼠标键盘，Claude 可编排跨多个独立应用的工作流。用户可要求其分析 PDF 报告中的数据，打开电子表格程序进行相关计算，生成图表，并将图表插入邮件草稿——这一系列任务以往需要持续的人工介入。
 
-**Browser Use**: This  is an open-source library that provides a high-level API for programmatic browser automation. It enables AI agents to interface with web pages by granting them access to and control over the Document Object Model (DOM). The API abstracts the intricate, low-level commands of browser control protocols, into a more simplified and intuitive set of functions. This allows an agent to perform complex sequences of actions, including data extraction from nested elements, form submissions, and automated navigation across multiple pages. As a result, the library facilitates the transformation of unstructured web data into a structured format that an AI agent can systematically process and utilize for analysis or decision-making.
+**Browser Use**: This is an open-source library that provides a high-level API for programmatic browser automation. It enables AI agents to interface with web pages by granting them access to and control over the Document Object Model (DOM). The API abstracts the intricate, low-level commands of browser control protocols, into a more simplified and intuitive set of functions. This allows an agent to perform complex sequences of actions, including data extraction from nested elements, form submissions, and automated navigation across multiple pages. As a result, the library facilitates the transformation of unstructured web data into a structured format that an AI agent can systematically process and utilize for analysis or decision-making.
 
 **Browser Use**：这是一个提供程序化浏览器自动化高级 API 的开源库。它使 AI 智能体通过访问和控制文档对象模型（Document Object Model，DOM）与网页交互。该 API 将浏览器控制协议的复杂底层指令抽象为更简洁直观的函数集。这使得智能体能够执行复杂操作序列，包括从嵌套元素提取数据、提交表单以及跨页面自动导航。因此，该库助力将非结构化网络数据转化为 AI 智能体可以用于分析或决策的结构化格式。
 
@@ -100,15 +106,23 @@ This process is characterized by:
 该过程具有以下特征：
 
 - **Conversational Prompts:** Instead of writing detailed specifications, a developer might say, "Create a simple, modern-looking landing page for a new app," or, "Refactor this function to be more Pythonic and readable." The AI interprets the "vibe" of "modern" or "Pythonic" and generates the corresponding code.  
-- **Iterative Refinement:** The initial output from the AI is often a starting point. The developer then provides feedback in natural language, such as, "That's a good start, but can you make the buttons blue?" or, "Add some error handling to that." This back-and-forth continues until the code meets the developer's expectations.  
-- **Creative Partnership:** In vibe coding, the AI acts as a creative partner, suggesting ideas and solutions that the developer may not have considered. This can accelerate the development process and lead to more innovative outcomes.  
-- **Focus on "What" not "How":** The developer focuses on the desired outcome (the "what") and leaves the implementation details (the "how") to the AI. This allows for rapid prototyping and exploration of different approaches without getting bogged down in boilerplate code.  
-- **Optional Memory Banks:** To maintain context across longer interactions, developers can use "memory banks" to store key information, preferences, or constraints. For example, a developer might save a specific coding style or a set of project requirements to the AI's memory, ensuring that future code generations remain consistent with the established "vibe" without needing to repeat the instructions.
 
 - **对话式提示**：开发者不再编写详细规格说明，而是用自然语言表达，如"为新应用创建一个简洁现代风格的登录页面"，或"重构此函数使其更符合 Pythonic 风格并提升可读性"。AI 会解读"现代"或"Pythonic"的"氛围"内涵，生成相应代码。
+
+- **Iterative Refinement:** The initial output from the AI is often a starting point. The developer then provides feedback in natural language, such as, "That's a good start, but can you make the buttons blue?" or, "Add some error handling to that." This back-and-forth continues until the code meets the developer's expectations.  
+
 - **迭代精炼**：AI 的初始输出通常只是起点。开发者随后以自然语言提供反馈，如"这个开头不错，但能把按钮改成蓝色吗？"或"为那段代码添加错误处理机制。"如此往复，直至代码符合预期。
+
+- **Creative Partnership:** In vibe coding, the AI acts as a creative partner, suggesting ideas and solutions that the developer may not have considered. This can accelerate the development process and lead to more innovative outcomes.  
+
 - **创意伙伴关系**：在 vibe 编码中，AI 扮演创意伙伴角色，提出开发者可能未曾考虑的创意和解决方案。这能加速开发进程并催生更具创新性的成果。
+
+- **Focus on "What" not "How":** The developer focuses on the desired outcome (the "what") and leaves the implementation details (the "how") to the AI. This allows for rapid prototyping and exploration of different approaches without getting bogged down in boilerplate code.  
+
 - **聚焦"目标"而非"方法"**：开发者专注于期望成果（"目标"），将实现细节（"方法"）交由 AI 处理。这使得快速原型设计和多方案探索成为可能，避免陷入样板代码的繁琐。
+
+- **Optional Memory Banks:** To maintain context across longer interactions, developers can use "memory banks" to store key information, preferences, or constraints. For example, a developer might save a specific coding style or a set of project requirements to the AI's memory, ensuring that future code generations remain consistent with the established "vibe" without needing to repeat the instructions.
+
 - **可选记忆库**：为在长对话中保持上下文连贯，开发者可使用"记忆库"存储关键信息、偏好或约束条件。例如，开发者可将特定编码风格或项目需求集保存至 AI 记忆库，确保后续代码生成与既定"氛围"保持一致，无需重复指令。
 
 Vibe coding is becoming increasingly popular with the rise of powerful AI models like GPT-4, Claude, and Gemini, which are integrated into development environments. These tools are not just auto-completing code; they are actively participating in the creative process of software development, making it more accessible and efficient. This new way of working is changing the nature of software engineering, emphasizing creativity and high-level thinking over rote memorization of syntax and APIs.
@@ -120,13 +134,19 @@ Vibe coding is becoming increasingly popular with the rise of powerful AI models
 ## 关键要点
 
 * AI agents are evolving from simple automation to visually controlling software through graphical user interfaces, much like a human would.  
-* The next frontier is real-world interaction, with projects like Google's Astra using cameras and microphones to see, hear, and understand their physical surroundings.  
-* Leading technology companies are converging these digital and physical capabilities to create universal AI assistants that operate seamlessly across both domains.  
-* This shift is creating a new class of proactive, context-aware AI companions capable of assisting with a vast range of tasks in users' daily lives.
 
 * AI 智能体正从简单自动化演进为通过图形用户界面视觉控制软件，操作方式类人化。
+
+* The next frontier is real-world interaction, with projects like Google's Astra using cameras and microphones to see, hear, and understand their physical surroundings.  
+
 * 下一前沿是真实世界交互，如 Google Astra 等项目利用摄像头和麦克风感知、聆听并理解物理环境。
+
+* Leading technology companies are converging these digital and physical capabilities to create universal AI assistants that operate seamlessly across both domains.  
+
 * 领先科技公司正融合这些数字与物理能力，打造跨域无缝运行的通用 AI 助手。
+
+* This shift is creating a new class of proactive, context-aware AI companions capable of assisting with a vast range of tasks in users' daily lives.
+
 * 这一转变催生了新型主动式、情境感知型 AI 伙伴，能协助用户处理日常生活中的大量任务。
 
 ## Conclusion

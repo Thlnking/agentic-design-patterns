@@ -151,9 +151,9 @@ This communication  contains attributes, which are key-value metadata describing
 * Push Notifications (Webhooks): Designed for very long-running or resource-intensive tasks where maintaining a constant connection or frequent polling is inefficient. The client can register a webhook URL, and the server will send an asynchronous notification (a "push") to that URL when the task's status changes significantly (e.g., upon completion).
 
 * 同步请求/响应：用于快速、即时操作。在此模型中，客户端发送请求并主动等待服务器处理并在单个同步交换中返回完整响应。
-* 异步轮询：适用于需要更长时间处理的任务。客户端发送请求，服务器立即以“工作中”状态和任务 ID 确认。然后客户端可自由执行其他操作，并可通过发送新请求定期轮询服务器检查任务状态，直至标记为“已完成”或“失败”。
+* 异步轮询：适用于需要更长时间处理的任务。客户端发送请求，服务器立即以"工作中"状态和任务 ID 确认。然后客户端可自由执行其他操作，并可通过发送新请求定期轮询服务器检查任务状态，直至标记为"已完成"或"失败"。
 * 流式更新（服务器发送事件 - SSE）：适用于接收实时、增量结果。此方法建立从服务器到客户端的持久单向连接。它允许远程智能体推送更新（如状态更改或部分结果），而无需客户端发出多个请求。
-* 推送通知（Webhook）：专为非常长时间运行或资源密集型任务设计，其中维护恒定连接或频繁轮询效率低下。客户端可注册 webhook URL，当任务状态发生重大变化（如完成时），服务器将向该 URL 发送异步通知（“推送”）。
+* 推送通知（Webhook）：专为非常长时间运行或资源密集型任务设计，其中维护恒定连接或频繁轮询效率低下。客户端可注册 webhook URL，当任务状态发生重大变化（如完成时），服务器将向该 URL 发送异步通知（"推送"）。
 
 The Agent Card specifies whether an agent supports streaming or push notification capabilities. Furthermore, A2A is modality-agnostic, meaning it can facilitate these interaction patterns not just for text, but also for other data types like audio and video, enabling rich, multimodal AI applications. Both streaming and push notification capabilities are specified within the Agent Card.
 
@@ -271,7 +271,7 @@ Inter-Agent Communication is indispensable for building sophisticated AI solutio
 
 * **多框架协作**：A2A 的主要用例是使独立 AI 智能体能够通信和协作，无论其底层框架（如 ADK、LangGraph、CrewAI）如何。这对构建复杂多智能体系统非常重要，其中不同智能体专注于问题的不同方面。
 * **自动化工作流编排**：在企业环境中，A2A 可通过使智能体通信和协调任务来促进复杂工作流。例如，一个智能体可以处理初始数据收集，然后委派给另一个智能体进行分析，随后委派给第三个智能体生成报告，所有通信均通过 A2A 协议进行。
-* **动态信息检索**：Agent 可以通过通信来检索和交换实时信息。主智能体从专门的“数据获取 Agent”请求实时市场数据，后者然后使用外部 API 收集信息并发送回来。
+* **动态信息检索**：Agent 可以通过通信来检索和交换实时信息。主智能体从专门的"数据获取 Agent"请求实时市场数据，后者然后使用外部 API 收集信息并发送回来。
 
 ## Hands-On Code Example
 
@@ -279,7 +279,7 @@ Inter-Agent Communication is indispensable for building sophisticated AI solutio
 
 Let's examine the practical applications of the A2A protocol. The repository at [https://github.com/google-a2a/a2a-samples/tree/main/samples](https://github.com/google-a2a/a2a-samples/tree/main/samples) provides examples in Java, Go, and Python that illustrate how various agent frameworks, such as LangGraph, CrewAI, Azure AI Foundry, and AG2, can communicate using A2A. All code in this repository is released under the Apache 2.0 license. To further illustrate A2A's core concepts, we will review code excerpts focusing on setting up an A2A Server using an ADK-based agent with Google-authenticated tools. Looking at [https://github.com/google-a2a/a2a-samples/blob/main/samples/python/agents/birthday_planner_adk/calendar_agent/adk_agent.py](https://github.com/google-a2a/a2a-samples/blob/main/samples/python/agents/birthday_planner_adk/calendar_agent/adk_agent.py) 
 
-让我们检查 A2A 协议的实际应用。位于 [https://github.com/google-a2a/a2a-samples/tree/main/samples](https://github.com/google-a2a/a2a-samples/tree/main/samples) 的仓库提供 Java、Go 和 Python 示例，说明各种智能体框架（如 LangGraph、CrewAI、Azure AI Foundry 和 AG2）如何使用 A2A 通信。此仓库中所有代码均在 Apache 2.0 许可证下发布。为进一步说明 A2A 核心概念，我们将审查代码摘录，重点是基于 ADK 的智能体和 Google 身份验证工具设置 A2A 服务器。查看 [https://github.com/google-a2a/a2a-samples/blob/main/samples/python/agents/birthday_planner_adk/calendar_agent/adk_agent.py](https://github.com/google-a2a/a2a-samples/blob/main/samples/python/agents/birthday_planner_adk/calendar_agent/adk_agent.py)
+让我们检查 A2A 协议的实际应用。位于 [https://github.com/google-a2a/a2a-samples/tree/main/samples](https://github.com/google-a2a/a2a-samples/tree/main/samples) 的仓库提供 Java、Go 和 Python 示例，说明各种智能体框架（如 LangGraph、CrewAI、Azure AI Foundry 和 AG2）如何使用 A2A 通信。此仓库中所有代码均在 Apache 2.0 许可证下发布。为进一步说明 A2A 核心概念，我们将审查代码摘录，重点是基于 ADK 的智能体和 Google 身份验证工具设置 A2A 服务器。查看 [https://github.com/google-a2a/a2a-samples/blob/main/samples/python/agents/birthday_planner_adk/calendar_agent/adk_agent.py](https://github.com/google-a2a/a2a-samples/blob/main/samples/python/agents/birthday_planner_adk/calendar_agent/adk_agent.py) 
 
 ```python
 import datetime
@@ -311,7 +311,7 @@ This Python code defines an asynchronous function `create_agent` that constructs
 
 The code below shows how the agent is defined with its specific instructions and tools. Please note that only the code required to explain this functionality is shown; you can access the complete file here: [https://github.com/a2aproject/a2a-samples/blob/main/samples/python/agents/birthday_planner_adk/calendar_agent/__main__.py](https://github.com/a2aproject/a2a-samples/blob/main/samples/python/agents/birthday_planner_adk/calendar_agent/__main__.py) 
 
-以下代码显示智能体使用其特定指令和工具定义。请注意，仅显示解释此功能所需代码；您可在此处访问完整文件：[https://github.com/a2aproject/a2a-samples/blob/main/samples/python/agents/birthday_planner_adk/calendar_agent/__main__.py](https://github.com/a2aproject/a2a-samples/blob/main/samples/python/agents/birthday_planner_adk/calendar_agent/__main__.py)
+以下代码显示智能体使用其特定指令和工具定义。请注意，仅显示解释此功能所需代码；您可在此处访问完整文件：[https://github.com/a2aproject/a2a-samples/blob/main/samples/python/agents/birthday_planner_adk/calendar_agent/__main__.py](https://github.com/a2aproject/a2a-samples/blob/main/samples/python/agents/birthday_planner_adk/calendar_agent/__main__.py) 
 
 ```python
 def main(host: str, port: int):
@@ -319,7 +319,7 @@ def main(host: str, port: int):
     # Not required if using Vertex AI APIs.
     if os.getenv('GOOGLE_GENAI_USE_VERTEXAI') != 'TRUE' and not os.getenv('GOOGLE_API_KEY'):
         raise ValueError(
-            'GOOGLE_API_KEY environment variable not set and '
+            'GOOGLE_API_KEY environment not set and '
             'GOOGLE_GENAI_USE_VERTEXAI is not TRUE.'
         )
 
@@ -389,7 +389,7 @@ if __name__ == '__main__':
 
 This Python code demonstrates setting up an A2A-compliant "Calendar Agent" for checking user availability using Google Calendar. It involves verifying API keys or Vertex AI configurations for authentication purposes. The agent's capabilities, including the "check_availability" skill, are defined within an AgentCard, which also specifies the agent's network address. Subsequently, an ADK agent is created, configured with in-memory services for managing artifacts, sessions, and memory. The code then initializes a Starlette web application, incorporates an authentication callback and the A2A protocol handler, and executes it using Uvicorn to expose the agent via HTTP.
 
-此 Python 代码演示了设置符合 A2A 的“日历 Agent”，用于通过 Google Calendar 检查用户可用性。它涉及验证 API 密钥或 Vertex AI 配置以用于身份验证目的。智能体能力（包括“check_availability”技能）在 AgentCard 中定义，该卡片还指定智能体地址。随后创建 ADK 智能体，配置内存服务以管理工件、会话和内存。然后代码初始化 Starlette Web 应用程序，合并身份验证回调和 A2A 协议处理程序，并使用 Uvicorn 执行它以通过 HTTP 公开智能体。
+此 Python 代码演示了设置符合 A2A 的"日历 Agent"，用于通过 Google Calendar 检查用户可用性。它涉及验证 API 密钥或 Vertex AI 配置以用于身份验证目的。智能体能力（包括"check_availability"技能）在 AgentCard 中定义，该卡片还指定智能体地址。随后创建 ADK 智能体，配置内存服务以管理工件、会话和内存。然后代码初始化 Starlette Web 应用程序，合并身份验证回调和 A2A 协议处理程序，并使用 Uvicorn 执行它以通过 HTTP 公开智能体。
 
 These examples illustrate the process of building an A2A-compliant agent, from defining its capabilities to running it as a web service. By utilizing Agent Cards and ADK, developers can create interoperable AI agents capable of integrating with tools like Google Calendar. This practical approach demonstrates the application of A2A in establishing a multi-agent ecosystem.
 
@@ -465,7 +465,7 @@ This enables the creation of modular and scalable architectures where specialize
 1. Chen, B. (2025, April 22). *How to Build Your First Google A2A Project: A Step-by-Step Tutorial*. Trickle.so Blog. [https://www.trickle.so/blog/how-to-build-google-a2a-project](https://www.trickle.so/blog/how-to-build-google-a2a-project)   
 2. Google A2A GitHub Repository. [https://github.com/google-a2a/A2A](https://github.com/google-a2a/A2A)   
 3. Google Agent Development Kit (ADK) [https://google.github.io/adk-docs/](https://google.github.io/adk-docs/)   
-4. Getting Started with Agent-to-Agent (A2A) Protocol: [https://codelabs.developer.google.com/intro-a2a-purchasing-concierge#0](https://codelabs.developer.google.com/intro-a2a-purchasing-concierge#0)   
+4. Getting Started with Agent-to-Agent (A2A) Protocol: [https://codelabs.developers.google.com/intro-a2a-purchasing-concierge#0](https://codelabs.developers.google.com/intro-a2a-purchasing-concierge#0)   
 5. Google AgentDiscovery - [https://a2a-protocol.org/latest/](https://a2a-protocol.org/latest/)    
 6. Communication between different AI frameworks such as LangGraph, CrewAI, and Google ADK [https://www.trickle.so/blog/how-to-build-google-a2a-project#setting-up-your-a2a-development-environment](https://www.trickle.so/blog/how-to-build-google-a2a-project#setting-up-your-a2a-development-environment)   
 7. Designing Collaborative Multi-Agent Systems with the A2A Protocol [https://www.oreilly.com/radar/designing-collaborative-multi-agent-systems-with-the-a2a-protocol/](https://www.oreilly.com/radar/designing-collaborative-multi-agent-systems-with-the-a2a-protocol/) 

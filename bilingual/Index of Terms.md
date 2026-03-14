@@ -18,9 +18,9 @@
 
 ### 上下文学习（In-Context Learning）：上下文学习是 AI 直接从提示词中提供的示例学习新任务的能力，无需任何重新训练。这个强大的功能允许单个通用模型即时适应无数特定任务。
 
-## Zero-Shot, One-Shot, & Few-Shot Prompting: These are prompting techniques where a model is given zero, one, or a few examples of a task to guide its response. Providing more examples generally helps the model better understand the user's intent and improves its accuracy for the specific task.
+## Zero-Shot, One-Shot, &amp; Few-Shot Prompting: These are prompting techniques where a model is given zero, one, or a few examples of a task to guide its response. Providing more examples generally helps the model better understand the user's intent and improves its accuracy for the specific task.
 
-### 零样本、单样本和少样本提示（Zero-Shot, One-Shot, & Few-Shot Prompting）：这些是提示技术，其中向模型提供零个、一个或几个任务示例来指导其响应。提供更多示例通常有助于模型更好地理解用户意图，并提高特定任务的准确性。
+### 零样本、单样本和少样本提示（Zero-Shot, One-Shot, &amp; Few-Shot Prompting）：这些是提示技术，其中向模型提供零个、一个或几个任务示例来指导其响应。提供更多示例通常有助于模型更好地理解用户意图，并提高特定任务的准确性。
 
 ## Multimodality: Multimodality is an AI's ability to understand and process information across multiple data types like text, images, and audio. This allows for more versatile and human-like interactions, such as describing an image or answering a spoken question.
 
@@ -70,7 +70,7 @@
 
 ### 微调技术：微调是使用较小的专业化数据集将通用预训练模型适应特定任务的过程。最常见的方法是监督微调（SFT），其中模型在标记的正确输入输出对示例上进行训练。一个流行的变体是指令调优，专注于训练模型更好地遵循用户命令。为了使此过程更高效，使用参数高效微调（PEFT）方法，顶级技术包括 LoRA（低秩适应），仅更新少量参数，以及其内存优化版本 QLoRA。另一种技术，检索增强生成（RAG），通过在微调或推理阶段将模型连接到外部知识源来增强模型。
 
-## Alignment & Safety Techniques: Alignment is the process of ensuring an AI model's behavior aligns with human values and expectations, making it helpful and harmless. The most prominent technique is Reinforcement Learning from Human Feedback (RLHF), where a "reward model" trained on human preferences guides the AI's learning process, often using an algorithm like Proximal Policy Optimization (PPO) for stability. Simpler alternatives have emerged, such as Direct Preference Optimization (DPO), which bypasses the need for a separate reward model, and Kahneman-Tversky Optimization (KTO), which simplifies data collection further. To ensure safe deployment, Guardrails are implemented as a final safety layer to filter outputs and block harmful actions in real-time.
+## Alignment &amp; Safety Techniques: Alignment is the process of ensuring an AI model's behavior aligns with human values and expectations, making it helpful and harmless. The most prominent technique is Reinforcement Learning from Human Feedback (RLHF), where a "reward model" trained on human preferences guides the AI's learning process, often using an algorithm like Proximal Policy Optimization (PPO) for stability. Simpler alternatives have emerged, such as Direct Preference Optimization (DPO), which bypasses the need for a separate reward model, and Kahneman-Tversky Optimization (KTO), which simplifies data collection further. To ensure safe deployment, Guardrails are implemented as a final safety layer to filter outputs and block harmful actions in real-time.
 
 ### 对齐和安全技术：对齐是确保 AI 模型行为与人类价值观和期望保持一致的过程，使其有帮助且无害。最突出的技术是基于人类反馈的强化学习（RLHF），其中在人类偏好上训练的"奖励模型"指导 AI 的学习过程，通常使用近端策略优化（PPO）等算法来保持稳定性。已经出现了更简单的替代方案，例如直接偏好优化（DPO），它绕过了对单独奖励模型的需求，以及 Kahneman-Tversky 优化（KTO），它进一步简化了数据收集。为确保安全部署，实施护栏作为最终安全层，以实时过滤输出并阻止有害行为。
 
@@ -130,8 +130,8 @@ This index of terms was generated using Gemini Pro 2.5. The prompt and reasoning
 * Adaptive Task Allocation \- Chapter 16: Resource-Aware Optimization  
 * 自适应任务分配(Adaptive Task Allocation) - 第 16 章：资源感知优化
 
-* Adaptive Tool Use & Selection \- Chapter 16: Resource-Aware Optimization  
-* 自适应工具使用与选择(Adaptive Tool Use & Selection) - 第 16 章：资源感知优化
+* Adaptive Tool Use &amp; Selection \- Chapter 16: Resource-Aware Optimization  
+* 自适应工具使用与选择(Adaptive Tool Use &amp; Selection) - 第 16 章：资源感知优化
 
 * Agent \- What makes an AI system an Agent?  
 * 智能体(Agent) - 什么使 AI 系统成为 Agent？
@@ -285,8 +285,8 @@ This index of terms was generated using Gemini Pro 2.5. The prompt and reasoning
 * Context Window \- Glossary  
 * 上下文窗口(Context Window) - 术语表
 
-* Contextual Pruning & Summarization \- Chapter 16: Resource-Aware Optimization  
-* 上下文修剪与摘要(Contextual Pruning & Summarization) - 第 16 章：资源感知优化
+* Contextual Pruning &amp; Summarization \- Chapter 16: Resource-Aware Optimization  
+* 上下文修剪与摘要(Contextual Pruning &amp; Summarization) - 第 16 章：资源感知优化
 
 * Contextual Prompting \- Appendix A  
 * 上下文提示(Contextual Prompting) - 附录 A
@@ -460,8 +460,8 @@ This index of terms was generated using Gemini Pro 2.5. The prompt and reasoning
 * Google Agent Development Kit (ADK) \- Chapter 2: Routing, Chapter 3: Parallelization, Chapter 4: Reflection, Chapter 5: Tool Use, Chapter 7: Multi-Agent Collaboration, Chapter 8: Memory Management, Chapter 12: Exception Handling and Recovery, Chapter 13: Human-in-the-Loop, Chapter 15: Inter-Agent Communication (A2A), Chapter 16: Resource-Aware Optimization, Chapter 19: Evaluation and Monitoring, Appendix C  
 * Google 智能体开发工具包(Google Agent Development Kit, ADK) - 第 2 章：路由，第 3 章：并行化，第 4 章：反思，第 5 章：工具使用，第 7 章：多智能体协作，第 8 章：记忆管理，第 12 章：异常处理与恢复，第 13 章：人机协同，第 15 章：Agent 间通信（A2A），第 16 章：资源感知优化，第 19 章：评估与监控，附录 C
 
-* Google Co-scientist \- Chapter 21: Exploration and Discovery  
-* Google 联合科学家(Google Co-scientist) - 第 21 章：探索与发现
+* Google Co-Scientist \- Chapter 21: Exploration and Discovery  
+* Google 联合科学家(Google Co-Scientist) - 第 21 章：探索与发现
 
 * Google DeepResearch \- Chapter 6: Planning  
 * Google DeepResearch(Google DeepResearch) - 第 6 章：规划
@@ -471,6 +471,9 @@ This index of terms was generated using Gemini Pro 2.5. The prompt and reasoning
 
 * Graceful Degradation \- Chapter 12: Exception Handling and Recovery, Chapter 16: Resource-Aware Optimization  
 * 优雅降级(Graceful Degradation) - 第 12 章：异常处理与恢复，第 16 章：资源感知优化
+
+* Graph of Debates (GoD) \- Chapter 17: Reasoning Techniques  
+* 辩论图(Graph of Debates, GoD) - 第 17 章：推理技术
 
 * Grounding \- Glossary  
 * 基础化(Grounding) - 术语表
@@ -679,8 +682,8 @@ This index of terms was generated using Gemini Pro 2.5. The prompt and reasoning
 * Parallelization \- Chapter 3: Parallelization  
 * 并行化(Parallelization) - 第 3 章：并行化
 
-* Parallelization & Distributed Computing Awareness \- Chapter 16: Resource-Aware Optimization  
-* 并行化与分布式计算感知(Parallelization & Distributed Computing Awareness) - 第 16 章：资源感知优化
+* Parallelization &amp; Distributed Computing Awareness \- Chapter 16: Resource-Aware Optimization  
+* 并行化与分布式计算感知(Parallelization &amp; Distributed Computing Awareness) - 第 16 章：资源感知优化
 
 * Parameter-Efficient Fine-Tuning (PEFT) \- Glossary  
 * 参数高效微调(Parameter-Efficient Fine-Tuning, PEFT) - 术语表
@@ -975,6 +978,8 @@ Below is the prompt that was utilized to create this index of terms.
 以下是用于创建此术语索引的提示词。
 
 | *do you read https://docs.google.com/document/d/1rsaK53T3Lg5KoGwvf8ukOUvbELRtH-V0LnOIFDxBryE/edit?tab=t.0 and all the related documents in the first page Please extract all the titles for each chapter. and print them. Then process the content of all the individual chapters, and create a detailed index used for publishing, a list of words or phrases ('headings') and associated pointers ('locators') to where useful material relating to that heading can be found in a document or collection of documents. I don't want a sample index. I want the full index, with 100 index terms* |
+| :---- |
+
 | *请阅读 https://docs.google.com/document/d/1rsaK53T3Lg5KoGwvf8ukOUvbELRtH-V0LnOIFDxBryE/edit?tab=t.0 及第一页中的所有相关文档。请提取各章节的所有标题并打印出来。然后处理所有独立章节的内容，创建一个用于出版的详细索引，包含单词或短语列表（"标题"）以及指向文档或文档集合中相关有用材料位置的指针（"定位符"）。我不需要示例索引，而是要求完整的索引，包含 100 个索引术语* |
 
 ## Gemini 2.5: Reasoning Steps
@@ -993,7 +998,7 @@ I've initiated the process by reading the Google Doc provided. Currently, I'm fo
 
 **定义索引提取流程**
 
-I'm now fully immersed in this task. I've broken down the user's request into actionable steps. My initial focus is using Workspaces to access the main Google Doc. Following this, I'll parse the document to locate and retrieve related documents, which will also be accessed using the same tool. Finally, I will extract all chapter titles from all the documents, and create a comprehensive index. I've planned the detailed process.
+I'm now fully immersed in the task. I've broken down the user's request into actionable steps. My initial focus is using Workspaces to access the main Google Doc. Following this, I'll parse the document to locate and retrieve related documents, which will also be accessed using the same tool. Finally, I will extract all chapter titles from all the documents, and create a comprehensive index. I've planned the detailed process.
 
 现在已完全投入到此任务中。已将用户请求分解为可执行的步骤：初始阶段使用 Workspaces 访问主 Google 文档，接着解析文档以定位并检索相关文档（同样使用 Workspaces 工具），最后从所有文档中提取章节标题并创建全面索引。已规划完整的详细流程。
 
@@ -1001,7 +1006,7 @@ I'm now fully immersed in this task. I've broken down the user's request into ac
 
 **完善提取策略**
 
-The user's instructions are clear: read a Google document, its related documents, and build a detailed index of chapter titles. I've devised a multi-step plan: Workspaces will first access the main document, then I'll parse it to find and read related documents, also using Workspaces. I'm now focusing on extracting titles and forming the detailed index with the required terms. I'm prioritizing accuracy to meet the user's specific demands for a comprehensive index.
+The user's instructions are clear: read a Google Doc, its related documents, and build a detailed index of chapter titles. I've devised a multi-step plan. First, Workspaces will access the main Google Doc. Then, I'll parse it to find and read related documents, also using Workspaces. I'm now focusing on extracting titles and forming the detailed index with the required terms. I'm prioritizing accuracy to meet the user's specific demands for a comprehensive index.
 
 用户指令明确：阅读 Google 文档及其相关文档，构建章节标题的详细索引。已制定多步骤计划：Workspaces 首先访问主文档，然后解析并检索相关文档，同样使用 Workspaces。当前专注于提取标题并使用所需术语构建详细索引，优先确保准确性以满足用户对综合索引的特定要求。
 
@@ -1065,7 +1070,7 @@ I've extracted the chapter URLs and initiated a call to Workspaces. I'm currentl
 
 **解码用户请求**
 
-I've determined the user's need: they require two primary deliverables: first, a comprehensive list of chapter titles extracted from Google Docs, and second, a detailed index containing a minimum of one hundred key terms. The process of extracting titles seems straightforward, while curating the index will involve more nuanced analysis.
+I've determined the user's need. They require two primary deliverables: first, a comprehensive list of chapter titles extracted from Google Docs, and second, a detailed index containing a minimum of one hundred key terms. The process of extracting titles seems straightforward, while curating the index will involve more nuanced analysis.
 
 已明确用户需求：两个主要交付成果——从 Google 文档提取的章节标题综合列表，以及包含至少一百个关键术语的详细索引。提取标题的过程相对直接，而策划索引则需要更细致的分析工作。
 
@@ -1081,7 +1086,7 @@ I've successfully identified the user's need: extracting chapter titles from the
 
 **制定提取计划**
 
-I've refined my approach to tackle the user's request. I've now formulated a precise plan: firstly, I will compile the chapter titles from the filenames of the 31 fetched documents. Secondly, and more complexly, I will meticulously analyze the content to create a comprehensive, alphabetically ordered index exceeding 100 entries. I have finalized my extraction and indexing strategy and can now commence execution.
+I've refined my approach to tackle the user's request. I've now formulated a precise plan. Firstly, I will compile the chapter titles from the filenames of the 31 fetched documents. Secondly, and more complexly, I will meticulously analyze the content to create a comprehensive, alphabetically ordered index exceeding 100 entries. I have finalized my extraction and indexing strategy and can now commence execution.
 
 已完善处理用户请求的方法。现制定精确计划：首先从 31 个已获取文档的文件名中编制章节标题，其次（更复杂的部分）精心分析内容以创建超过 100 个条目的综合、按字母顺序排列的索引。已最终确定提取和索引策略，现在可以开始执行。
 
@@ -1089,7 +1094,7 @@ I've refined my approach to tackle the user's request. I've now formulated a pre
 
 **制定提取策略**
 
-My approach is well-defined: I will compile chapter titles from the filenames of the 31 fetched documents. Subsequently, I'll analyze the content meticulously to construct an alphabetically organized index exceeding 100 entries. I've finalized the extraction and indexing strategy and can now commence implementation. The user's goal of a detailed index, covering content from diverse chapters and appendices within the Agentic Design Patterns series, is now within reach. I'll focus on delivering a thorough response, going beyond a mere sample index.
+My approach is well-defined. I will compile chapter titles from the filenames of the 31 fetched documents. Subsequently, I'll analyze the content meticulously to construct an alphabetically organized index exceeding 100 entries. I've finalized the extraction and indexing strategy and can now commence implementation. The user's goal of a detailed index, covering content from diverse chapters and appendices within the Agentic Design Patterns series, is now within reach. I'll focus on delivering a thorough response, going beyond a mere sample index.
 
 方法已明确定义：从 31 个已获取文档的文件名中编制章节标题，随后精心分析内容以构建按字母顺序组织、超过 100 个条目的索引。已最终确定提取和索引策略，现在可以开始实施。用户获取详细索引的目标——涵盖 Agentic 设计模式系列中各个章节和附录的内容——现已触手可及。将专注于提供全面响应，超越简单的示例索引。
 
@@ -1097,6 +1102,6 @@ My approach is well-defined: I will compile chapter titles from the filenames of
 
 **定义方法**
 
-I've clarified the user's need: I will extract chapter titles from the document filenames. Following that, I will carefully create an index exceeding 100 entries, arranging them alphabetically and noting their chapter locations. I am prepared to begin the indexing and extraction process.
+I've clarified the user's need. I will extract chapter titles from the document filenames. Following that, I will carefully create an index exceeding 100 entries, arranging them alphabetically and noting their chapter locations. I am prepared to begin the indexing and extraction process.
 
 已明确用户需求：从文档文件名中提取章节标题，随后精心创建超过 100 个条目的索引，按字母顺序排列并注明章节位置。准备开始索引和提取过程。

@@ -4,155 +4,140 @@ lang: bilingual
 title: Agentic Design Patterns
 ---
 
-![封面图](../images/cover.png)
+# Agentic Design Patterns 
 
-# Agentic Design Patterns (Chinese Translation Project)
+# 智能体设计模式
 
-# Agentic Design Patterns（中文翻译项目）
+*A Hands-On Guide to Building Intelligent Systems[^1], [Antonio Gulli](https://www.linkedin.com/in/searchguy/)*  
 
-## 👨‍💻 About xindoo
+*构建智能系统的实战指南[^1]，作者：[Antonio Gulli](https://www.linkedin.com/in/searchguy/)*  
 
-## 👨‍💻 关于xindoo
+Table of Contents - total 424 pages   = 1+2+1+1+4+9+103+61+34+114+74+5+4 11  
 
-**xindoo** - Initiator and main maintainer of this translation project
+**目录总览**（424 页）
 
-**xindoo** - 本翻译项目的发起者和主要维护者
+[Dedication](https://docs.google.com/document/d/1cQ61mNpiWn6eSORmWjEjF44vN2Lpba8kyKmNwIC60ig/edit?usp=sharing), 1 page   
+[Acknowledgment](https://docs.google.com/document/d/1u2y6tY48bw8nriDUuwWEf9s8g66vyIqBKSKZDOS-n0s/edit?tab=t.0#heading=h.y1l1kh7vu0qi), *2 pages*  [final, last read done]  
+[Foreword](https://docs.google.com/document/d/18Q9kfZuCTL37ztrSjLxwf8Elr5UfAiAavmnj0IqSpbU/edit?tab=t.0#heading=h.5wi2c0amdd0f), 1 page   [final, last read done]  
+[A Thought Leader's Perspective: Power and Responsibility](https://docs.google.com/document/d/1PWhaXD_UNKgJaxYe3JBxRFRt3_B8Wm67CFxtSBQ4LkU/edit?tab=t.0#heading=h.2v348nrvaqww)   [final, last read done]  
+[Introduction](https://docs.google.com/document/d/1K5jwqB6jh20uHL0TTWxqWOxFk-dzFxRvHzrRRV79hrg/edit?tab=t.0), 4 pages [final, last read done]  
+[What makes an AI system an "agent"?](https://docs.google.com/document/d/1Nw6hRa7ItdLr_Tj5hF2q-OH8B_uPKb--RLn8SXZKA94/edit?usp=sharing), 9 pages [final, last read done]
 
-- **GitHub**: [xindoo](https://github.com/xindoo)
-- **Website**: [zxs.io](https://zxs.io)
-- **Blog**: [xindoo](https://blog.csdn.net/xindoo)
-- **About**: A developer passionate about technical sharing and open source contributions, focusing on AI technology, system architecture, and career development.
+- 致谢（1 页）
+- 鸣谢（2 页）
+- 前言（1 页）
+- 思想领袖视角：权力与责任
+- [引言](README.md)（4 页）
+- 是什么让 AI 系统成为"智能体"？（9 页）
 
-- **GitHub**: [xindoo](https://github.com/xindoo)
-- **个人网站**: [zxs.io](https://zxs.io)
-- **博客**：[xindoo](https://blog.csdn.net/xindoo)
-- **个人简介**: 热衷于技术分享和开源贡献的开发者，专注于 AI 技术、系统架构、职业发展。 
+Part One, (Total: 103 pages)
 
-## 📚 Project Introduction
+## 第一部分：核心模式（103 页）
 
-## 📚 项目简介
+1. [Chapter 1: Prompt Chaining](https://docs.google.com/document/d/1flxKGrbnF2g8yh3F-oVD5Xx7ZumId56HbFpIiPdkqLI/edit?usp=sharing) ([code](https://colab.research.google.com/drive/15XCzDOvBhIQaZ__xkvruf5sP9OznAbK9)), 12 pages [final, last read done, code ok]  
+2. [Chapter 2: Routing](https://docs.google.com/document/d/1ux_n8n3T4bYndOjs1DKW5ccpC802KISdy2IWnlvYbas/edit?tab=t.0) ([code](https://drive.google.com/drive/u/0/folders/1Y3U3IrYCiJ3E45Z8okR5eCg7OPnWQtPV)), 13 pages [fina, last read done, code ok]  
+3. [Chapter 3: Parallelization](https://docs.google.com/document/d/1XVMp4RcRkoUJTVbrP2foWZX703CUJpWkrhyFU2cfUOA/edit?tab=t.0) ([code](https://drive.google.com/drive/u/0/folders/1Y3U3IrYCiJ3E45Z8okR5eCg7OPnWQtPV)), 15 pages [final, last read done, code okl]  
+4. [Chapter 4: Reflection](https://docs.google.com/document/d/1HXXJOQIMWowtLw4WMiSR360caDAlZPtl5dPPgvq9IT4/edit?tab=t.0#heading=h.a7nkedxjnyap) ([code](https://drive.google.com/drive/u/0/folders/1Y3U3IrYCiJ3E45Z8okR5eCg7OPnWQtPV)), 13 pages [final, last read done, code okl]  
+5. [Chapter 5: Tool Use](https://docs.google.com/document/d/1bE4iMljhppqGY1p48gQWtZvk6MfRuJRCiba1yRykGNE/edit?usp=sharing) [(code](https://drive.google.com/drive/u/0/folders/1Y3U3IrYCiJ3E45Z8okR5eCg7OPnWQtPV)), 20 pages [final, last read done, code ok]  
+6. [Chapter 6: Planning](https://docs.google.com/document/d/18vvNESEwHnVUREzIipuaDNCnNAREGqEfy9MQYC9wb4o/edit?usp=sharing) ([code](https://drive.google.com/drive/u/0/folders/1Y3U3IrYCiJ3E45Z8okR5eCg7OPnWQtPV)), 13 pages [final, last read done, code ok]  
+7. [Chapter 7: Multi-Agent](https://docs.google.com/document/d/1RZ5-2fykDQKOBx01pwfKkDe0GCs5ydca7xW9Q4wqS_M/edit?tab=t.0) ([code](https://drive.google.com/drive/u/0/folders/1Y3U3IrYCiJ3E45Z8okR5eCg7OPnWQtPV)), 17 pages [final,  last read done, code ok], **121**  
 
-This is the Chinese translation project of the book "Agentic Design Patterns." The book systematically introduces various design patterns for AI Agent systems, covering 21 core patterns from basic to advanced levels, along with multiple appendices.
+1. [提示词链](Chapter%201_%20Prompt%20Chaining.md)（12 页）
+2. [路由决策](Chapter%202_%20Routing.md)（13 页）
+3. [并行执行](Chapter%203_%20Parallelization.md)（15 页）
+4. [反思优化](Chapter%204_%20Reflection.md)（13 页）
+5. [工具调用](Chapter%205_%20Tool%20Use.md)（20 页）
+6. [任务规划](Chapter%206_%20Planning.md)（13 页）
+7. [多智能体协作](Chapter%207_%20Multi-Agent%20Collaboration.md)（17 页）
 
-本项目是《Agentic Design Patterns》一书的中文翻译项目。该书系统介绍了 AI Agent 系统的各种设计模式，涵盖从基础到高级的 21 个核心模式，以及多个附录章节。
+Part Two (Total: 61 pages)
 
-## 🎯 About the Book
+## 第二部分：认知机制（61 页）
 
-## 🎯 关于本书
+8. [Chapter 8: Memory Management](https://docs.google.com/document/d/1asVTObtzIye0I9ypAztaeeI_sr_Hx2TORE02uUuqH_c/edit?tab=t.0) ([code](https://drive.google.com/drive/u/0/folders/1Y3U3IrYCiJ3E45Z8okR5eCg7OPnWQtPV)), 21 pages [final, last read done, code ok]  
+9. [Chapter 9: Learning and Adaptation](https://docs.google.com/document/d/1UHTEDCmSM1nwB-iyMoHuYzVcu_B_4KkJ2ITGGUKqo8s/edit?tab=t.0) ([code](https://drive.google.com/drive/u/0/folders/1Y3U3IrYCiJ3E45Z8okR5eCg7OPnWQtPV)), 12 pages [final, last read done, code ok]  
+10. [Chapter 10: Model Context Protocol (MCP)](https://docs.google.com/document/d/1e6XimYczKmhX9zpqEyxLFWPQgGuG0brp7Hic2sFl_qw/edit?usp=sharing) ([code](https://drive.google.com/drive/u/0/folders/1Y3U3IrYCiJ3E45Z8okR5eCg7OPnWQtPV)), 16 pages  [final, last read done, code ok]  
+11. [Chapter 11: Goal Setting and Monitoring](https://docs.google.com/document/d/10ndlCB39BWjyFRWKpcoKib4vuPD1ojD-x0-ynMaf5uw/edit?tab=t.0) ([code](https://drive.google.com/drive/u/0/folders/1Y3U3IrYCiJ3E45Z8okR5eCg7OPnWQtPV)), 12 pages [final, last read don, code oe], **182**
 
-"Agentic Design Patterns" explores the core design patterns for building intelligent AI Agent systems, including:
+1. [记忆管理](Chapter%208_%20Memory%20Management.md)（21 页）
+2. [学习与适应](Chapter%209_%20Learning%20and%20Adaptation.md)（12 页）
+3. [模型上下文协议 (MCP)](Chapter%2010_%20Model%20Context%20Protocol%20(MCP).md)（16 页）
+4. [目标设定与监控](Chapter%2011_%20Goal%20Setting%20and%20Monitoring.md)（12 页）
 
-- **Fundamental Patterns**: Prompt Chaining, Routing, and Parallelization
-- **Intermediate Patterns**: Reflection, Tool Use, and Planning
-- **Advanced Patterns**: Multi-Agent Collaboration, Memory Management, and Knowledge Retrieval
-- **Practical Patterns**: Guardrails/Safety Patterns, Evaluation, and Monitoring
+Part Three (Total: 34 pages)
 
-《Agentic Design Patterns》探讨了构建智能 AI Agent 系统的核心设计模式，包括：
-- 提示链、路由、并行化等基础模式
-- 反思、工具使用、规划等进阶模式
-- 多智能体协作、记忆管理、知识检索等高级模式
-- 安全防护、评估监控等实践模式
+## 第三部分：容错与扩展（34 页）
 
-## 📖 Table of Contents
+12. [Chapter 12: Exception Handling and Recovery](https://docs.google.com/document/d/1C07AuMur6-infwE0viCp4QtAy_wWI-uceFm6MaYHQGk/edit?tab=t.0#heading=h.m2kk4kdjt6ir) ([code](https://drive.google.com/drive/u/0/folders/1Y3U3IrYCiJ3E45Z8okR5eCg7OPnWQtPV)), 8 pages [final,  last read done, code ok]    
+13. [Chapter 13: Human-in-the-Loop](https://docs.google.com/document/d/1ImOZcw6yeb7a-uRBMNP1VdovYfyip4IdsAcLu9yue-0/edit?usp=sharing) ([code](https://drive.google.com/drive/u/0/folders/1Y3U3IrYCiJ3E45Z8okR5eCg7OPnWQtPV)), 9 pages [final, last read done, code ok]  
+14. [Chapter 14: Knowledge Retrieval (RAG)](https://docs.google.com/document/d/1v96Oobio6xDOqbK8ejsXjmOc4Dp2uoLMo5_gfJgi-NE/edit?usp=sharing) ([code](https://drive.google.com/drive/u/0/folders/1Y3U3IrYCiJ3E45Z8okR5eCg7OPnWQtPV)), 17 pages [final, last read done, code ok], **216**
 
-## 📖 目录结构
+1. [异常处理与恢复](Chapter%2012_%20Exception%20Handling%20and%20Recovery.md)（8 页）
+2. [人机协同](Chapter%2013_%20Human-in-the-Loop.md)（9 页）
+3. [知识检索 (RAG)](Chapter%2014_%20Knowledge%20Retrieval%20(RAG).md)（17 页）
 
-### Core Chapters
+Part Four (Total: 114 pages)
 
-### 核心章节
+## 第四部分：高级架构（114 页）
 
-1. [Chapter 1: Prompt Chaining](Chapter%201_%20Prompt%20Chaining.md)
-2. [Chapter 2: Routing](Chapter%202_%20Routing.md)
-3. [Chapter 3: Parallelization](Chapter%203_%20Parallelization.md)
-4. [Chapter 4: Reflection](Chapter%204_%20Reflection.md)
-5. [Chapter 5: Tool Use](Chapter%205_%20Tool%20Use.md)
-6. [Chapter 6: Planning](Chapter%206_%20Planning.md)
-7. [Chapter 7: Multi-Agent Collaboration](Chapter%207_%20Multi-Agent%20Collaboration.md)
-8. [Chapter 8: Memory Management](Chapter%208_%20Memory%20Management.md)
-9. [Chapter 9: Learning and Adaptation](Chapter%209_%20Learning%20and%20Adaptation.md)
-10. [Chapter 10: Model Context Protocol (MCP)](Chapter%2010_%20Model%20Context%20Protocol%20(MCP).md)
-11. [Chapter 11: Goal Setting and Monitoring](Chapter%2011_%20Goal%20Setting%20and%20Monitoring.md)
-12. [Chapter 12: Exception Handling and Recovery](Chapter%2012_%20Exception%20Handling%20and%20Recovery.md)
-13. [Chapter 13: Human-in-the-Loop](Chapter%2013_%20Human-in-the-Loop.md)
-14. [Chapter 14: Knowledge Retrieval (RAG)](Chapter%2014_%20Knowledge%20Retrieval%20(RAG).md)
-15. [Chapter 15: Inter-Agent Communication (A2A)](Chapter%2015_%20Inter-Agent%20Communication%20(A2A).md)
-16. [Chapter 16: Resource-Aware Optimization](Chapter%2016_%20Resource-Aware%20Optimization.md)
-17. [Chapter 17: Reasoning Techniques](Chapter%2017_%20Reasoning%20Techniques.md)
-18. [Chapter 18: Guardrails/Safety Patterns](Chapter%2018_%20Guardrails_Safety%20Patterns.md)
-19. [Chapter 19: Evaluation and Monitoring](Chapter%2019_%20Evaluation%20and%20Monitoring.md)
-20. [Chapter 20: Prioritization](Chapter%2020_%20Prioritization.md)
-21. [Chapter 21: Exploration and Discovery](Chapter%2021_%20Exploration%20and%20Discovery.md)
+15. [Chapter 15: Inter-Agent Communication (A2A](https://docs.google.com/document/d/1H6HmUYcy5kugt5gt7Kh2Zzb8C62d5pu36RsgMNDCX24/edit?usp=sharing)) ([code](https://drive.google.com/drive/u/0/folders/1Y3U3IrYCiJ3E45Z8okR5eCg7OPnWQtPV)), 15 pages [final, last read done, code ok]  
+16. [Chapter 16: Resource-Aware Optimization](https://docs.google.com/document/d/1nAN58l6JjqEJHk43126uh7xgdEblCpcbsNUHXgtBmJQ/edit?usp=sharing) ([code](https://drive.google.com/drive/u/0/folders/1Y3U3IrYCiJ3E45Z8okR5eCg7OPnWQtPV)), 15 pages  [final,  last read done, code ok]  
+17. [Chapter 17: Reasoning Techniques](https://docs.google.com/document/d/1Yt1W_hLaC6ZNgJXfT4W6NrCL4TzNVdKOX50kgpHiIq4/edit?usp=sharing) ([code](https://drive.google.com/drive/u/0/folders/1Y3U3IrYCiJ3E45Z8okR5eCg7OPnWQtPV)), 24 pages [final,  last read done, code ok]  
+18. [Chapter 18: Guardrails/Safety Patterns](https://docs.google.com/document/d/1Gpc5af_okze1kprRLohP6-81e1KwL6HggjeLvxQyIuk/edit?usp=sharing) ([code](https://drive.google.com/drive/u/0/folders/1Y3U3IrYCiJ3E45Z8okR5eCg7OPnWQtPV)), 19 pages [final, last read done, code ok]  
+19. [Chapter 19: Evaluation and Monitoring](https://docs.google.com/document/d/1G3zOZM2ZOd0gUp5dy66FUjKMOcALh9l-JpvPxgGMm8w/edit?usp=sharing) ([code](https://drive.google.com/drive/u/0/folders/1Y3U3IrYCiJ3E45Z8okR5eCg7OPnWQtPV)), 18 pages [final, last read done, code ok]  
+20. [Chapter 20: Prioritization](https://docs.google.com/document/d/1qyXxGM2hNqW_qjXuBFxrEUeoYVO79BoW1ogKu1bfdCY/edit?usp=sharing) ([code](https://drive.google.com/drive/u/0/folders/1Y3U3IrYCiJ3E45Z8okR5eCg7OPnWQtPV)), 10 pages [final, last read done, code ok ]  
+21. [Chapter 21: Exploration and Discovery](https://docs.google.com/document/d/1zeeMVTqjqRIli6G9MMWThhoQhvKqLOjJF2EHHUXLhdk/edit?usp=sharing) ([code](https://drive.google.com/drive/u/0/folders/1Y3U3IrYCiJ3E45Z8okR5eCg7OPnWQtPV)), 13 pages [final, last read done, code ok], **330**
 
-1. [第1章：提示链（Prompt Chaining）](Chapter%201_%20Prompt%20Chaining.md)
-2. [第2章：路由（Routing）](Chapter%202_%20Routing.md)
-3. [第3章：并行化（Parallelization）](Chapter%203_%20Parallelization.md)
-4. [第4章：反思（Reflection）](Chapter%204_%20Reflection.md)
-5. [第5章：工具使用（Tool Use）](Chapter%205_%20Tool%20Use.md)
-6. [第6章：规划（Planning）](Chapter%206_%20Planning.md)
-7. [第7章：多智能体协作（Multi-Agent Collaboration）](Chapter%207_%20Multi-Agent%20Collaboration.md)
-8. [第8章：记忆管理（Memory Management）](Chapter%208_%20Memory%20Management.md)
-9. [第9章：学习与适应（Learning and Adaptation）](Chapter%209_%20Learning%20and%20Adaptation.md)
-10. [第10章：模型上下文协议（Model Context Protocol）](Chapter%2010_%20Model%20Context%20Protocol%20(MCP).md)
-11. [第11章：目标设定与监控（Goal Setting and Monitoring）](Chapter%2011_%20Goal%20Setting%20and%20Monitoring.md)
-12. [第12章：异常处理与恢复（Exception Handling and Recovery）](Chapter%2012_%20Exception%20Handling%20and%20Recovery.md)
-13. [第13章：人机协同（Human-in-the-Loop）](Chapter%2013_%20Human-in-the-Loop.md)
-14. [第14章：知识检索（Knowledge Retrieval - RAG）](Chapter%2014_%20Knowledge%20Retrieval%20(RAG).md)
-15. [第15章：智能体间通信（Inter-Agent Communication - A2A）](Chapter%2015_%20Inter-Agent%20Communication%20(A2A).md)
-16. [第16章：资源感知优化（Resource-Aware Optimization）](Chapter%2016_%20Resource-Aware%20Optimization.md)
-17. [第17章：推理技术（Reasoning Techniques）](Chapter%2017_%20Reasoning%20Techniques.md)
-18. [第18章：安全防护模式（Guardrails/Safety Patterns）](Chapter%2018_%20Guardrails_Safety%20Patterns.md)
-19. [第19章：评估与监控（Evaluation and Monitoring）](Chapter%2019_%20Evaluation%20and%20Monitoring.md)
-20. [第20章：优先级排序（Prioritization）](Chapter%2020_%20Prioritization.md)
-21. [第21章：探索与发现（Exploration and Discovery）](Chapter%2021_%20Exploration%20and%20Discovery.md)
+1. [智能体间通信 (A2A)](Chapter%2015_%20Inter-Agent%20Communication%20(A2A).md)（15 页）
+2. [资源感知优化](Chapter%2016_%20Resource-Aware%20Optimization.md)（15 页）
+3. [推理技术](Chapter%2017_%20Reasoning%20Techniques.md)（24 页）
+4. [安全护栏模式](Chapter%2018_%20Guardrails_Safety%20Patterns.md)（19 页）
+5. [评估与监控](Chapter%2019_%20Evaluation%20and%20Monitoring.md)（18 页）
+6. [优先级管理](Chapter%2020_%20Prioritization.md)（10 页）
+7. [探索与发现](Chapter%2021_%20Exploration%20and%20Discovery.md)（13 页）
 
-### Appendices
+Appendix (Total: 74 pages)
 
-### 附录章节
+## 附录（74 页）
 
-- [Appendix A: Advanced Prompting Techniques](Appendix%20A_%20Advanced%20Prompting%20Techniques.md)
-- [Appendix B: AI Agentic Interactions: From GUI to Real-world Environment](Appendix%20B%20-%20AI%20Agentic%20Interactions_%20From%20GUI%20to%20Real%20world%20environment.md)
-- [Appendix C: Quick Overview of Agentic Frameworks](Appendix%20C%20-%20Quick%20overview%20of%20Agentic%20Frameworks.md)
-- [Appendix D: Building an Agent with AgentSpace (online only)](Appendix%20D%20-%20Building%20an%20Agent%20with%20AgentSpace%20(on-line%20only).md)
-- [Appendix E: AI Agents on the CLI](Appendix%20E%20-%20AI%20Agents%20on%20the%20CLI.md)
-- [Appendix F: Under the Hood: An Inside Look at the Agents' Reasoning Engines](Appendix%20F%20%20-%20Under%20the%20Hood_%20An%20Inside%20Look%20at%20the%20Agents'%20Reasoning%20Engines.md)
-- [Appendix G: Coding Agents](Appendix%20G%20-%20%20Coding%20agents.md)
+22. [Appendix A: Advanced Prompting Techniques](https://docs.google.com/document/d/1V7EKEWibOH6IhHD_PtbFZiml492-2191jDQCcTkhtTI/edit?usp=sharing), 28 pages [final, last read done, code ok]  
+23. [Appendix B - AI Agentic ….: From GUI to Real world environment](https://docs.google.com/document/d/11pma_tCoC7uZ2SFKjcR5KyIq0_ooMGSoadI6f9mxG2I/edit?tab=t.0#heading=h.4bsgiycebw26), 6 pages [final, last read done, code ok]  
+24. [Appendix C - Quick overview of Agentic Frameworks](https://docs.google.com/document/d/151rGsiEYOkXUcNDRus_N8TxxuvjoyTDViBhzt9z0Mfw/edit?tab=t.0#heading=h.8y2llpsk10ds), 8 pages [final, last read done, code ok] ,  
+25. [Appendix D - Building an Agent with AgentSpace (on-line only)](https://docs.google.com/document/d/1bDRJ8mKtLTeWNC-cGD0Cr8pEJQgJHNcjqz5ekloAjaE/edit?tab=t.0), 6 pages [final, last read done, code ok]  
+26. [Appendix E - AI Agents on the CLI (online)](http://docs.google.com/document/d/1W4znto0a8Ikajw5a4tEyRAaB2nJPJw_iFc4w4qNnjho/edit?tab=t.0#heading=h.6zaq0kvy131m) , 5 pages [final, last read done, code ok]  
+27. [Appendix F - Under the Hood: An Inside Look at the Agents' Reasoning Engines](https://docs.google.com/document/d/14q3fQ-FZmDgiughno_WLSILMWkURvUgR7mlGiFtvwd4/edit?tab=t.0), 14 pages [final, lrd, code ok],  
+28. [Appendix G -  Coding agents](https://docs.google.com/document/d/1tVyhgwrD4fu_D_pHUrwhNxoguRG3tLc1KObXFxrxE_s/edit?tab=t.0), 7 pages  **406**
 
-- [附录A：高级提示技术](Appendix%20A_%20Advanced%20Prompting%20Techniques.md)
-- [附录B：AI 智能体交互：从 GUI 到真实世界环境](Appendix%20B%20-%20AI%20Agentic%20Interactions_%20From%20GUI%20to%20Real%20world%20environment.md)
-- [附录C：智能体框架快速概览](Appendix%20C%20-%20Quick%20overview%20of%20Agentic%20Frameworks.md)
-- [附录D：使用 AgentSpace 构建智能体（仅在线）](Appendix%20D%20-%20Building%20an%20Agent%20with%20AgentSpace%20(on-line%20only).md)
-- [附录E：命令行上的 AI 智能体](Appendix%20E%20-%20AI%20Agents%20on%20the%20CLI.md)
-- [附录F：深入探究：智能体推理引擎内部机制](Appendix%20F%20%20-%20Under%20the%20Hood_%20An%20Inside%20Look%20at%20the%20Agents'%20Reasoning%20Engines.md)
-- [附录G：编程智能体](Appendix%20G%20-%20%20Coding%20agents.md)
+1. [高级提示技术](Appendix%20A_%20Advanced%20Prompting%20Techniques.md)（28 页）
+2. [AI 智能体交互：从 GUI 到真实世界](Appendix%20B%20-%20AI%20Agentic%20Interactions_%20From%20GUI%20to%20Real%20world%20environment.md)（6 页）
+3. [智能体框架概览](Appendix%20C%20-%20Quick%20overview%20of%20Agentic%20Frameworks.md)（8 页）
+4. [使用 AgentSpace 构建智能体](Appendix%20D%20-%20Building%20an%20Agent%20with%20AgentSpace%20(on-line%20only).md)（6 页）
+5. [命令行 AI 智能体](Appendix%20E%20-%20AI%20Agents%20on%20the%20CLI.md)（5 页）
+6. [智能体推理引擎剖析](Appendix%20F%20%20-%20Under%20the%20Hood_%20An%20Inside%20Look%20at%20the%20Agents'%20Reasoning%20Engines.md)（14 页）
+7. [编程实现智能体](Appendix%20G%20-%20%20Coding%20agents.md)（7 页）
 
-### Additional Content
+[Conclusion,](https://docs.google.com/document/d/1NGzpg9VldtStb_7jRkXJYBaHFwPwJ7WN6ZcTr7dNSVA/edit?usp=sharing) 5 pages [final, last read done]   
+[Glossary](https://docs.google.com/document/d/1_j_OdzeUALluBUO1GkZ48DsHbbDETiM_1G4farVLPnE/edit?usp=sharing), 4 pages  [final, last read done]  
+[Index of Terms](https://docs.google.com/document/d/15MrpoJBrZIi6aEZrBJCeCvVsIoC-EecYG9EWVk3YCKw/edit?tab=t.0), 11 pages  (*Generated by Gemini. Reasoning step included as an agentic example*) [final, lrd]  
+[Online Contribution - Frequently Asked Questions: Agentic Design Patterns](https://docs.google.com/document/d/1XxQsHX3FWEP3TisQeWZwFfYw81zDwEHfHdIfjypa_0g/edit?tab=t.0)  
 
-### 其他内容
+## 参考资料
 
-- [Frequently Asked Questions](Frequently%20Asked%20Questions_%20Agentic%20Design%20Patterns.md)
-- [Glossary](Glossary.md)
-- [Index of Terms](Index%20of%20Terms.md)
-- [Conclusion](Conclusion.md)
-
+- [结论](Conclusion.md)（5 页）
+- [术语表](Glossary.md)（4 页）
+- [术语索引](Index%20of%20Terms.md)（11 页，含智能体推理示例）
 - [常见问题解答](Frequently%20Asked%20Questions_%20Agentic%20Design%20Patterns.md)
-- [术语表](Glossary.md)
-- [术语索引](Index%20of%20Terms.md)
-- [总结](Conclusion.md)
 
-## 🌐 Online Access
+**Pre Print**: [*https://www.amazon.com/Agentic-Design-Patterns-Hands-Intelligent/dp/3032014018/*](https://www.amazon.com/Agentic-Design-Patterns-Hands-Intelligent/dp/3032014018/)   
 
-## 🌐 在线访问
+**预印本**：[https://www.amazon.com/Agentic-Design-Patterns-Hands-Intelligent/dp/3032014018/](https://www.amazon.com/Agentic-Design-Patterns-Hands-Intelligent/dp/3032014018/)  
 
-This project has been deployed to GitHub Pages and can be read online at:
+![][image1]  
 
-**URL:** [https://adp.xindoo.xyz/](https://adp.xindoo.xyz/)
+![封面图][image1]  
 
-本项目已部署到 GitHub Pages，可以在线阅读：
+[^1]:  All my royalties will be donated to Save the Children
 
-**访问地址：** [https://adp.xindoo.xyz/](https://adp.xindoo.xyz/)
+[^1]: 本书所有版税将捐赠给救助儿童会 (Save the Children)
 
----
-
-**Note**: This is a translation project for learning and communication purposes. Please contact us if there are any copyright concerns.
-
-**注意**：本项目为学习交流目的的翻译项目，如有版权问题请联系处理。
+[image1]: ../images/cover.png

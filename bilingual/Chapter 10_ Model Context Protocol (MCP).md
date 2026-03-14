@@ -194,11 +194,6 @@ root_agent = LlmAgent(
 )
 ```
 
-\`npx\` (Node Package Execute), bundled with npm (Node Package Manager) versions 5.2.0 and later, is a utility that enables direct execution of Node.js packages from the npm registry. This eliminates the need for global installation. In essence, \`npx\` serves as an npm package runner, and it is commonly used to run many community MCP servers, which are distributed as Node.js packages.
-
-`npx`（Node Package Execute）与 npm（Node Package Manager）5.2.0 及更高版本捆绑在一起，是一个实用程序，可以直接从 npm 注册表执行 Node.js 包。这消除了全局安装的需要。本质上，`npx` 作为 npm 包运行器，它通常用于运行许多社区 MCP 服务器，这些服务器作为 Node.js 包分发。
-Creating an \_\_init\_\_.py file is necessary to ensure the agent.py file is recognized as part of a discoverable Python package for the Agent Development Kit (ADK). This file should reside in the same directory as [agent.py](http://agent.py).
-创建 __init__.py 文件是必要的，以确保 agent.py 文件被识别为智能体开发工具包（ADK）的可发现 Python 包的一部分。此文件应与 [agent.py](http://agent.py) 位于同一目录中。
 ```python
 ## ./adk_agent_samples/mcp_agent/__init__.py
 from . import agent
@@ -207,7 +202,6 @@ from . import agent
 ## ./adk_agent_samples/mcp_agent/__init__.py
 from . import agent
 ```
-
 Certainly, other supported commands are available for use. For example, connecting to python3 can be achieved as follows:
 
 当然，还可以使用其他受支持的命令。例如，可以按如下方式连接到 python3：
@@ -234,8 +228,6 @@ connection_params = StdioConnectionParams(
         }
     }
 )
-```
-
 UVX, in the context of Python, refers to a command-line tool that utilizes uv to execute commands in a temporary, isolated Python environment. Essentially, it allows you to run Python tools and packages without needing to install them globally or within your project's environment. You can run it via the MCP server.
 
 在 Python 的上下文中，UVX 是指一个命令行工具，它利用 uv 在临时的、隔离的 Python 环境中执行命令。本质上，它允许您运行 Python 工具和包，而无需全局安装或在项目环境中安装它们。您可以通过 MCP 服务器运行它。
@@ -262,8 +254,6 @@ connection_params = StdioConnectionParams(
         }
     }
 )
-```
-
 Once the MCP Server is created, the next step is to connect to it.
 
 创建 MCP 服务器后，下一步是连接到它。
@@ -278,9 +268,7 @@ adk web
 ```bash
 cd ./adk_agent_samples # 或您的等效父目录
 adk web
-```
-
-Once the ADK Web UI has loaded in your browser, select the \`filesystem\_assistant\_agent\` from the agent menu. Next, experiment with prompts such as:
+Once the ADK Web UI has loaded in your browser, select the `filesystem_assistant_agent` from the agent menu. Next, experiment with prompts such as:
 
 ADK Web UI 在浏览器中加载后，从智能体中选择 `filesystem_assistant_agent`。接下来，尝试以下提示：
 * "Show me the contents of this folder."  
@@ -371,12 +359,12 @@ if __name__ == "__main__":
         host="127.0.0.1",
         port=8000
     )
-```
-
 This Python script defines a single function called greet, which takes a person's name and returns a personalized greeting. The @tool() decorator above this function automatically registers it as a tool that an AI or another program can use. The function's documentation string and type hints are used by FastMCP to tell the Agent how the tool works, what inputs it needs, and what it will return.
 
 这个 Python 脚本定义了一个名为 greet 的单一函数，它接受一个人的名字并返回个性化的问候语。此函数上方的 @tool() 装饰器自动将其注册为 AI 或其他程序可以使用的工具。函数的文档字符串和类型提示被 FastMCP 用来告诉智能体该工具的工作原理、需要什么输入以及它将返回什么。
+
 When the script is executed, it starts the FastMCP server, which listens for requests on localhost:8000. This makes the greet function available as a network service. An  agent could then be configured to connect to this server and use the greet tool to generate greetings as part of a larger task. The server runs continuously until it is manually stopped.
+
 当脚本执行时，它启动 FastMCP 服务器，该服务器在 localhost:8000 上监听请求。这使得 greet 函数作为网络服务可用。然后可以将智能体配置为连接到此服务器，并使用 greet 工具生成问候语，作为更大任务的一部分。服务器持续运行，直到手动停止。
 ## Consuming the FastMCP Server with an ADK Agent
 ## 使用 ADK 智能体消费 FastMCP 服务器
@@ -437,9 +425,7 @@ root_agent = LlmAgent(
         )
     ],
 )
-```
-
-The script defines an Agent named fastmcp\_greeter\_agent that uses a Gemini language model. It's given a specific instruction to act as a friendly assistant whose purpose is to greet people. Crucially, the code equips this agent with a tool to perform its task. It configures an MCPToolset to connect to a separate server running on localhost:8000, which is expected to be the FastMCP server from the previous example. The agent is specifically granted access to the greet tool hosted on that server. In essence, this code sets up the client side of the system, creating an intelligent agent that understands its goal is to greet people and knows exactly which external tool to use to accomplish it.
+The script defines an Agent named fastmcp_greeter_agent that uses a Gemini language model. It's given a specific instruction to act as a friendly assistant whose purpose is to greet people. Crucially, the code equips this agent with a tool to perform its task. It configures an MCPToolset to connect to a separate server running on localhost:8000, which is expected to be the FastMCP server from the previous example. The agent is specifically granted access to the greet tool hosted on that server. In essence, this code sets up the client side of the system, creating an intelligent agent that understands its goal is to greet people and knows exactly which external tool to use to accomplish it.
 
 该脚本定义了一个名为 fastmcp_greeter_agent 的智能体，它使用 Gemini 语言模型。它被赋予特定的指令，作为一个友好的助手，其目的是问候人们。至关重要的是，该代码为此智能体配备了执行其任务的工具。它配置了一个 MCPToolset 来连接到在 localhost:8000 上运行的独立服务器，该服务器应该是前面示例中的 FastMCP 服务器。智能体被明确授予访问该服务器上托管的 greet 工具的权限。本质上，此代码设置了系统的客户端，创建了一个智能智能体，它理解其目标是问候人们，并确切地知道使用哪个外部工具来完成它。
 Creating an \_\_init\_\_.py file within the fastmcp\_client\_agent directory is necessary. This ensures the agent is recognized as a discoverable Python package for the ADK.
@@ -454,7 +440,9 @@ To begin, open a new terminal and run \`python fastmcp\_server.py\` to start the
 **为什么**：模型上下文协议（MCP）通过充当 LLM 和外部系统之间的通用接口，提供了标准化的解决方案。它建立了一个开放的标准化协议，定义了如何发现和使用外部能力。基于客户端-服务器模型运行，MCP 允许服务器向任何兼容的客户端公开工具、数据资源和交互式提示。LLM 驱动的应用程序充当这些客户端，以可预测的方式动态发现和与可用资源交互。这种标准化方法促进了可互操作和可重用组件的生态系统，显著简化了复杂智能体工作流的开发。
 **Rule of thumb:** Use the Model Context Protocol (MCP) when building complex, scalable, or enterprise-grade agentic systems that need to interact with a diverse and evolving set of external tools, data sources, and APIs. It is ideal when interoperability between different LLMs and tools is a priority, and when agents require the ability to dynamically discover new capabilities without being redeployed. For simpler applications with a fixed and limited number of predefined functions, direct tool function calling may be sufficient.
 **经验法则**：在构建需要与各种不断发展的外部工具、数据源和 API 交互的复杂、可扩展或企业级智能体系统时，使用模型上下文协议（MCP）。当不同 LLM 和工具之间的互操作性是优先考虑事项时，以及当智能体需要动态发现新能力而无需重新部署时，它是理想选择。对于具有固定有限数量预定义函数的简单应用程序，直接工具函数调用可能就足够了。
-**Visual summary![][image1]**
+**Visual summary**
+
+![][image1]
 
 Fig.1: Model Context protocol
 
@@ -463,10 +451,10 @@ Fig.1: Model Context protocol
 **可视化摘要**
 
 图 1：模型上下文协议
-
 ## Key Takeaways
 
 These are the key takeaways:
+
 * The Model Context Protocol (MCP) is an open standard facilitating standardized communication between LLMs and external applications, data sources, and tools.  
 * It employs a client-server architecture, defining the methods for exposing and consuming resources, prompts, and tools.  
 * The Agent Development Kit (ADK) supports both utilizing existing MCP servers and exposing ADK tools via an MCP server.  
@@ -477,6 +465,7 @@ These are the key takeaways:
 ## 关键要点
 
 以下是本章核心要点：
+
 * 模型上下文协议（MCP）是一个开放标准，促进 LLM 与外部应用程序、数据源和工具之间的标准化通信
 * 它采用客户端-服务器架构，定义了公开和使用资源、提示和工具的方法
 * 智能体开发工具包（ADK）支持使用现有 MCP 服务器以及通过 MCP 服务器公开 ADK 工具

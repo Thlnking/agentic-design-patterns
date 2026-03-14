@@ -17,7 +17,7 @@ These principles, when applied through their respective patterns, provide a robu
 
 ## Combining Patterns for Complex Systems
 
-## The true power of agentic design emerges not from the application of a single pattern in isolation, but from the artful composition of multiple patterns to create sophisticated, multi-layered systems. The agentic canvas is rarely populated by a single, simple workflow; instead, it becomes a tapestry of interconnected patterns that work in concert to achieve a complex objective.
+The true power of agentic design emerges not from the application of a single pattern in isolation, but from the artful composition of multiple patterns to create sophisticated, multi-layered systems. The agentic canvas is rarely populated by a single, simple workflow; instead, it becomes a tapestry of interconnected patterns that work in concert to achieve a complex objective.
 
 Consider the development of an autonomous AI research assistant, a task that requires a combination of planning, information retrieval, analysis, and synthesis. Such a system would be a prime example of pattern composition:
 

@@ -143,9 +143,6 @@ This code defines and runs a LangGraph workflow that operates in parallel. Its m
 Google's Agent Development Kit, or ADK, provides a high-level, structured framework for building and deploying applications composed of multiple, interacting AI agents. It contrasts with LangChain and LangGraph by offering a more opinionated and production-oriented system for orchestrating agent collaboration, rather than providing the fundamental building blocks for an agent's internal logic.
 
 Google 的智能体开发工具包（ADK）提供了一个高级、结构化的框架，用于构建和部署由多个交互性 AI 智能体组成的应用程序。与 LangChain 和 LangGraph 相比，它提供了一个更具指导性和生产就绪的系统，用于编排智能体协作，而非提供智能体内部逻辑的基础构建块。
-Google's Agent Development Kit, or ADK, provides a high-level, structured framework for building and deploying applications composed of multiple, interacting AI agents. It contrasts with LangChain and LangGraph by offering a more opinionated and production-oriented system for orchestrating agent collaboration, rather than providing the fundamental building blocks for an agent's internal logic.
-
-Google 的智能体开发工具包（ADK）提供了一个高级、结构化的框架，用于构建和部署由多个交互性 AI 智能体组成的应用程序。与 LangChain 和 LangGraph 相比，它提供了一个更具指导性和生产就绪的系统，用于编排智能体协作，而非提供智能体内部逻辑的基础构建块。
 
 LangChain operates at the most foundational level, offering the components and standardized interfaces to create sequences of operations, such as calling a model and parsing its output. LangGraph extends this by introducing a more flexible and powerful control flow; it treats an agent's workflow as a stateful graph. Using LangGraph, a developer explicitly defines nodes, which are functions or tools, and edges, which dictate the path of execution. This graph structure allows for complex, cyclical reasoning where the system can loop, retry tasks, and make decisions based on an explicitly managed state object that is passed between nodes. It gives the developer fine-grained control over a single agent's thought process or the ability to construct a multi-agent system from first principles.
 
@@ -174,7 +171,6 @@ This code creates a search-augmented agent. When this agent receives a question,
 
 ## Crew.AI
 
-CrewAI offers an orchestration framework for building multi-agent systems by focusing on collaborative roles and structured processes. It operates at a higher level of abstraction than foundational toolkits, providing a conceptual model that mirrors a human team. Instead of defining the granular flow of logic as a graph, the developer defines the actors and their assignments, and CrewAI manages their interaction.
 CrewAI offers an orchestration framework for building multi-agent systems by focusing on collaborative roles and structured processes. It operates at a higher level of abstraction than foundational toolkits, providing a conceptual model that mirrors a human team. Instead of defining the granular flow of logic as a graph, the developer defines the actors and their assignments, and CrewAI manages their interaction.
 
 CrewAI 提供了一个编排框架，通过聚焦协作角色与结构化流程来构建多智能体系统。它在比基础工具包更高的抽象层级运作，提供模拟人类团队的概念模型。开发者无需将逻辑细粒度流程定义为图，而是定义参与者及其任务分配，由 CrewAI 管理其交互。

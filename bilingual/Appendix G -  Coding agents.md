@@ -26,11 +26,11 @@ This chapter presents a framework for organizing a human-agent team based on the
 
 本章提出一个人机协作团队的组织框架，其核心理念是：人类开发者担任创意领导和架构师，而 AI 智能体充当能力倍增器。该框架基于三大基本原则：
 
-1. **Human-Led Orchestration:** The developer is the team lead and project architect. They are always in the loop, orchestrating the workflow, setting the high-level goals, and making the final decisions. The agents are powerful, but they are supportive collaborators. The developer directs which agent to engage, provides the necessary context, and, most importantly, exercises the final judgment on any Agent-generated output, ensuring it aligns with the project's quality standards and long-term vision.  
-2. **The Primacy of Context:** An agent's performance is entirely dependent on the quality and completeness of its context. A powerful LLM with poor context is useless. Therefore, our framework prioritizes a meticulous, human-led approach to context curation. Automated, black-box context retrieval is avoided. The developer is responsible for assembling the perfect "briefing" for their Agent team member. This includes:  
-   * **The Complete Codebase:** Providing all relevant source code so the agent understands the existing patterns and logic.  
-   * **External Knowledge:** Supplying specific documentation, API definitions, or design documents.  
-   * **The Human Brief:** Articulating clear goals, requirements, pull request descriptions, and style guides.  
+1. **Human-Led Orchestration:** The developer is the team lead and project architect. They are always in the loop, orchestrating the workflow, setting the high-level goals, and making the final decisions. The agents are powerful, but they are supportive collaborators. The developer directs which agent to engage, provides the necessary context, and, most importantly, exercises the final judgment on any Agent-generated output, ensuring it aligns with the project's quality standards and long-term vision.
+2. **The Primacy of Context:** An agent's performance is entirely dependent on the quality and completeness of its context. A powerful LLM with poor context is useless. Therefore, our framework prioritizes a meticulous, human-led approach to context curation. Automated, black-box context retrieval is avoided. The developer is responsible for assembling the perfect "briefing" for their Agent team member. This includes:
+   * **The Complete Codebase:** Providing all relevant source code so the agent understands the existing patterns and logic.
+   * **External Knowledge:** Supplying specific documentation, API definitions, or design documents.
+   * **The Human Brief:** Articulating clear goals, requirements, pull request descriptions, and style guides.
 3. **Direct Model Access:** To achieve state-of-the-art results, the agents must be powered by direct access to frontier models (e.g., Gemini 2.5 PRO, Claude Opus 4, OpenAI, DeepSeek, etc). Using less powerful models or routing requests through intermediary platforms that obscure or truncate context will degrade performance. The framework is built on creating the purest possible dialogue between the human lead and the raw capabilities of the underlying model, ensuring each agent operates at its peak potential.
 
 1. **人类主导的流程编排：** 开发者是团队领导和项目架构师。他们始终处于决策闭环中，负责编排工作流、设定高层目标并做出最终决策。智能体虽然强大，但只是支持性协作者。开发者指导调用哪个智能体、提供必要的上下文，最重要的是——对智能体生成的任何输出行使最终裁决权，确保其符合项目的质量标准和长期愿景。
@@ -56,7 +56,7 @@ To effectively leverage a frontier Large Language Model, this framework assigns 
 
 **流程编排者：人类开发者：** 在此协作框架中，人类开发者担任编排者，作为 AI 智能体的中央智能节点和最终权威。
 
-* **Role:** Team Lead, Architect, and final decision-maker. The orchestrator defines tasks, prepares the context, and validates all work done by the agents.  
+* **Role:** Team Lead, Architect, and final decision-maker. The orchestrator defines tasks, prepares the context, and validates all work done by the agents.
   * **Interface:** The developer's own terminal, editor, and the native web UI of the chosen Agents.
 
 * **角色定位：** 团队领导、架构师和最终决策者。编排者负责定义任务、准备上下文，并验证智能体完成的所有工作。
@@ -66,7 +66,7 @@ To effectively leverage a frontier Large Language Model, this framework assigns 
 
 **上下文准备区：** 作为任何成功智能体交互的基础，上下文准备区是人类开发者精心准备完整且任务特定简报的专用空间。
 
-* **Role:** A dedicated workspace for each task, ensuring agents receive a complete and accurate briefing.  
+* **Role:** A dedicated workspace for each task, ensuring agents receive a complete and accurate briefing.
   * **Implementation:** A temporary directory (task-context/) containing markdown files for goals, code files, and relevant docs
 
 * **功能定位：** 为每项任务提供独立工作环境，确保智能体获得完整准确的简报材料。
@@ -76,64 +76,59 @@ To effectively leverage a frontier Large Language Model, this framework assigns 
 
 **专业化智能体：** 通过使用定向提示，我们可以构建一个专业化智能体团队，每个成员针对特定开发任务量身定制。
 
-* **The Scaffolder Agent: The Implementer**  
-  * **Purpose:** Writes new code, implements features, or creates boilerplate based on detailed specifications.  
-    * **Invocation Prompt:** "You are a senior software engineer. Based on the requirements in 01\_BRIEF.md and the existing patterns in 02\_CODE/, implement the feature..."
+* **The Scaffolder Agent: The Implementer**
+  * **Purpose:** Writes new code, implements features, or creates boilerplate based on detailed specifications.
+    * **Invocation Prompt:** "You are a senior software engineer. Based on the requirements in 01_BRIEF.md and the existing patterns in 02_CODE/, implement the feature..."
 
 * **脚手架智能体：代码实施专家**
   * **核心职能：** 依据详细规范编写新代码、实现功能特性或创建基础模板。
     * **调用提示模板：**
-
       ```markdown
       你是一名资深软件工程师。请基于 01_BRIEF.md 中的需求说明与 02_CODE/ 目录下的现有模式，实现指定功能...
       ```
 
-* **The Test Engineer Agent: The Quality Guard**  
-  * **Purpose:** Writes comprehensive unit tests, integration tests, and end-to-end tests for new or existing code.  
-  * **Invocation Prompt:** "You are a quality assurance engineer. For the code provided in 02\_CODE/, write a full suite of unit tests using [Testing Framework, e.g., pytest]. Cover all edge cases and adhere to the project's testing philosophy."
+* **The Test Engineer Agent: The Quality Guard**
+  * **Purpose:** Writes comprehensive unit tests, integration tests, and end-to-end tests for new or existing code.
+  * **Invocation Prompt:** "You are a quality assurance engineer. For the code provided in 02_CODE/, write a full suite of unit tests using [Testing Framework, e.g., pytest]. Cover all edge cases and adhere to the project's testing philosophy."
 
 * **测试工程师智能体：质量守护者**
   * **核心职能：** 为新代码或现有代码编写全面的单元测试、集成测试及端到端测试套件。
   * **调用提示模板：**
-
     ```markdown
     你是一名质量保证工程师。针对 02_CODE/ 中提供的代码，使用 [测试框架，如 pytest] 编写完整单元测试套件。需覆盖所有边界情况并遵循项目测试规范。
     ```
 
-* **The Documenter Agent: The Scribe**  
-  * **Purpose:** Generates clear, concise documentation for functions, classes, APIs, or entire codebases.  
+* **The Documenter Agent: The Scribe**
+  * **Purpose:** Generates clear, concise documentation for functions, classes, APIs, or entire codebases.
   * **Invocation Prompt:** "You are a technical writer. Generate markdown documentation for the API endpoints defined in the provided code. Include request/response examples and explain each parameter."
 
 * **文档编写智能体：技术文档专员**
   * **核心职能：** 为函数、类、API 或完整代码库生成清晰、简洁的技术文档。
   * **调用提示模板：**
-
     ```markdown
     你是一名技术文档工程师。为指定代码中定义的 API 端点生成 markdown 格式文档。需包含请求/响应示例并对各参数进行详细说明。
     ```
 
-* **The Optimizer Agent: The Refactoring Partner**  
-  * **Purpose:** Proposes performance optimizations and code refactoring to improve readability, maintainability, and efficiency.  
+* **The Optimizer Agent: The Refactoring Partner**
+  * **Purpose:** Proposes performance optimizations and code refactoring to improve readability, maintainability, and efficiency.
   * **Invocation Prompt:** "Analyze the provided code for performance bottlenecks or areas that could be refactored for clarity. Propose specific changes with explanations for why they are an improvement."
 
 * **优化智能体：代码重构顾问**
   * **核心职能：** 提出性能优化方案与代码重构建议，以提升可读性、可维护性及执行效率。
   * **调用提示模板：**
-
     ```markdown
     分析提供代码中的性能瓶颈与可重构区域。提出具体改进方案并阐述各项更改的优化价值。
     ```
 
-* **The Process Agent: The Code Supervisor**  
-  * **Critique:** The agent performs an initial pass, identifying potential bugs, style violations, and logical flaws, much like a static analysis tool.  
-  * **Reflection:** The agent then analyzes its own critique. It synthesizes the findings, prioritizes the most critical issues, dismisses pedantic or low-impact suggestions, and provides a high-level, actionable summary for the human developer.  
+* **The Process Agent: The Code Supervisor**
+  * **Critique:** The agent performs an initial pass, identifying potential bugs, style violations, and logical flaws, much like a static analysis tool.
+  * **Reflection:** The agent then analyzes its own critique. It synthesizes the findings, prioritizes the most critical issues, dismisses pedantic or low-impact suggestions, and provides a high-level, actionable summary for the human developer.
   * **Invocation Prompt:** "You are a principal engineer conducting a code review. First, perform a detailed critique of the changes. Second, reflect on your critique to provide a concise, prioritized summary of the most important feedback."
 
 * **流程智能体：代码质量监督员**
   * **批判分析：** 智能体执行初步审查，识别潜在缺陷、编码规范违规及逻辑漏洞，功能类似静态分析工具。
   * **深度反思：** 智能体对自身批判进行元分析。综合各项发现，优先处理关键问题，过滤琐碎或低价值建议，为人类开发者提供高层级、可执行的总结报告。
   * **调用提示模板：**
-
     ```markdown
     你是一名首席工程师执行代码审查。首先对变更进行详细批判分析，随后进行反思总结，提供关键反馈的优先级排序摘要。
     ```
@@ -154,17 +149,15 @@ To effectively implement the human-agent team framework, the following setup is 
 
 为有效实施人机协作团队框架，建议采用以下配置，核心目标是在提升效率的同时保持完全控制。
 
-1. **Provision Access to Frontier Models** Secure API keys for at least two leading large language models, such as Gemini 2.5 Pro and Claude 4 Opus. This dual-provider approach allows for comparative analysis and hedges against single-platform limitations or downtime. These credentials should be managed securely as you would any other production secret.  
-2. **Implement a Local Context Orchestrator** Instead of ad-hoc scripts, use a lightweight CLI tool or a local agent runner to manage context. These tools should allow you to define a simple configuration file (e.g., context.toml) in your project root that specifies which files, directories, or even URLs to compile into a single payload for the LLM prompt. This ensures you retain full, transparent control over what the model sees on every request.  
-3. **Establish a Version-Controlled Prompt Library** Create a dedicated /prompts directory within your project's Git repository. In it, store the invocation prompts for each specialist agent (e.g., reviewer.md, documenter.md, tester.md) as markdown files. Treating your prompts as code allows the entire team to collaborate on, refine, and version the instructions given to your AI agents over time.  
+1. **Provision Access to Frontier Models** Secure API keys for at least two leading large language models, such as Gemini 2.5 Pro and Claude 4 Opus. This dual-provider approach allows for comparative analysis and hedges against single-platform limitations or downtime. These credentials should be managed securely as you would any other production secret.
+2. **Implement a Local Context Orchestrator** Instead of ad-hoc scripts, use a lightweight CLI tool or a local agent runner to manage context. These tools should allow you to define a simple configuration file (e.g., context.toml) in your project root that specifies which files, directories, or even URLs to compile into a single payload for the LLM prompt. This ensures you retain full, transparent control over what the model sees on every request.
+3. **Establish a Version-Controlled Prompt Library** Create a dedicated /prompts directory within your project's Git repository. In it, store the invocation prompts for each specialist agent (e.g., reviewer.md, documenter.md, tester.md) as markdown files. Treating your prompts as code allows the entire team to collaborate on, refine, and version the instructions given to your AI agents over time.
 4. **Integrate Agent Workflows with Git Hooks** Automate your review rhythm by using local Git hooks. For instance, a pre-commit hook can be configured to automatically trigger the Reviewer Agent on your staged changes. The agent's critique-and-reflection summary can be presented directly in your terminal, providing immediate feedback before you finalize the commit and baking the quality assurance step directly into your development process.
 
 1. **前沿模型访问权限配置** 获取至少两个领先大语言模型（如 Gemini 2.5 Pro 与 Claude 4 Opus）的 API 访问密钥。这种双供应商策略便于性能对比分析，同时规避单一平台限制或服务中断风险。此类凭证应按照生产环境密钥管理规范进行安全存储。
 2. **本地上下文编排器部署** 采用轻量级 CLI 工具或本地智能体运行器来管理上下文，而非临时脚本方案。此类工具应支持在项目根目录定义简明配置文件（如 context.toml），明确指定需编译至 LLM 提示词统一载荷的文件、目录或 URL 资源。这确保您对模型每次请求所见内容保持完全透明的控制。
 3. **版本化提示词库构建** 在项目 Git 仓库内创建专用 /prompts 目录。以 markdown 文件形式存储各专业智能体的调用提示词（如 reviewer.md、documenter.md、tester.md）。将提示词视同代码资产管理，支持团队持续协作优化、版本追踪及 AI 智能体的迭代演进。
 4. **智能体工作流与 Git 钩子集成** 通过本地 Git 钩子实现审查流程自动化。例如，配置 pre-commit 钩子自动在暂存变更上触发审查者智能体。智能体生成的批判与反思摘要将直接输出至终端，在提交确认前提供即时质量反馈，将质量保障环节深度嵌入开发流程。
-
-**![][image1]**
 
 **![][image1]**
 
@@ -180,9 +173,9 @@ Successfully leading this framework requires evolving from a sole contributor in
 
 成功驾驭此框架需要实现从独立贡献者向人机协作团队领导者的角色转型，遵循以下核心原则：
 
-* **Maintain Architectural Ownership** Your role is to set the strategic direction and own the high-level architecture. You define the "what" and the "why," using the agent team to accelerate the "how." You are the final **arbiter** of design, ensuring every component aligns with the project's long-term vision and quality standards.  
-* **Master the Art of the Brief** The quality of an agent's output is a direct reflection of the quality of its input. Master the art of the brief by providing clear, unambiguous, and comprehensive context for every task. Think of your prompt not as a simple command, but as a complete briefing package for a new, highly capable team member.  
-* **Act as the Ultimate Quality Gate** An agent's output is always a proposal, never a command. Treat the Reviewer Agent's feedback as a powerful signal, but you are the ultimate quality gate. Apply your domain expertise and project-specific knowledge to validate, challenge, and approve all changes, acting as the final guardian of the codebase's integrity.  
+* **Maintain Architectural Ownership** Your role is to set the strategic direction and own the high-level architecture. You define the "what" and the "why," using the agent team to accelerate the "how." You are the final **arbiter** of design, ensuring every component aligns with the project's long-term vision and quality standards.
+* **Master the Art of the Brief** The quality of an agent's output is a direct reflection of the quality of its input. Master the art of the brief by providing clear, unambiguous, and comprehensive context for every task. Think of your prompt not as a simple command, but as a complete briefing package for a new, highly capable team member.
+* **Act as the Ultimate Quality Gate** An agent's output is always a proposal, never a command. Treat the Reviewer Agent's feedback as a powerful signal, but you are the ultimate quality gate. Apply your domain expertise and project-specific knowledge to validate, challenge, and approve all changes, acting as the final guardian of the codebase's integrity.
 * **Engage in Iterative Dialogue** The best results emerge from conversation, not monologue. If an agent's initial output is imperfect, don't discard it—refine it. Provide corrective feedback, add clarifying context, and prompt for another attempt. This iterative dialogue is crucial, especially with the Reviewer Agent, whose "Reflection" output is designed to be the start of a collaborative discussion, not just a final report.
 
 * **坚守架构主导权** 您的核心职责是制定战略方向并掌控高层架构设计。您定义"目标"和"设计理念"，借助智能体团队加速"实施方案"落地。作为设计决策的最终**仲裁者**，确保各组件严格遵循项目长期愿景与质量标准。
@@ -208,8 +201,4 @@ By offloading tactical execution to Agents, developers can now dedicate their co
 
 1. AI is responsible for generating more than 30% of the code at Google [https://www.reddit.com/r/singularity/comments/1k7rxo0/ai_is_now_writing_well_over_30_of_the_code_at/](https://www.reddit.com/r/singularity/comments/1k7rxo0/ai_is_now_writing_well_over_30_of_the_code_at/)
 2. AI is responsible for generating more than 30% of the code at Microsoft [https://www.businesstoday.in/tech-today/news/story/30-of-microsofts-code-is-now-ai-generated-says-ceo-satya-nadella-474167-2025-04-30](https://www.businesstoday.in/tech-today/news/story/30-of-microsofts-code-is-now-ai-generated-says-ceo-satya-nadella-474167-2025-04-30)
-
-1. AI is responsible for generating more than 30% of the code at Google [https://www.reddit.com/r/singularity/comments/1k7rxo0/ai_is_now_writing_well_over_30_of_the_code_at/]
-2. AI is responsible for generating more than 30% of the code at Microsoft [https://www.businesstoday.in/tech-today/news/story/30-of-microsofts-code-is-now-ai-generated-says-ceo-satya-nadella-474167-2025-04-30]
-
 [image1]: ../images/appendix-g/image1.png

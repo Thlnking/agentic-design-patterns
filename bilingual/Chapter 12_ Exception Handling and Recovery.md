@@ -26,7 +26,7 @@ The Exception Handling and Recovery pattern addresses the need for AI agents to 
 
 异常处理和恢复模式解决了 AI 智能体应对操作失败的需求。此模式涉及预测潜在问题，例如工具错误或服务不可用，并制定相应的缓解策略。这些策略可能包括错误日志记录、重试机制、回退方案、优雅降级和通知机制。此外，该模式强调恢复机制，如状态回滚、诊断分析、自我纠正和问题升级，以将智能体恢复到稳定运行状态。实施此模式增强了 AI 智能体的可靠性和鲁棒性，使它们能够在不可预测的环境中有效运作。实际应用示例包括管理数据库错误的聊天机器人、处理金融错误的交易机器人以及解决设备故障的智能家居智能体。该模式确保智能体在遇到失败时能够继续有效运行。
 
-![](../images/chapter-12/image1.png)
+![][image1]
 
 Fig.1: Key components of exception handling and recovery for AI agents
 
@@ -160,8 +160,6 @@ This code defines a robust location retrieval system using a ADK's SequentialAge
 **可视化摘要**
 
 **![][image2]**
-
-![](../images/chapter-12/image2.png)
 
 Fig.2: Exception handling pattern
 

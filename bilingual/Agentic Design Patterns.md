@@ -115,11 +115,11 @@ Part Four (Total: 114 pages)
 
 1. [智能体间通信 (A2A)](Chapter%2015_%20Inter-Agent%20Communication%20(A2A).md)（15 页）
 
-16. [Chapter 16: Resource-Aware Optimization](https://docs.google.com/document/d/1nAN58l6JjqEJHk43126uh7xgdEblCpcbsNUHXgtBmJQ/edit?usp=sharing) ([code](https://drive.google.com/drive/u/0/folders/1Y3U3IrYCiJ3E45Z8okR5eCg7OPnWQtPV)), 15 pages  \[final,  last read done, code ok\]  
+16. [Chapter 16: Resource-Aware Optimization](https://docs.google.com/document/d/1nAN58l6JjqEJHk43126uh7xgdEblCpcbsNUHXgtBmJQ/edit?usp=sharing) ([code](https://drive.google.com/drive/u/0/folders/1Y3U3IrYCiJ3E45Z8okR5eCg7OPnWQtPV)), 15 pages  \[final, last read done, code ok\]  
 
 2. [资源感知优化](Chapter%2016_%20Resource-Aware%20Optimization.md)（15 页）
 
-17. [Chapter 17: Reasoning Techniques](https://docs.google.com/document/d/1Yt1W_hLaC6ZNgJXfT4W6NrCL4TzNVdKOX50kgpHiIq4/edit?usp=sharing) ([code](https://drive.google.com/drive/u/0/folders/1Y3U3IrYCiJ3E45Z8okR5eCg7OPnWQtPV)), 24 pages \[final,  last read done, code ok\]  
+17. [Chapter 17: Reasoning Techniques](https://docs.google.com/document/d/1Yt1W_hLaC6ZNgJXfT4W6NrCL4TzNVdKOX50kgpHiIq4/edit?usp=sharing) ([code](https://drive.google.com/drive/u/0/folders/1Y3U3IrYCiJ3E45Z8okR5eCg7OPnWQtPV)), 24 pages \[final, last read done, code ok\]  
 
 3. [推理技术](Chapter%2017_%20Reasoning%20Techniques.md)（24 页）
 
@@ -155,7 +155,7 @@ Appendix (Total: 74 pages)
 
 3. [智能体框架概览](Appendix%20C%20-%20Quick%20overview%20of%20Agentic%20Frameworks.md)（8 页）
 
-25. [Appendix D - Building an Agent with AgentSpace (on-line only)](https://docs.google.com/document/d/1bDRJ8mKtLTeWNC-cGD0Cr8pEJQgJHNcjqz5ekloAjaE/edit?tab=t.0), 6 pages \[final, last read done, code ok\]  
+25. [Appendix D - Building an Agent with AgentSpace (on-line only)](https://docs.google.com/document/d/1bDRJ8mKtLTeWNC-cGD0Cr8pEJQgJHNcjqz5ekloAjaE/edit?usp=sharing), 6 pages \[final, last read done, code ok\]  
 
 4. [使用 AgentSpace 构建智能体](Appendix%20D%20-%20Building%20an%20Agent%20with%20AgentSpace%20(on-line%20only).md)（6 页）
 

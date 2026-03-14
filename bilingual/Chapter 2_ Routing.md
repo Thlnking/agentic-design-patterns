@@ -409,7 +409,6 @@ Fig.1: Router pattern, using an LLM as a Router
 
 ![][image1]  
 图 1：路由模式，使用 LLM 作为路由器
-
 ## Key Takeaways
 
 ## 关键要点
@@ -447,9 +446,6 @@ Mastering the Routing pattern is essential for building agents that can intellig
 ## References
 
 ## 参考文献
-
-1. LangGraph Documentation: [https://www.langchain.com/](https://www.langchain.com/)
-2. Google Agent Developer Kit Documentation: [https://google.github.io/adk-docs/](https://google.github.io/adk-docs/)
 
 1. LangGraph Documentation: [https://www.langchain.com/](https://www.langchain.com/)
 2. Google 智能体开发工具包文档: [https://google.github.io/adk-docs/](https://google.github.io/adk-docs/)

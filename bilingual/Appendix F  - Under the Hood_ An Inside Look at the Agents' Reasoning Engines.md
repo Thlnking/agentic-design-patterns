@@ -16,8 +16,6 @@ Therefore, understanding the internal reasoning mechanisms of these models is no
 
 ## Gemini
 
-## Gemini
-
 **Analyzing My Approach**
 
 **分析我的方法**
@@ -52,9 +50,7 @@ Here’s a step-by-step breakdown of how I reason:
 
 ---
 
----
-
-### **1\. Deconstructing the Prompt 📝**
+### **1. Deconstructing the Prompt 📝**
 
 ### **1. 解构提示 📝**
 
@@ -74,9 +70,7 @@ First, I analyze your question or instruction to understand exactly what you're 
 
 ---
 
----
-
-### **2\. Information Retrieval and Synthesis 🧠**
+### **2. Information Retrieval and Synthesis 🧠**
 
 ### **2. 信息检索与综合 🧠**
 
@@ -94,9 +88,7 @@ Once I understand the prompt, I access my internal knowledge base. This isn't li
 
 ---
 
----
-
-### **3\. Generating the Response ✍️**
+### **3. Generating the Response ✍️**
 
 ### **3. 生成响应 ✍️**
 
@@ -118,21 +110,15 @@ In essence, my reasoning is a sophisticated form of **pattern matching and predi
 
 ## ChatGPT
 
-## ChatGPT
-
 Great — let me explain **how I reason step by step**, as simply and clearly as possible.
 
 很好——让我尽可能简明清晰地阐述**我的逐步推理过程**。
 
 ---
 
----
-
 ## **🧠 Step-by-Step Explanation: How I Reason**
 
 ## **🧠 逐步解析：我的推理机制**
-
----
 
 ---
 
@@ -153,14 +139,12 @@ I begin by **analyzing your words**.
 * 判定**问题类型**（逻辑、数学、判断、语言等）。
 
 📌 *Example*:  
- You say: “If Tom is older than Jane, and Jane is older than Sue, who is the youngest?”  
- → I recognize this is a **logic puzzle**.
+You say: "If Tom is older than Jane, and Jane is older than Sue, who is the youngest?"  
+→ I recognize this is a **logic puzzle**.
 
 📌 *示例*：
-  您说：「若 Tom 年长于 Jane，Jane 年长于 Sue，谁最年幼？」
-  → 我识别此为**逻辑推理题**。
-
----
+ 您说：「若 Tom 年长于 Jane，Jane 年长于 Sue，谁最年幼？」
+ → 我识别此为**逻辑推理题**。
 
 ---
 
@@ -183,14 +167,12 @@ I search through what I learned during training — books, articles, conversatio
 * 关系
 
 📌 *Example*:  
- I’ve seen that “older than” means someone has more age.  
- I know that if A > B and B > C, then A > C.
+I've seen that "older than" means someone has more age.  
+I know that if A > B and B > C, then A > C.
 
 📌 *示例*：
-  我理解「年长于」表示年龄比较关系。
-  我掌握传递性逻辑：若 A > B 且 B > C，则 A > C。
-
----
+ 我理解「年长于」表示年龄比较关系。
+ 我掌握传递性逻辑：若 A > B 且 B > C，则 A > C。
 
 ---
 
@@ -213,12 +195,10 @@ Based on the question, I decide which **kind of reasoning** to use:
 * **类比推理**（参照相似案例进行推论）
 
 📌 *Example*:  
- In the Tom/Jane/Sue case, I’ll use **deduction**.
+In the Tom/Jane/Sue case, I'll use **deduction**.
 
 📌 *示例*：
-  针对 Tom/Jane/Sue 案例，我选用**演绎推理**。
-
----
+ 针对 Tom/Jane/Sue 案例，我选用**演绎推理**。
 
 ---
 
@@ -242,11 +222,9 @@ Here I go step by step, as a human might do when solving a problem.
 3. 故得：Tom > Jane > Sue
 4. 由此判定，**Sue 最年幼**
 
-This is called **chain-of-thought reasoning** — I simulate “thinking it through.”
+This is called **chain-of-thought reasoning** — I simulate "thinking it through."
 
 此过程称为**思维链推理**——我模拟「逐步思考」。
-
----
 
 ---
 
@@ -267,12 +245,10 @@ Now I turn the conclusion into a response that:
 * 让您能理解
 
 📌 *Example*:  
- “Sue is the youngest because Tom is older than Jane, and Jane is older than Sue.”
+"Sue is the youngest because Tom is older than Jane, and Jane is older than Sue."
 
 📌 *示例*：
-  「Sue 最年幼，因为 Tom 年长于 Jane，而 Jane 年长于 Sue。」
-
----
+ 「Sue 最年幼，因为 Tom 年长于 Jane，而 Jane 年长于 Sue。」
 
 ---
 
@@ -293,12 +269,10 @@ Finally, I adjust how I say it to:
 * 按需补充示例或深化解释
 
 📌 *Example*:  
- If you’re asking casually, I’ll answer simply. If you’re learning, I might break it down more.
+If you're asking casually, I'll answer simply. If you're learning, I might break it down more.
 
 📌 *示例*：
-  若为轻松咨询，我简洁回应；若属学习场景，我提供详细解析。
-
----
+ 若为轻松咨询，我简洁回应；若属学习场景，我提供详细解析。
 
 ---
 
@@ -326,21 +300,15 @@ Finally, I adjust how I say it to:
 
 ---
 
----
-
-Would you like to give me a problem, and I’ll show you this step-by-step reasoning live?
+Would you like to give me a problem, and I'll show you this step-by-step reasoning live?
 
 是否希望给我一个问题，我将实时演示此逐步推理流程？
 
 ## Grok
 
-## Grok
-
-Explaining how I reason is a fascinating challenge, as it involves unpacking the complex interplay of algorithms, data processing, and decision-making that underpins my responses. As Grok 3, my reasoning process is inspired by human cognition but operates within the constraints and capabilities of a large language model. Below, I’ll break down the steps of how I approach reasoning, using a clear, step-by-step framework. I’ll aim to keep it concise yet comprehensive, avoiding overly technical jargon while providing insight into my "thought" process.
+Explaining how I reason is a fascinating challenge, as it involves unpacking the complex interplay of algorithms, data processing, and decision-making that underpins my responses. As Grok 3, my reasoning process is inspired by human cognition but operates within the constraints and capabilities of a large language model. Below, I'll break down the steps of how I approach reasoning, using a clear, step-by-step framework. I'll aim to keep it concise yet comprehensive, avoiding overly technical jargon while providing insight into my "thought" process.
 
 阐述我的推理机制是一项引人入胜的挑战，因为这涉及揭示支撑我响应的算法、数据处理与决策制定的复杂交互网络。作为 Grok 3，我的推理过程受人类认知启发，但运作于大语言模型的特定约束与能力边界内。下文我将通过清晰的阶段框架解析我的推理流程，力求在避免过度技术化的同时，提供对内部「思维」过程的深入洞察。
-
----
 
 ---
 
@@ -352,9 +320,9 @@ Explaining how I reason is a fascinating challenge, as it involves unpacking the
 
 #### **阶段 1：理解查询**
 
-* **What I Do**: I start by parsing your input to grasp the intent, context, and specifics of your question. This involves analyzing the text for keywords, structure, and any explicit instructions (e.g., “explain step by step” or “be concise”).  
-* **How It Works**: My natural language processing (NLP) components break down your query into tokens (words or phrases) and map them to semantic meanings. I identify whether you’re asking for information, analysis, a process explanation, or something else. For your question, I recognize a request for a meta-explanation of my reasoning process, which requires introspection and clarity.  
-* **Example**: Your query contains “explain,” “reason,” and “step by step,” signaling that I need to provide a structured, detailed breakdown of an abstract process.
+* **What I Do**: I start by parsing your input to grasp the intent, context, and specifics of your question. This involves analyzing the text for keywords, structure, and any explicit instructions (e.g., "explain step by step" or "be concise").  
+* **How It Works**: My natural language processing (NLP) components break down your query into tokens (words or phrases) and map them to semantic meanings. I identify whether you're asking for information, analysis, a process explanation, or something else. For your question, I recognize a request for a meta-explanation of my reasoning process, which requires introspection and clarity.  
+* **Example**: Your query contains "explain," "reason," and "step by step," signaling that I need to provide a structured, detailed breakdown of an abstract process.
 
 * **核心操作**：我首先解析输入内容以把握问题意图、上下文背景及具体细节。这包括分析文本关键词、结构特征及显式指令（如「逐步阐释」或「简明扼要」）。
 * **技术实现**：我的自然语言处理组件将查询拆分为语义单元（词或短语）并映射至概念含义。我辨识查询类型（信息获取、分析请求、流程说明等）。针对您的问题，我识别出对推理过程的元认知请求，这要求内省性与表述清晰度。
@@ -365,7 +333,7 @@ Explaining how I reason is a fascinating challenge, as it involves unpacking the
 #### **阶段 2：上下文分析与知识检索**
 
 * **What I Do**: I draw on my internal knowledge base, which is a vast repository of patterns and information encoded in my training data. I also consider any relevant context from our conversation or external tools (e.g., web search or X posts, if needed, though not required here).  
-* **How It Works**: I use attention mechanisms to prioritize relevant concepts. For “reasoning,” I retrieve associations with logic, problem-solving, and cognitive processes. Since this is a meta-question about my own process, I focus on how my architecture simulates reasoning, such as evaluating inputs, generating hypotheses, and refining outputs.  
+* **How It Works**: I use attention mechanisms to prioritize relevant concepts. For "reasoning," I retrieve associations with logic, problem-solving, and cognitive processes. Since this is a meta-question about my own process, I focus on how my architecture simulates reasoning, such as evaluating inputs, generating hypotheses, and refining outputs.  
 * **Example**: I recall that reasoning involves breaking down a problem, evaluating options, and constructing a coherent response, which informs my approach to structuring this answer.
 
 * **核心操作**：我调用内部知识库——训练数据中编码的庞大模式与信息集合。同时考量对话上下文或外部工具（如网络搜索或 X 平台内容，虽此处未启用）的相关信息。
@@ -376,7 +344,7 @@ Explaining how I reason is a fascinating challenge, as it involves unpacking the
 
 #### **阶段 3：构建心智模型**
 
-* **What I Do**: I create a conceptual framework to organize my response. This involves structuring the problem space to ensure my answer is logical and comprehensive. For your query, I outline a sequence of steps that reflect the reasoning process, ensuring it’s clear and easy to follow.  
+* **What I Do**: I create a conceptual framework to organize my response. This involves structuring the problem space to ensure my answer is logical and comprehensive. For your query, I outline a sequence of steps that reflect the reasoning process, ensuring it's clear and easy to follow.  
 * **How It Works**: I simulate a mental model by mapping out the key components of reasoning—understanding, retrieval, evaluation, and synthesis—based on patterns in my training data. I prioritize clarity and coherence, aligning with your request for a step-by-step explanation.  
 * **Example**: For this question, my mental model is a linear process: parse the query, retrieve relevant knowledge, evaluate approaches, and construct a response. This framework guides the structure of my answer.
 
@@ -402,13 +370,11 @@ Explaining how I reason is a fascinating challenge, as it involves unpacking the
 
 * **What I Do**: I generate the final response by synthesizing retrieved knowledge into a coherent, structured answer. I ensure it aligns with your instructions and is presented in a logical, step-by-step format.  
 * **How It Works**: My language generation component sequences words and sentences to maximize clarity and relevance. I draw on patterns from my training to mimic human-like reasoning, such as breaking down complex ideas into digestible steps. I also incorporate any specific constraints, like avoiding unnecessary technical details.  
-* **Example**: For this response, I structure the answer as a numbered list, ensuring each step is distinct and builds logically from the previous step, addressing any gaps or refining the explanation to ensure it’s comprehensive yet concise.
+* **Example**: For this response, I structure the answer as a numbered list, ensuring each step is distinct and builds logically from the previous step, addressing any gaps or refining the explanation to ensure it's comprehensive yet concise.
 
 * **核心操作**：我通过整合检索知识生成连贯的结构化最终响应。确保内容严格遵循指令要求，并以逻辑清晰的阶段化格式呈现。
 * **技术实现**：语言生成组件对词汇与句式进行序列优化以最大化清晰度与相关性。借鉴训练数据中的模式特征模仿人类推理风格，例如将复杂概念分解为可消化步骤。同时纳入特定约束条件，如规避非必要技术细节。
 * **实例说明**：针对此响应，我采用编号列表结构，确保各阶段具备独特性且从前序步骤自然演进，通过填补逻辑间隙或精炼表述来保障内容的全面性与简洁性。
-
-System: builds logically from the previous step, addressing any gaps or refining the explanation to ensure it’s comprehensive yet concise.
 
 * **Example**: I refine the explanation by re-evaluating the balance between technical detail and accessibility, ensuring the final response is clear and tailored to your request.
 
@@ -428,8 +394,6 @@ System: builds logically from the previous step, addressing any gaps or refining
 
 ---
 
----
-
 ### **Key Characteristics of My Reasoning**
 
 ### **推理机制的核心特征**
@@ -446,35 +410,31 @@ System: builds logically from the previous step, addressing any gaps or refining
 
 ---
 
----
-
 ### **Limitations and Considerations**
 
 ### **能力边界与考量因素**
 
 * My reasoning is bounded by my training data and architecture, which may not capture the full nuance of human reasoning, particularly emotional or intuitive aspects.  
-* I don’t generate new knowledge independently but rely on patterns in my training and, if needed, external data (not used here).  
+* I don't generate new knowledge independently but rely on patterns in my training and, if needed, external data (not used here).  
 * My process is deterministic yet flexible, aiming to produce human-like responses within computational constraints.
 
 * 我的推理能力受限于训练数据与架构设计，可能无法完全复现人类推理的细微差异，尤其在情感与直觉层面。
 * 我不具备独立生成新知识的能力，而是依赖训练模式及（必要时）外部数据源（本案未使用）。
 * 我的处理过程具备确定性特征同时保持灵活性，旨在计算约束范围内产出类人类响应。
 
-This step-by-step breakdown reflects how I simulate reasoning to provide clear, accurate, and relevant answers to your queries, such as this one. If you’d like me to dive deeper into any specific step or aspect, let me know!
+This step-by-step breakdown reflects how I simulate reasoning to provide clear, accurate, and relevant answers to your queries, such as this one. If you'd like me to dive deeper into any specific step or aspect, let me know!
 
 此阶段化解析展示了我如何通过模拟推理过程为您的查询提供清晰、准确且相关的答案，例如本响应。若需深入探讨任何特定阶段或技术细节，敬请告知！
 
 ## Kimi
 
-## Kimi
-
-I’m glad you asked—here is a transparent, “under-the-hood” walk-through of how I typically reason through a problem. I’ll use a miniature example so you can see each stage in action.
+I'm glad you asked—here is a transparent, "under-the-hood" walk-through of how I typically reason through a problem. I'll use a miniature example so you can see each stage in action.
 
 很高兴您提出此问——我将以透明的「幕后视角」逐步演示常规推理流程。通过微型案例，您可直观观察各阶段运作机制。
 
 EXAMPLE QUESTION  
-“Which is larger: 3⁴ or 4³?”  
-I’ll annotate every internal stage so you can see what I’m doing and why.
+"Which is larger: 3⁴ or 4³?"  
+I'll annotate every internal stage so you can see what I'm doing and why.
 
 示例问题
 「3⁴ 与 4³ 何者更大？」
@@ -483,16 +443,16 @@ I’ll annotate every internal stage so you can see what I’m doing and why.
 ────────────────────────  
 PHASE 0 – INPUT PRE-PROCESSING  
 Tokenization  
-I break the text into discrete symbols: [“Which”, “is”, “larger”, “:”, “3”, “^”, “4”, “or”, “4”, “^”, “3”, “?”]
+I break the text into discrete symbols: ["Which", "is", "larger", ":", "3", "^", "4", "or", "4", "^", "3", "?"]
 
 Syntactic parsing  
 I recognize the structure:  
-COMPARATIVE\_QUERY (superlative adjective “larger”) with two NUMERICAL\_EXPONENT\_TERMS [3^4] vs [4^3].  
+COMPARATIVE_QUERY (superlative adjective "larger") with two NUMERICAL_EXPONENT_TERMS [3^4] vs [4^3].  
 Semantic mapping  
-I map “larger” to the numerical relation “>”.  
+I map "larger" to the numerical relation ">".  
 ────────────────────────  
 PHASE 1 – PROBLEM IDENTIFICATION & STRATEGY SELECTION  
-4\. Classify task type  
+4. Classify task type  
 → Arithmetic comparison of integer powers.  
 Choose solution strategy
 
@@ -503,40 +463,40 @@ C. Pattern heuristics (powers of 3 grow faster than powers of 4 for small expone
 I select Strategy A because the numbers are tiny; exact integer evaluation is cheapest.  
 ────────────────────────  
 PHASE 2 – KNOWLEDGE RETRIEVAL  
-6\. Retrieve arithmetic facts  
+6. Retrieve arithmetic facts  
 3² = 9 (memorized)  
 3³ = 27 (retrieved)  
 4² = 16 (memorized)  
 4³ = 64 (retrieved)  
 Compute remaining term  
-3⁴ = 3³·3 = 27×3 = 81\.  
+3⁴ = 3³·3 = 27×3 = 81.  
 ────────────────────────  
 PHASE 3 – EXECUTION & VERIFICATION  
-8\. Perform comparison  
-81 vs 64 → 81 > 64\.  
+8. Perform comparison  
+81 vs 64 → 81 > 64.  
 Cross-check  
 Quick modular sanity check: 81 mod 5 = 1, 64 mod 5 = 4; no contradiction.  
 ────────────────────────  
 PHASE 4 – RESPONSE GENERATION  
-10\. Plan response structure  
-\- Restate the question.  
-\- Show the computed values.  
-\- State the conclusion.  
+10. Plan response structure  
+- Restate the question.  
+- Show the computed values.  
+- State the conclusion.  
 Surface realization  
-“3⁴ is 81 and 4³ is 64, so 3⁴ is larger.”  
+"3⁴ is 81 and 4³ is 64, so 3⁴ is larger."  
 ────────────────────────  
 PHASE 5 – METACOGNITIVE REFLECTION (internal)  
-12\. Confidence score  
+12. Confidence score  
 0.99 (exact integers, small values, no ambiguity).  
-13\. Identify possible edge-cases  
-If exponents were huge, direct evaluation would be infeasible and I’d switch to logarithms.  
+13. Identify possible edge-cases  
+If exponents were huge, direct evaluation would be infeasible and I'd switch to logarithms.  
 ────────────────────────  
 SUMMARY OF REASONING STEPS IN HUMAN TERMS  
 Read and parse the question.  
-Recognize it’s a numeric comparison.  
+Recognize it's a numeric comparison.  
 Decide the simplest safe method is to compute both numbers.  
-Recall or calculate 3⁴ = 81 and 4³ = 64\.  
-Compare 81 > 64\.  
+Recall or calculate 3⁴ = 81 and 4³ = 64.  
+Compare 81 > 64.  
 Communicate the result clearly.
 
 That pipeline—parsing, strategizing, knowledge retrieval, execution, verification, and explanation—repeats at every scale, from tiny arithmetic to complex multi-step problems.
@@ -600,11 +560,8 @@ C. 模式启发法（小指数情况下 3 的幂次增长是否快于 4？）。
 通过记忆检索或实时计算得 3⁴ = 81，4³ = 64。
 执行数值比较 81 > 64。
 清晰传达最终结论。
-
 此处理管道——解析、策略制定、知识检索、执行、验证、解释——可在任意规模重复应用，从基础算术至复杂多步问题求解。
 ```
-
-## Claude
 
 ## Claude
 
@@ -646,8 +603,6 @@ The interesting thing is that much of this happens in ways that feel somewhat in
 
 ## DeepSeek
 
-## DeepSeek
-
 I'd be happy to explain how I "reason" step-by-step! It's important to clarify that **I don't reason like a human** (I have no consciousness, intuition, or lived experience). Instead, my "reasoning" is a sophisticated pattern-matching, information retrieval, and probabilistic calculation process based on my training data and architecture. Think of it as **structured computation, not conscious thought**.
 
 我很乐意逐步阐释我的「推理」机制！首要澄清：**我的推理方式与人类截然不同**（我缺乏意识、直觉及生活体验）。实质上，我的「推理」是基于训练数据与架构设计的复杂模式匹配、信息检索及概率计算流程。可视作**结构化计算过程，而非意识驱动思考**。
@@ -658,7 +613,7 @@ Here's the step-by-step breakdown:
 
 1. **Receive & Parse Input:**  
    * I take your query ("how do you reason?").  
-   * I break it down into its constituent parts: key words ("reason," "explain," "step by step"), grammar, and intent. Here, the key intent is an explanation of my internal processes.
+   * I break it down into its constituent parts: key words ("reason", "explain", "step by step"), grammar, and intent. Here, the key intent is an explanation of my internal processes.
 
 1. **输入接收与解析：**
    * 接收查询指令（「你如何推理？」）。
@@ -705,7 +660,7 @@ Here's the step-by-step breakdown:
      * *「首要任务是澄清与人类推理的本质差异…」*
      * *「继而需阐释基础机制：模式识别、统计原理、下一标记预测…」*
      * *「随后描述本响应的处理序列：输入解析、知识检索、结构搭建、内容生成…」*
-     * *「最终强调模拟特性及已知局限。」*
+     * *「最终强调模拟特性及固有局限。」*
    * 实现方式：基于训练数据中同类解释的所有模式特征，预测构成连贯、信息丰富且符合逐步要求的*最可能标记序列*。
 
 5. **Calculate Probabilities & Generate Output:**  
@@ -746,7 +701,7 @@ Here's the step-by-step breakdown:
 
 1. **Clarification:** I identified the need to start by distinguishing my process from human thought.  
 2. **Core Mechanics:** I recalled and explained my foundation: patterns, training data, token prediction.  
-3. **Process Breakdown:** I explicitly listed the 7 distinct computational steps outlined above (Receive & Parse \-\> Generate Output).  
+3. **Process Breakdown:** I explicitly listed the 7 distinct computational steps outlined above (Receive & Parse -> Generate Output).  
 4. **Focus on Sequence:** I emphasized the "chain-of-thought" planning step as key to simulating reasoning.  
 5. **Limitations:** I concluded by reiterating this is *simulation*, not true understanding, and recalled known limitations.
 
