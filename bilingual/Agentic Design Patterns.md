@@ -39,7 +39,7 @@ Table of Contents - total 424 pages = 1+2+1+1+4+9+103+61+34+114+74+5+4 11
 
 - 是什么让 AI 系统成为"智能体"？（9 页）
 
-Part One, (Total: 103 pages)
+## Part One, (Total: 103 pages)
 
 ## 第一部分：核心模式（103 页）
 
@@ -71,7 +71,7 @@ Part One, (Total: 103 pages)
 
 7. [多智能体协作](Chapter%207_%20Multi-Agent%20Collaboration.md)（17 页）
 
-Part Two (Total: 61 pages)
+## Part Two (Total: 61 pages)
 
 ## 第二部分：认知机制（61 页）
 
@@ -91,7 +91,7 @@ Part Two (Total: 61 pages)
 
 11. [目标设定与监控](Chapter%2011_%20Goal%20Setting%20and%20Monitoring.md)（12 页）
 
-Part Three (Total: 34 pages)
+## Part Three (Total: 34 pages)
 
 ## 第三部分：容错与扩展（34 页）
 
@@ -107,7 +107,7 @@ Part Three (Total: 34 pages)
 
 14. [知识检索 (RAG)](Chapter%2014_%20Knowledge%20Retrieval%20(RAG).md)（17 页）
 
-Part Four (Total: 114 pages)
+## Part Four (Total: 114 pages)
 
 ## 第四部分：高级架构（114 页）
 
@@ -139,7 +139,7 @@ Part Four (Total: 114 pages)
 
 21. [探索与发现](Chapter%2021_%20Exploration%20and%20Discovery.md)（13 页）
 
-Appendix (Total: 74 pages)
+## Appendix (Total: 74 pages)
 
 ## 附录（74 页）
 
@@ -191,12 +191,8 @@ Appendix (Total: 74 pages)
 
 **预印本**：[https://www.amazon.com/Agentic-Design-Patterns-Hands-Intelligent/dp/3032014018/](https://www.amazon.com/Agentic-Design-Patterns-Hands-Intelligent/dp/3032014018/)  
 
-![][image1]
-
 ![封面图][image1]
 
 [^1]:  All my royalties will be donated to Save the Children
-
-[^1]: 本书所有版税将捐赠给救助儿童会 (Save the Children)
 
 [image1]: ../images/cover.png

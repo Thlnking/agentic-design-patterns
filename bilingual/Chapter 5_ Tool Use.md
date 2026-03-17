@@ -638,7 +638,7 @@ Overall, this code provides a basic framework for building a conversational AI a
 
 **可视化摘要：**
 
-**![][image2]**
+![][image2]
 
 Fig.2: Tool use design pattern
 

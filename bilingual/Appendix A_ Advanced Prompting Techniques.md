@@ -128,48 +128,17 @@ Few-shot prompting enhances one-shot prompting by supplying several examples, ty
 * **Example:**  
   Classify the sentiment of the following movie reviews as POSITIVE, NEUTRAL, or NEGATIVE:
 
-  Review: "The acting was superb and the story was engaging."  
-  Sentiment: POSITIVE
+   Review: "The acting was superb and the story was engaging."  
+   Sentiment: POSITIVE
 
-  Review: "It was okay, nothing special."  
-  Sentiment: NEUTRAL
+   Review: "It was okay, nothing special."  
+   Sentiment: NEUTRAL
 
-  Review: "I found the plot confusing and the characters unlikable."  
-  Sentiment: NEGATIVE
+   Review: "I found the plot confusing and the characters unlikable."  
+   Sentiment: NEGATIVE
 
-  Review: "The visuals were stunning, but the dialogue was weak."  
-  Sentiment:
-
-* **适用场景**：少样本提示特别适用于需要遵循特定格式、风格或展现细微变化的任务。它非常适合于分类、具有特定模式的数据提取或以特定风格生成文本等任务，尤其是在零样本或单样本无法产生一致结果时。使用至少三到五个示例是通用经验法则，可根据任务复杂度和模型 token 限制进行调整。
-* **示例质量与多样性的重要性**：少样本提示的效果很大程度上取决于所提供示例的质量和多样性。示例应准确、具有代表性，并涵盖模型可能遇到的潜在变化或边缘情况。高质量、精心编写的示例至关重要；即使微小错误也可能混淆模型并导致不良输出。包含多样化示例有助于模型更好地泛化到未见过的输入。
-* **分类示例中的类别混合**：在使用少样本提示进行分类任务（模型需要将输入分类到预定义类别）时，混合不同类别的示例顺序是最佳实践。这防止模型过度拟合特定示例序列，确保其学会独立识别每个类别的关键特征，从而在未见数据上实现更鲁棒和可泛化的性能。
-* **向"多样本学习"的演进**：随着 Gemini 等现代 LLM 在长上下文建模方面能力增强，它们在利用"多样本学习"方面变得极为有效。这意味着现在可以通过在提示中直接包含大量示例（有时甚至数百个）来实现复杂任务的最佳性能，使模型能够学习更复杂的模式。
-* **示例**：
-  将以下电影评论的情感分类为 POSITIVE、NEUTRAL 或 NEGATIVE：
-
-  Review: "The acting was superb and the story was engaging."  
-  Sentiment: POSITIVE
-
-  评论："表演精湛，故事引人入胜。"
-  情感：POSITIVE
-
-  Review: "It was okay, nothing special."  
-  Sentiment: NEUTRAL
-
-  评论："还行，没什么特别的。"
-  情感：NEUTRAL
-
-  Review: "I found the plot confusing and the characters unlikable."  
-  Sentiment: NEGATIVE
-
-  评论："我觉得情节混乱，角色不讨喜。"
-  情感：NEGATIVE
-
-  Review: "The visuals were stunning, but the dialogue was weak."  
-  Sentiment:
-
-  评论："视觉效果惊艳，但对话薄弱。"
-  情感：
+   Review: "The visuals were stunning, but the dialogue was weak."  
+   Sentiment:
 
 Understanding when to apply zero-shot, one-shot, and few-shot prompting techniques, and thoughtfully crafting and organizing examples, are essential for enhancing the effectiveness of agentic systems. These basic methods serve as the groundwork for various prompting strategies.
 
@@ -792,9 +761,6 @@ This allows for the creation of highly specialized AI agents for focused applica
 Consequently, the user avoids the need to re-establish the same contextual information with each new query. This methodology reduces conversational redundancy and improves the efficiency of task execution. The resulting interactions are more focused, yielding outputs that are consistently aligned with the user's initial requirements. This framework allows for applying fine-grained, persistent user direction to a generalist AI model. Ultimately, Gems enable a shift from general-purpose interaction to specialized, pre-defined AI functionalities.
 
 因此，用户无需在每个新查询中重新建立相同上下文信息。这种方法减少了对话冗余，提升了任务执行效率。产生的交互更加专注，输出与用户初始要求保持高度一致。此框架允许对通用 AI 模型应用细粒度、持久的用户指导。最终，Gems 实现了从通用交互向专业化、预定义 AI 功能的转变。
-
-![][image1]  
-Fig.1: Example of Google Gem usage.
 
 ![][image1]
 图 1：Google Gem 使用示例。

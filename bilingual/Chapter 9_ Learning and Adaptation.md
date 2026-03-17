@@ -208,8 +208,6 @@ Fig. 3: The OpenEvolve internal architecture is managed by a controller. This co
 
 This code snippet uses the OpenEvolve library to perform evolutionary optimization on a program. It initializes the OpenEvolve system with paths to an initial program, an evaluation file, and a configuration file. The evolve.run(iterations=1000) line starts the evolutionary process, running for 1000 iterations to find an improved version of the program. Finally, it prints the metrics of the best program found during the evolution, formatted to four decimal places. 
 
-此代码片段使用 OpenEvolve 库对程序执行进化优化。它使用初始程序、评估文件和配置文件的路径初始化 OpenEvolve 系统。`evolve.run(iterations=1000)` 行启动进化过程，运行 1000 次迭代以找到程序的改进版本。最后，它打印在进化过程中找到的最佳程序的指标，格式化为四位小数。
-
 ```python
 from openevolve import OpenEvolve
 
@@ -226,6 +224,8 @@ print(f"Best program metrics:")
 for name, value in best_program.metrics.items():
    print(f"  {name}: {value:.4f}")
 ```
+
+此代码片段使用 OpenEvolve 库对程序执行进化优化。它使用初始程序、评估文件和配置文件的路径初始化 OpenEvolve 系统。`evolve.run(iterations=1000)` 行启动进化过程，运行 1000 次迭代以找到程序的改进版本。最后，它打印在进化过程中找到的最佳程序的指标，格式化为四位小数。
 
 ## At a Glance
 
@@ -247,7 +247,7 @@ for name, value in best_program.metrics.items():
 
 **可视化摘要**
 
-**![][image4]**
+![][image4]
 
 Fig.4: Learning and adapting pattern
 
@@ -304,6 +304,14 @@ These elements contribute to significant advancements, such as Google's AlphaEvo
 5. Robeyns, M., Aitchison, L., & Szummer, M. (2025). *A Self-Improving Coding Agent*. arXiv:2504.15228v2. [https://arxiv.org/pdf/2504.15228](https://arxiv.org/pdf/2504.15228)  [https://github.com/MaximeRobeyns/self\_improving\_coding\_agent](https://github.com/MaximeRobeyns/self_improving_coding_agent)   
 6. AlphaEvolve blog, [https://deepmind.google/discover/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/](https://deepmind.google/discover/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/)   
 7. OpenEvolve, [https://github.com/codelion/openevolve](https://github.com/codelion/openevolve) 
+
+1. Sutton, R. S., & Barto, A. G. (2018). *《强化学习：导论》*. MIT Press.   
+2. Goodfellow, I., Bengio, Y., & Courville, A. (2016). *《深度学习》*. MIT Press.   
+3. Mitchell, T. M. (1997). *《机器学习》*. McGraw-Hill.   
+4. 近端策略优化算法，作者 John Schulman、Filip Wolski、Prafulla Dhariwal、Alec Radford 和 Oleg Klimov。可在 arXiv 上找到：[https://arxiv.org/abs/1707.06347](https://arxiv.org/abs/1707.06347)   
+5. Robeyns, M., Aitchison, L., & Szummer, M. (2025). *《自我改进编码智能体》*. arXiv:2504.15228v2. [https://arxiv.org/pdf/2504.15228](https://arxiv.org/pdf/2504.15228)  [https://github.com/MaximeRobeyns/self\_improving\_coding\_agent](https://github.com/MaximeRobeyns/self_improving_coding_agent)   
+6. AlphaEvolve 博客，[https://deepmind.google/discover/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/](https://deepmind.google/discover/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/)   
+7. OpenEvolve，[https://github.com/codelion/openevolve](https://github.com/codelion/openevolve) 
 
 [image1]: ../images/chapter-9/image1.png
 [image2]: ../images/chapter-9/image2.png

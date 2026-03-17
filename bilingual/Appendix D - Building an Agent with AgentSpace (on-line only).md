@@ -33,61 +33,61 @@ Furthermore, AgentSpace supports a multi-agent system where different AI agents 
 
 Figure 1 illustrates how to access AgentSpace by selecting AI Applications from the Google Cloud Console.
 
-图 1 展示了如何通过 Google Cloud Console 选择 AI Applications 来访问 AgentSpace。
-
 ![](../images/appendix-d/image1.png)
 
 Fig. 1: How to use Google Cloud Console to access AgentSpace
+
+图 1 展示了如何通过 Google Cloud Console 选择 AI Applications 来访问 AgentSpace。
 
 图 1：通过 Google Cloud Console 访问 AgentSpace 的方法
 
 Your agent can be connected to various services, including Calendar, Google Mail, Workday, Jira, Outlook, and Service Now (see Fig. 2).
 
-您的智能体可以连接到多种服务，包括 Calendar、Google Mail、Workday、Jira、Outlook 和 Service Now（见图 2）。
-
 ![](../images/appendix-d/image2.png)
 
 Fig. 2: Integrate with diverse services, including Google and third-party platforms.
+
+您的智能体可以连接到多种服务，包括 Calendar、Google Mail、Workday、Jira、Outlook 和 Service Now（见图 2）。
 
 图 2：与 Google 及第三方平台等多样化服务集成
 
 The Agent can then utilize its own prompt, chosen from a gallery of pre-made prompts provided by Google, as illustrated in Fig. 3.
 
-随后，智能体可以使用自己的提示词，也可以从 Google 提供的预制提示词库中选择，如图 3 所示。
-
 ![](../images/appendix-d/image3.png)
 
 Fig. 3: Google's Gallery of Pre-assembled prompts
+
+随后，智能体可以使用自己的提示词，也可以从 Google 提供的预制提示词库中选择，如图 3 所示。
 
 图 3：Google 预置提示词库
 
 Alternatively, you can create your own prompt as in Fig. 4, which will then be used by your agent.
 
-或者，您可以创建自己的提示词，如图 4 所示，供您的智能体使用。
-
 ![](../images/appendix-d/image4.png)
 
 Fig. 4: Customizing the Agent's Prompt
+
+或者，您可以创建自己的提示词，如图 4 所示，供您的智能体使用。
 
 图 4：智能体提示词定制
 
 AgentSpace offers a number of advanced features such as integration with datastores to store your own data, integration with Google Knowledge Graph or with your private Knowledge Graph, Web interface for exposing your agent to the Web, and Analytics to monitor usage, and more (see Fig. 5).
 
-AgentSpace 提供多项高级功能，例如与数据存储集成以存储自有数据、与 Google 知识图谱或私有知识图谱集成、用于向 Web 公开智能体的 Web 界面、使用情况监控分析等（见图 5）。
-
 ![](../images/appendix-d/image5.png)
 
 Fig. 5: AgentSpace advanced capabilities
+
+AgentSpace 提供多项高级功能，例如与数据存储集成以存储自有数据、与 Google 知识图谱或私有知识图谱集成、用于向 Web 公开智能体的 Web 界面、使用情况监控分析等（见图 5）。
 
 图 5：AgentSpace 高级能力
 
 Upon completion, the AgentSpace chat interface (Fig. 6) will be accessible.
 
-配置完成后，即可访问 AgentSpace 聊天界面（图 6）。
-
 ![](../images/appendix-d/image6.png)
 
 Fig. 6: The AgentSpace User Interface for initiating a chat with your Agent.
+
+配置完成后，即可访问 AgentSpace 聊天界面（图 6）。
 
 图 6：用于启动与智能体对话的 AgentSpace 用户界面
 
@@ -108,6 +108,11 @@ This approach abstracts the underlying technical complexity, enabling the constr
 ## 参考文献
 
 1. Create a no-code agent with Agent Designer, [https://cloud.google.com/agentspace/agentspace-enterprise/docs/agent-designer](https://cloud.google.com/agentspace/agentspace-enterprise/docs/agent-designer)
+
+1. Create a no-code agent with Agent Designer, [https://cloud.google.com/agentspace/agentspace-enterprise/docs/agent-designer](https://cloud.google.com/agentspace/agentspace-enterprise/docs/agent-designer)
+
+2. Google Cloud Skills Boost, [https://www.cloudskillsboost.google/](https://www.cloudskillsboost.google/)
+
 2. Google Cloud Skills Boost, [https://www.cloudskillsboost.google/](https://www.cloudskillsboost.google/)
 
 [image1]: ../images/appendix-d/image1.png

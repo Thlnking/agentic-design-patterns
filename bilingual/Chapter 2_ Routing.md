@@ -96,11 +96,11 @@ This code demonstrates a simple agent-like system using LangChain and Google's G
 
 First, ensure you have the necessary libraries installed:
 
-首先，确保您已安装必要的库：
-
 ```bash
 pip install langchain langgraph google-cloud-aiplatform langchain-google-genai google-adk deprecated pydantic
 ```
+
+首先，确保您已安装必要的库：
 
 You will also need to set up your environment with your API key for the language model you choose (e.g., OpenAI, Google Gemini, Anthropic).
 

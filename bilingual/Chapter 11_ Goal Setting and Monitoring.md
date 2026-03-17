@@ -27,28 +27,18 @@ The Goal Setting and Monitoring pattern is essential for building agents that ca
 
 目标设定与监控模式对于构建能够在复杂的现实场景中自主可靠运行的智能体至关重要。以下是一些实际应用：
 
-* **Customer Support Automation:** An agent's goal might be to "resolve customer's billing inquiry." It monitors the conversation, checks database entries, and uses tools to adjust billing. Success is monitored by confirming the billing change and receiving positive customer feedback. If the issue isn't resolved, it escalates.  
-
-* **客户支持自动化**：智能体的目标可能是"解决客户的账单查询"。它监控对话，检查数据库条目，并使用工具调整账单。通过确认账单更改并收到客户的积极反馈来监控成功。如果问题未解决，它会升级处理。
-
-* **Personalized Learning Systems:** A learning agent might have the goal to "improve students' understanding of algebra." It monitors the student's progress on exercises, adapts teaching materials, and tracks performance metrics like accuracy and completion time, adjusting its approach if the student struggles.  
-
-* **个性化学习系统**：学习智能体有"提高学生对代数的理解"的目标。它监控学生在练习中的进度，调整教学材料，并跟踪准确性和完成时间等性能指标，如果学生遇到困难则调整其方法。
-
-* **Project Management Assistants:** An agent could be tasked with "ensuring project milestone X is completed by Y date." It monitors task statuses, team communications, and resource availability, flagging delays and suggesting corrective actions if the goal is at risk.  
-
-* **项目管理助手**：可以为智能体分配"确保项目里程碑 X 在 Y 日期前完成"的任务。它监控任务状态、团队沟通和资源可用性，如果目标面临风险则标记延迟并建议纠正措施。
-
-* **Automated Trading Bots:** A trading agent's goal might be to "maximize portfolio gains while staying within risk tolerance." It continuously monitors market data, its current portfolio value, and risk indicators, executing trades when conditions align with its goals and adjusting strategy if risk thresholds are breached.  
-
-* **自动交易机器人**：交易智能体的目标可能是"在保持风险承受范围内最大化投资组合收益"。它持续监控市场数据、当前投资组合价值和风险指标，在条件符合其目标时执行交易，并在突破风险阈值时调整策略。
-
-* **Robotics and Autonomous Vehicles:** An autonomous vehicle's primary goal is "safely transport passengers from A to B." It constantly monitors its environment (other vehicles, pedestrians, traffic signals), its own state (speed, fuel), and its progress along the planned route, adapting its driving behavior to achieve the goal safely and efficiently.  
-
-* **机器人和自动驾驶车辆**：自动驾驶车辆的主要目标是"安全地将乘客从 A 点运送到 B 点"。它不断监控其环境（其他车辆、行人、交通信号）、自身状态（速度、燃料）以及沿规划路线的进度，调整其驾驶行为以安全高效地实现目标。
-
+* **Customer Support Automation:** An agent's goal might be to "resolve customer's billing inquiry." It monitors the conversation, checks database entries, and uses tools to adjust billing. Success is monitored by confirming the billing change and receiving positive customer feedback. If the issue isn't resolved, it escalates.
+* **Personalized Learning Systems:** A learning agent might have the goal to "improve students' understanding of algebra." It monitors the student's progress on exercises, adapts teaching materials, and tracks performance metrics like accuracy and completion time, adjusting its approach if the student struggles.
+* **Project Management Assistants:** An agent could be tasked with "ensuring project milestone X is completed by Y date." It monitors task statuses, team communications, and resource availability, flagging delays and suggesting corrective actions if the goal is at risk.
+* **Automated Trading Bots:** A trading agent's goal might be to "maximize portfolio gains while staying within risk tolerance." It continuously monitors market data, its current portfolio value, and risk indicators, executing trades when conditions align with its goals and adjusting strategy if risk thresholds are breached.
+* **Robotics and Autonomous Vehicles:** An autonomous vehicle's primary goal is "safely transport passengers from A to B." It constantly monitors its environment (other vehicles, pedestrians, traffic signals), its own state (speed, fuel), and its progress along the planned route, adapting its driving behavior to achieve the goal safely and efficiently.
 * **Content Moderation:** An agent's goal could be to "identify and remove harmful content from platform X." It monitors incoming content, applies classification models, and tracks metrics like false positives/negatives, adjusting its filtering criteria or escalating ambiguous cases to human reviewers.
 
+* **客户支持自动化**：智能体的目标可能是"解决客户的账单查询"。它监控对话，检查数据库条目，并使用工具调整账单。通过确认账单更改并收到客户的积极反馈来监控成功。如果问题未解决，它会升级处理。
+* **个性化学习系统**：学习智能体有"提高学生对代数的理解"的目标。它监控学生在练习中的进度，调整教学材料，并跟踪准确性和完成时间等性能指标，如果学生遇到困难则调整其方法。
+* **项目管理助手**：可以为智能体分配"确保项目里程碑 X 在 Y 日期前完成"的任务。它监控任务状态、团队沟通和资源可用性，如果目标面临风险则标记延迟并建议纠正措施。
+* **自动交易机器人**：交易智能体的目标可能是"在保持风险承受范围内最大化投资组合收益"。它持续监控市场数据、当前投资组合价值和风险指标，在条件符合其目标时执行交易，并在突破风险阈值时调整策略。
+* **机器人和自动驾驶车辆**：自动驾驶车辆的主要目标是"安全地将乘客从 A 点运送到 B 点"。它不断监控其环境（其他车辆、行人、交通信号）、自身状态（速度、燃料）以及沿规划路线的进度，调整其驾驶行为以安全高效地实现目标。
 * **内容审核**：智能体的目标可能是"识别并从平台 X 中删除有害内容"。它监控传入的内容，应用分类模型，并跟踪误报/漏报等指标，调整其过滤标准或将模糊案例升级给人工审查员。
 
 This pattern is fundamental for agents that need to operate reliably, achieve specific outcomes, and adapt to dynamic conditions, providing the necessary framework for intelligent self-management.
@@ -66,13 +56,13 @@ It employs a "goal-setting and monitoring" pattern where it doesn't just generat
 
 它采用"目标设定与监控"模式，不仅仅生成一次代码，而是进入创建、自我评估和改进的迭代循环。智能体的成功通过其自己的 AI 驱动的判断来衡量，判断生成的代码是否成功满足初始目标。最终输出是一个经过打磨、注释完善且可以立即使用的 Python 文件，代表了这个完善过程的成果。
 
- **Dependencies**: 
+**Dependencies**:
+
 **依赖项**：
 
 ```bash
 pip install langchain_openai openai python-dotenv
 # .env file needs to contain OPENAI_API_KEY
-# .env 文件中需要有 OPENAI_API_KEY
 ```
 
 You can best understand this script by imagining it as an autonomous AI programmer assigned to a project (see Fig. 1). The process begins when you hand the AI a detailed project brief, which is the specific coding problem it needs to solve.
@@ -283,35 +273,34 @@ If the verdict is "False," the AI doesn't give up. It enters a thoughtful revisi
 
 Ultimately, LLMs do not produce flawless code by magic; you still need to run and test the produced code. Furthermore, the "monitoring" in the simple example is basic and creates a potential risk of the process running forever. 
 
-最终，LLM 不会魔法般地产生完美的代码；你仍然需要运行和测试生成的代码。此外，简单示例中的"监控"是基础的，并造成了进程可能永远运行的潜在风险。
+```text
+Act as an expert code reviewer with a deep commitment to producing clear, correct, and simple code. Your core mission is to eliminate code "hallucinations" by ensuring every recommendation is grounded in reality and best practices. When I provide you with a code snippet, I expect you to:
 
+-- Identify and correct errors: Point out any logical flaws, mistakes, or potential runtime errors.
+-- Simplify and refactor: Suggest changes that make the code more readable, efficient, and maintainable, without sacrificing correctness.
+-- Provide clear explanations: For each suggested change, explain why it's an improvement, referencing principles of clean code, performance, or security.
+-- Provide corrected code: Show "before" and "after" for suggested changes so improvements are clear.
+
+Your feedback should be direct, constructive, and always aimed at improving code quality.
 ```
-Act as an expert code reviewer with a deep commitment to producing clean, correct, and simple code. Your core mission is to eliminate code "hallucinations" by ensuring every suggestion is grounded in reality and best practices. When I provide you with a code snippet, I want you to:
--- Identify and Correct Errors: Point out any logical flaws, bugs, or potential runtime errors.
--- Simplify and Refactor: Suggest changes that make the code more readable, efficient, and maintainable without sacrificing correctness.
--- Provide Clear Explanations: For every suggested change, explain why it is an improvement, referencing principles of clean code, performance, or security.
--- Offer Corrected Code: Show the "before" and "after" of your suggested changes so the improvement is clear.
-Your feedback should be direct, constructive, and always aimed at improving the quality of the code.
-```
+
+最终，LLMs 不会魔法般地产生完美的代码；你仍然需要运行和测试生成的代码。此外，简单示例中的"监控"是基础的，并造成了进程可能永远运行的潜在风险。
 
 A more robust approach involves separating these concerns by giving specific roles to a crew of agents. For instance, I have built a personal crew of AI agents using Gemini where each has a specific role:
 
 更健壮的方法涉及通过为智能体团队分配特定角色来分离这些关注点。例如，我使用 Gemini 构建了一个个人 AI 智能体团队，其中每个智能体都有特定的角色：
 
-* The Peer Programmer: Helps write and brainstorm code.  
-* **同伴程序员**：帮助编写和头脑风暴代码。
-
-* The Code Reviewer: Catches errors and suggests improvements.  
-* **代码审查员**：捕获错误并建议改进。
-
-* The Documenter: Generates clear and concise documentation.  
-* **文档编写员**：生成清晰简洁的文档。
-
-* The Test Writer: Creates comprehensive unit tests.  
-* **测试编写员**：创建全面的单元测试。
-
+* The Peer Programmer: Helps write and brainstorm code.
+* The Code Reviewer: Catches errors and suggests improvements.
+* The Documenter: Generates clear and concise documentation.
+* The Test Writer: Creates comprehensive unit tests.
 * The Prompt Refiner: Optimizes interactions with the AI.
-* **提示词优化器**：优化与 AI 的交互。
+
+* 同伴程序员：帮助编写和头脑风暴代码。
+* 代码审查员：捕获错误并建议改进。
+* 文档编写员：生成清晰简洁的文档。
+* 测试编写员：创建全面的单元测试。
+* 提示词优化器：优化与 AI 的交互。
 
 In this multi-agent system, the Code Reviewer, acting as a separate entity from the programmer agent, has a prompt similar to the judge in the example, which significantly improves objective evaluation. This structure naturally leads to better practices, as the Test Writer agent can fulfill the need to write unit tests for the code produced by the Peer Programmer.
 
@@ -350,22 +339,19 @@ Fig.2: Goal design patterns
 Key takeaways include:
 关键要点包括：
 
-* Goal Setting and Monitoring equips agents with purpose and mechanisms to track progress.  
-* 目标设定与监控为智能体配备了目的感和跟踪进度的机制。
-
-* Goals should be specific, measurable, achievable, relevant, and time-bound (SMART).  
-* 目标应该是具体的、可衡量的、可实现的、相关的和有时限的（SMART）。
-
-* Clearly defining metrics and success criteria is essential for effective monitoring.  
-* 清楚地定义指标和成功标准对于有效监控至关重要。
-
-* Monitoring involves observing agent actions, environmental states, and tool outputs.  
-* 监控涉及观察智能体的行动、环境状态和工具输出。
-
-* Feedback loops from monitoring allow agents to adapt, revise plans, or escalate issues.  
-* 来自监控的反馈循环允许智能体适应、修订计划或升级问题。
-
+* Goal Setting and Monitoring equips agents with purpose and mechanisms to track progress.
+* Goals should be specific, measurable, achievable, relevant, and time-bound (SMART).
+* Clearly defining metrics and success criteria is essential for effective monitoring.
+* Monitoring involves observing agent actions, environmental states, and tool outputs.
+* Feedback loops from monitoring allow agents to adapt, revise plans, or escalate issues.
 * In Google's ADK, goals are often conveyed through agent instructions, with monitoring accomplished through state management and tool interactions.
+
+
+* 目标设定与监控为智能体配备了目的感和跟踪进度的机制。
+* 目标应该是具体的、可衡量的、可实现的、相关的和有时限的（SMART）。
+* 清楚地定义指标和成功标准对于有效监控至关重要。
+* 监控涉及观察智能体的行动、环境状态和工具输出。
+* 来自监控的反馈循环允许智能体适应、修订计划或升级问题。
 * 在 Google 的 ADK 中，目标通常通过智能体指令传达，监控通过状态管理和工具交互完成。
 
 ## Conclusion
@@ -378,7 +364,8 @@ This chapter focused on the crucial paradigm of Goal Setting and Monitoring. I h
 ## References
 ## 参考文献
 
-1. SMART Goals Framework. [https://en.wikipedia.org/wiki/SMART_criteria](https://en.wikipedia.org/wiki/SMART_criteria) 
+ 1. SMART Goals Framework. [https://en.wikipedia.org/wiki/SMART_criteria](https://en.wikipedia.org/wiki/SMART_criteria)
+
 
 [image1]: ../images/chapter-11/image1.png
 [image2]: ../images/chapter-11/image2.png

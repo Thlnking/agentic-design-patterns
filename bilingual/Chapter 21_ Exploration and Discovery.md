@@ -32,7 +32,7 @@ Examples:
 * **创意内容生成**：智能体探索风格、主题或数据的组合，以生成艺术作品、音乐作品或文学作品。
 * **个性化教育和培训**：AI 导师根据学生的进度、学习风格和需要改进的领域来优先处理学习路径和内容交付。
 
-Google Co-Scientist
+## Google Co-Scientist
 
 ## Google 协同科学家（Google Co-Scientist）
 
@@ -72,7 +72,7 @@ The system's operational foundation relies on Gemini, which provides language un
 
 ![][image1]Fig. 1: (Courtesy of the Authors) AI Co-Scientist: Ideation to Validation
 
-![][image1]图 1：（由作者提供）AI 协同科学家：从构思到验证
+图 1：（由作者提供）AI 协同科学家：从构思到验证
 
 The system follows an iterative "generate, debate, and evolve" approach mirroring the scientific method. Following the input of a scientific problem from a human scientist, the system engages in a self-improving cycle of hypothesis generation, evaluation, and refinement. Hypotheses undergo systematic assessment, including internal evaluations among agents and a tournament-based ranking mechanism.
 
@@ -349,11 +349,7 @@ In summary, "Agent Laboratory" represents a sophisticated framework for autonomo
 
 **可视化摘要**
 
-**![][image2]**
-
-**![][image2]**
-
-Fig.2: Exploration and Discovery design pattern
+![][image2]Fig.2: Exploration and Discovery design pattern
 
 图 2：探索和发现设计模式
 
@@ -387,14 +383,9 @@ Frameworks like Agent Laboratory further structure this by creating an agentic h
 
 ## 参考文献
 
-1. Exploration-Exploitation Dilemma**:** A fundamental problem in reinforcement learning and decision-making under uncertainty. [https://en.wikipedia.org/wiki/Exploration%E2%80%93exploitation\_dilemma](https://en.wikipedia.org/wiki/Exploration%E2%80%93exploitation_dilemma)   
+ 1. **Exploration-Exploitation Dilemma:** A fundamental problem in reinforcement learning and decision-making under uncertainty. [https://en.wikipedia.org/wiki/Exploration%E2%80%93exploitation\_dilemma](https://en.wikipedia.org/wiki/Exploration%E2%80%93exploitation_dilemma)   
 2. Google Co-Scientist: [https://research.google/blog/accelerating-scientific-breakthroughs-with-an-ai-co-scientist/](https://research.google/blog/accelerating-scientific-breakthroughs-with-an-ai-co-scientist/)   
 3. Agent Laboratory: Using LLM Agents as Research Assistants [https://github.com/SamuelSchmidgall/AgentLaboratory](https://github.com/SamuelSchmidgall/AgentLaboratory)   
-4. AgentRxiv: Towards Collaborative Autonomous Research: [https://agentrxiv.github.io/](https://agentrxiv.github.io/) 
-
-1. Exploration-Exploitation Dilemma**：** 强化学习和不确定性下决策的一个基本问题。[https://en.wikipedia.org/wiki/Exploration%E2%80%93exploitation\_dilemma](https://en.wikipedia.org/wiki/Exploration%E2%80%93exploitation_dilemma)
-2. Google Co-Scientist: [https://research.google/blog/accelerating-scientific-breakthroughs-with-an-ai-co-scientist/](https://research.google/blog/accelerating-scientific-breakthroughs-with-an-ai-co-scientist/)
-3. Agent Laboratory: Using LLM Agents as Research Assistants [https://github.com/SamuelSchmidgall/AgentLaboratory](https://github.com/SamuelSchmidgall/AgentLaboratory)
 4. AgentRxiv: Towards Collaborative Autonomous Research: [https://agentrxiv.github.io/](https://agentrxiv.github.io/)
 
 [image1]: ../images/chapter-21/image1.png

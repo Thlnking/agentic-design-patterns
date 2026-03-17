@@ -200,11 +200,13 @@ A key feature of this architecture is its capacity for deep personalization, ach
 
 **可视化摘要**：
 
-![](../images/chapter-13/image1.png)
+**![][image1]**
 
 Fig.1: Human in the loop design pattern
 
 图 1：人机协同设计模式
+
+[image1]: ../images/chapter-13/image1.png
 
 ## Key Takeaways
 
@@ -254,6 +256,4 @@ This chapter explored the vital Human-in-the-Loop (HITL) pattern, emphasizing it
 
 ## 参考文献
 
-1. A Survey of Human-in-the-loop for Machine Learning, Xingjiao Wu, Luwei Xiao, Yixuan Sun, Junhang Zhang, Tianlong Ma, Liang He, [https://arxiv.org/abs/2108.00941](https://arxiv.org/abs/2108.00941) 
-
-[image1]: ../images/chapter-13/image1.png
+1. A Survey of Human-in-the-loop for Machine Learning, Xingjiao Wu, Luwei Xiao, Yixuan Sun, Junhang Zhang, Tianlong Ma, Liang He, [https://arxiv.org/abs/2108.00941](https://arxiv.org/abs/2108.00941)

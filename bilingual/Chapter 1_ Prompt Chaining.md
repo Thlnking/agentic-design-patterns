@@ -55,11 +55,7 @@ This decomposition allows for more granular control over the process. Each step 
 
 **The Role of Structured Output:** The reliability of a prompt chain is highly dependent on the integrity of the data passed between steps. If the output of one prompt is ambiguous or poorly formatted, the subsequent prompt may fail due to faulty input. To mitigate this, specifying a structured output format, such as JSON or XML, is crucial.
 
-**结构化输出的作用：** 提示词链的可靠性高度依赖于步骤之间传递的数据完整性。如果一个提示词的输出不明确或格式不佳，后续提示词可能由于错误的输入而失败。为了缓解这一问题，指定结构化输出格式（如 JSON 或 XML）至关重要。
-
 For example, the output from the trend identification step could be formatted as a JSON object:
-
-例如，趋势识别步骤的输出可以格式化为 JSON 对象：
 
 ```json
 {
@@ -77,6 +73,10 @@ For example, the output from the trend identification step could be formatted as
 ```
 
 This structured format ensures that the data is machine-readable and can be precisely parsed and inserted into the next prompt without ambiguity. This practice minimizes errors that can arise from interpreting natural language and is a key component in building robust, multi-step LLM-based systems. 
+
+**结构化输出的作用：** 提示词链的可靠性高度依赖于步骤之间传递的数据完整性。如果一个提示词的输出不明确或格式不佳，后续提示词可能由于错误的输入而失败。为了缓解这一问题，指定结构化输出格式（如 JSON 或 XML）至关重要。
+
+例如，趋势识别步骤的输出可以格式化为 JSON 对象：
 
 这种结构化格式确保数据是机器可读的，可以精确解析并无歧义地插入到下一个提示词中。该实践最小化了自然语言解释可能导致的错误，是构建健壮的多步骤 LLM 系统的关键组件。
 
@@ -248,15 +248,13 @@ The following code implements a two-step prompt chain that functions as a data p
 
 To replicate this procedure, the required libraries must first be installed. This can be accomplished using the following command: 
 
-要复制此过程，必须首先安装所需的库。这可以使用以下命令完成：
-
 ```bash
 pip install langchain langchain-community langchain-openai langgraph
 ```
 
 Note that langchain-openai can be substituted with the appropriate package for a different model provider. Subsequently, the execution environment must be configured with the necessary API credentials for the selected language model provider, such as OpenAI, Google Gemini, or Anthropic.
 
-请注意，langchain-openai 可以替换为不同模型提供商的适当包。随后，必须为选定的语言模型提供商（如 OpenAI、Google Gemini 或 Anthropic）配置执行环境所需的 API 凭据。
+This Python code demonstrates how to use the LangChain library to process text. It utilizes two separate prompts: one to extract technical specifications from an input string and another to format these specifications into a JSON object. The ChatOpenAI model is employed for language model interactions, and the StrOutputParser ensures the output is in a usable string format. The LangChain Expression Language (LCEL) is used to elegantly chain these prompts and the language model together. The first chain, extraction\_chain, extracts the specifications. The full\_chain then takes the output of the extraction and uses it as input for the transformation prompt. A sample input text describing a laptop is provided. The full\_chain is invoked with this text, processing it through both steps. The final result, a JSON string containing the extracted and formatted specifications, is then printed.
 
 ```python
 import os
@@ -305,7 +303,7 @@ print("\n--- Final JSON Output ---")
 print(final_result)
 ```
 
-This Python code demonstrates how to use the LangChain library to process text. It utilizes two separate prompts: one to extract technical specifications from an input string and another to format these specifications into a JSON object. The ChatOpenAI model is employed for language model interactions, and the StrOutputParser ensures the output is in a usable string format. The LangChain Expression Language (LCEL) is used to elegantly chain these prompts and the language model together. The first chain, extraction\_chain, extracts the specifications. The full\_chain then takes the output of the extraction and uses it as input for the transformation prompt. A sample input text describing a laptop is provided. The full\_chain is invoked with this text, processing it through both steps. The final result, a JSON string containing the extracted and formatted specifications, is then printed.
+请注意，langchain-openai 可以替换为不同模型提供商的适当包。随后，必须为选定的语言模型提供商（如 OpenAI、Google Gemini 或 Anthropic）配置执行环境所需的 API 凭据。
 
 这段 Python 代码演示了如何使用 LangChain 库处理文本。它利用两个独立的提示词：一个从输入字符串中提取技术规格，另一个将这些规格格式化为 JSON 对象。ChatOpenAI 模型用于语言模型交互，StrOutputParser 确保输出为可用的字符串格式。LangChain 表达式语言（LCEL）用于优雅地将这些提示词和语言模型链接在一起。第一个链 extraction_chain 提取规格。然后 full_chain 获取提取的输出，并将其用作转换提示词的输入。提供了描述笔记本电脑的示例输入文本。使用此文本调用 full_chain，通过两个步骤处理它。最后打印最终结果，即包含提取和格式化规格的 JSON 字符串。
 
@@ -315,11 +313,11 @@ This Python code demonstrates how to use the LangChain library to process text. 
 
 Context Engineering (see Fig.1) is the systematic discipline of designing, constructing, and delivering a complete informational environment to an AI model prior to token generation. This methodology asserts that the quality of a model's output is less dependent on the model's architecture itself and more on the richness of the context provided. 
 
-上下文工程（见图 1）是在 token 生成之前系统地设计、构建和向 AI 模型提供完整信息环境的学科。这种方法论断言，模型输出的质量较少依赖于模型架构本身，而更多依赖于所提供上下文的丰富性。
-
 ![][image1]
 
 Fig.1: Context Engineering is the discipline of building a rich, comprehensive informational environment for an AI, as the quality of this context is a primary factor in enabling advanced Agentic performance.
+
+上下文工程（见图 1）是在 token 生成之前系统地设计、构建和向 AI 模型提供完整信息环境的学科。这种方法论断言，模型输出的质量较少依赖于模型架构本身，而更多依赖于所提供上下文的丰富性。
 
 图 1：上下文工程是为 AI 构建丰富、全面的信息环境的学科，因为此上下文的质量是实现高级智能体性能的主要因素。
 

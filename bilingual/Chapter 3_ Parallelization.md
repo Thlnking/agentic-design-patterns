@@ -428,7 +428,7 @@ Finally, a SequentialAgent named ResearchAndSynthesisPipeline is created to orch
 
 **可视化摘要**
 
-**![][image2]**
+![][image2]
 
 Fig.2: Parallelization design pattern
 

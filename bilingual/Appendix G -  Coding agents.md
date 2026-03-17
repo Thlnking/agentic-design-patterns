@@ -78,14 +78,14 @@ To effectively leverage a frontier Large Language Model, this framework assigns 
 
 * **The Scaffolder Agent: The Implementer**
   * **Purpose:** Writes new code, implements features, or creates boilerplate based on detailed specifications.
-    * **Invocation Prompt:** "You are a senior software engineer. Based on the requirements in 01_BRIEF.md and the existing patterns in 02_CODE/, implement the feature..."
+  * **Invocation Prompt:** "You are a senior software engineer. Based on the requirements in 01_BRIEF.md and the existing patterns in 02_CODE/, implement the feature..."
 
 * **脚手架智能体：代码实施专家**
   * **核心职能：** 依据详细规范编写新代码、实现功能特性或创建基础模板。
-    * **调用提示模板：**
-      ```markdown
-      你是一名资深软件工程师。请基于 01_BRIEF.md 中的需求说明与 02_CODE/ 目录下的现有模式，实现指定功能...
-      ```
+  * **调用提示模板：**
+    ```markdown
+    你是一名资深软件工程师。请基于 01_BRIEF.md 中的需求说明与 02_CODE/ 目录下的现有模式，实现指定功能...
+    ```
 
 * **The Test Engineer Agent: The Quality Guard**
   * **Purpose:** Writes comprehensive unit tests, integration tests, and end-to-end tests for new or existing code.

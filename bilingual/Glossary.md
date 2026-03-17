@@ -1,6 +1,10 @@
 # Glossary
 
+# 术语表
+
 ## Fundamental Concepts
+
+## 基础概念
 
 **Prompt:** A prompt is the input, typically in the form of a question, instruction, or statement, that a user provides to an AI model to elicit a response. The quality and structure of the prompt heavily influence the model's output, making prompt engineering a key skill for effectively using AI.
 
@@ -14,9 +18,9 @@
 
 **上下文学习（In-Context Learning）：** 上下文学习是 AI 通过提示中直接嵌入的示例掌握新任务的能力，无需额外训练过程。此强大特性使单一通用模型可即时适配海量特定任务场景。
 
-**Zero-Shot, One-Shot, & Few-Shot Prompting:** These are prompting techniques where a model is given zero, one, or a few examples of a task to guide its response. Providing more examples generally helps the model better understand the user's intent and improves its accuracy for the specific task.
+**Zero-Shot, One-Shot, &amp; Few-Shot Prompting:** These are prompting techniques where a model is given zero, one, or a few examples of a task to guide its response. Providing more examples generally helps the model better understand the user's intent and improves its accuracy for the specific task.
 
-**零样本、单样本与少样本提示（Zero-Shot, One-Shot, & Few-Shot Prompting）：** 此类提示技术通过提供零个、单个或少量任务示例引导模型生成响应。增加示例数量通常能提升模型对用户意图的把握精度，增强特定任务表现。
+**零样本、单样本与少样本提示（Zero-Shot, One-Shot, &amp; Few-Shot Prompting）：** 此类提示技术通过提供零个、单个或少量任务示例引导模型生成响应。增加示例数量通常能提升模型对用户意图的把握精度，增强特定任务表现。
 
 **Multimodality:** Multimodality is an AI's ability to understand and process information across multiple data types like text, images, and audio. This allows for more versatile and human-like interactions, such as describing an image or answering a spoken question.
 
@@ -27,6 +31,8 @@
 **基础化（Grounding）：** 基础化是将模型输出关联至可验证真实信息源的过程，旨在确保事实准确性并降低幻觉发生。常通过 RAG 等技术实现，提升 AI 系统可信度。
 
 ## Core AI Model Architectures
+
+## 核心 AI 模型架构
 
 **Transformers:** The Transformer is the foundational neural network architecture for most modern LLMs. Its key innovation is the self-attention mechanism, which efficiently processes long sequences of text and captures complex relationships between words.
 
@@ -50,6 +56,8 @@
 
 ## The LLM Development Lifecycle
 
+## LLM 开发生命周期
+
 The development of a powerful language model follows a distinct sequence. It begins with Pre-training, where a massive base model is built by training it on a vast dataset of general internet text to learn language, reasoning, and world knowledge. Next is Fine-tuning, a specialization phase where the general model is further trained on smaller, task-specific datasets to adapt its capabilities for a particular purpose. The final stage is Alignment, where the specialized model's behavior is adjusted to ensure its outputs are helpful, harmless, and aligned with human values.
 
 强大语言模型的开发遵循明确演进路径。初始阶段为预训练（Pre-training）——通过海量通用互联网文本数据集训练构建大规模基础模型，掌握语言规律、推理能力与世界知识。随后进入微调（Fine-tuning）阶段，通用模型在较小规模任务特定数据集上进一步训练，实现面向特定场景的能力适配。最终阶段为对齐（Alignment），调整专业化模型行为模式，确保输出兼具实用性、安全性且符合人类价值导向。
@@ -62,11 +70,13 @@ The development of a powerful language model follows a distinct sequence. It beg
 
 **微调技术（Fine-tuning Techniques）：** 微调是使用专业化小规模数据集将通用预训练模型适配至特定任务的过程。最常用方法为监督微调（Supervised Fine-Tuning, SFT），模型在标注准确的输入输出配对示例上进行训练。指令微调（Instruction Tuning）作为流行变体，重点提升模型遵循用户指令的精准度。为提升过程效率，普遍采用参数高效微调（Parameter-Efficient Fine-Tuning, PEFT）方法，其中代表性技术包括 LoRA（低秩适应）——仅更新少量参数，及其内存优化版本 QLoRA。检索增强生成（Retrieval-Augmented Generation, RAG）作为补充技术，通过在微调或推理阶段连接外部知识源增强模型能力。
 
-**Alignment & Safety Techniques:** Alignment is the process of ensuring an AI model's behavior aligns with human values and expectations, making it helpful and harmless. The most prominent technique is Reinforcement Learning from Human Feedback (RLHF), where a "reward model" trained on human preferences guides the AI's learning process, often using an algorithm like Proximal Policy Optimization (PPO) for stability. Simpler alternatives have emerged, such as Direct Preference Optimization (DPO), which bypasses the need for a separate reward model, and Kahneman-Tversky Optimization (KTO), which simplifies data collection further. To ensure safe deployment, Guardrails are implemented as a final safety layer to filter outputs and block harmful actions in real-time.
+**Alignment &amp; Safety Techniques:** Alignment is the process of ensuring an AI model's behavior aligns with human values and expectations, making it helpful and harmless. The most prominent technique is Reinforcement Learning from Human Feedback (RLHF), where a "reward model" trained on human preferences guides the AI's learning process, often using an algorithm like Proximal Policy Optimization (PPO) for stability. Simpler alternatives have emerged, such as Direct Preference Optimization (DPO), which bypasses the need for a separate reward model, and Kahneman-Tversky Optimization (KTO), which simplifies data collection further. To ensure safe deployment, Guardrails are implemented as a final safety layer to filter outputs and block harmful actions in real-time.
 
-**对齐与安全技术（Alignment & Safety Techniques）：** 对齐是确保 AI 模型行为契合人类价值观与期望的过程，使其输出兼具帮助性与安全性。最突出的技术是基于人类反馈的强化学习（Reinforcement Learning from Human Feedback, RLHF），通过基于人类偏好训练的"奖励模型"指导 AI 学习过程，常辅以近端策略优化（Proximal Policy Optimization, PPO）等算法保障训练稳定性。近年涌现的简化替代方案包括直接偏好优化（Direct Preference Optimization, DPO）——规避独立奖励模型需求，以及卡尼曼-特沃斯基优化（Kahneman-Tversky Optimization, KTO）——进一步简化数据收集流程。为确保部署安全，护栏（Guardrails）作为终态安全层被广泛应用，实时过滤输出并阻断有害行为。
+**对齐与安全技术（Alignment &amp; Safety Techniques）：** 对齐是确保 AI 模型行为契合人类价值观与期望的过程，使其输出兼具帮助性与安全性。最突出的技术是基于人类反馈的强化学习（Reinforcement Learning from Human Feedback, RLHF），通过基于人类偏好训练的"奖励模型"指导 AI 学习过程，常辅以近端策略优化（Proximal Policy Optimization, PPO）等算法保障训练稳定性。近年涌现的简化替代方案包括直接偏好优化（Direct Preference Optimization, DPO）——规避独立奖励模型需求，以及卡尼曼-特沃斯基优化（Kahneman-Tversky Optimization, KTO）——进一步简化数据收集流程。为确保部署安全，护栏（Guardrails）作为终态安全层被广泛应用，实时过滤输出并阻断有害行为。
 
 ## Enhancing AI Agent Capabilities
+
+## 增强 AI 智能体
 
 AI agents are systems that can perceive their environment and take autonomous actions to achieve goals. Their effectiveness is enhanced by robust reasoning frameworks.
 

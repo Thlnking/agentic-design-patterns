@@ -4,8 +4,7 @@ lang: bilingual
 title: Agentic Design Patterns
 ---
 
-# Agentic Design Patterns 
-
+# Agentic Design Patterns
 # 智能体设计模式
 
 *A Hands-On Guide to Building Intelligent Systems[^1], [Antonio Gulli](https://www.linkedin.com/in/searchguy/)*  
@@ -16,7 +15,7 @@ Table of Contents - total 424 pages   = 1+2+1+1+4+9+103+61+34+114+74+5+4 11
 
 **目录总览**（424 页）
 
-[Dedication](https://docs.google.com/document/d/1cQ61mNpiWn6eSORmWjEjF44vN2Lpba8kyKmNwIC60ig/edit?usp=sharing), 1 page   
+[Dedication](https://docs.google.com/document/d/1cQ61mNpiWn6eSORmWjEjF44vN2Lpba8kyKmNwIC60ig/edit?usp=sharing), 1 page
 
 致谢（1 页）
 
@@ -40,7 +39,7 @@ Table of Contents - total 424 pages   = 1+2+1+1+4+9+103+61+34+114+74+5+4 11
 
 是什么让 AI 系统成为"智能体"？（9 页）
 
-Part One, (Total: 103 pages)
+## Part One (Total: 103 pages)
 
 ## 第一部分：核心模式（103 页）
 
@@ -72,7 +71,7 @@ Part One, (Total: 103 pages)
 
 7. [多智能体协作](Chapter%207_%20Multi-Agent%20Collaboration.md)（17 页）
 
-Part Two (Total: 61 pages)
+## Part Two (Total: 61 pages)
 
 ## 第二部分：认知机制（61 页）
 
@@ -92,11 +91,11 @@ Part Two (Total: 61 pages)
 
 4. [目标设定与监控](Chapter%2011_%20Goal%20Setting%20and%20Monitoring.md)（12 页）
 
-Part Three (Total: 34 pages)
+## Part Three (Total: 34 pages)
 
 ## 第三部分：容错与扩展（34 页）
 
-12. [Chapter 12: Exception Handling and Recovery](https://docs.google.com/document/d/1C07AuMur6-infwE0viCp4QtAy_wWI-uceFm6MaYHQGk/edit?tab=t.0#heading=h.m2kk4kdjt6ir) ([code](https://drive.google.com/drive/u/0/folders/1Y3U3IrYCiJ3E45Z8okR5eCg7OPnWQtPV)), 8 pages [final,  last read done, code ok]    
+12. [Chapter 12: Exception Handling and Recovery](https://docs.google.com/document/d/1C07AuMur6-infwE0viCp4QtAy_wWI-uceFm6MaYHQGk/edit?tab=t.0#heading=h.m2kk4kdjt6ir) ([code](https://drive.google.com/drive/u/0/folders/1Y3U3IrYCiJ3E45Z8okR5eCg7OPnWQtPV)), 8 pages [final,  last read done, code ok]
 
 1. [异常处理与恢复](Chapter%2012_%20Exception%20Handling%20and%20Recovery.md)（8 页）
 
@@ -108,11 +107,11 @@ Part Three (Total: 34 pages)
 
 3. [知识检索 (RAG)](Chapter%2014_%20Knowledge%20Retrieval%20(RAG).md)（17 页）
 
-Part Four (Total: 114 pages)
+## Part Four (Total: 114 pages)
 
 ## 第四部分：高级架构（114 页）
 
-15. [Chapter 15: Inter-Agent Communication (A2A](https://docs.google.com/document/d/1H6HmUYcy5kugt5gt7Kh2Zzb8C62d5pu36RsgMNDCX24/edit?usp=sharing)) ([code](https://drive.google.com/drive/u/0/folders/1Y3U3IrYCiJ3E45Z8okR5eCg7OPnWQtPV)), 15 pages [final, last read done, code ok]  
+15. [Chapter 15: Inter-Agent Communication (A2A)](https://docs.google.com/document/d/1H6HmUYcy5kugt5gt7Kh2Zzb8C62d5pu36RsgMNDCX24/edit?usp=sharing) ([code](https://drive.google.com/drive/u/0/folders/1Y3U3IrYCiJ3E45Z8okR5eCg7OPnWQtPV)), 15 pages [final, last read done, code ok]  
 
 1. [智能体间通信 (A2A)](Chapter%2015_%20Inter-Agent%20Communication%20(A2A).md)（15 页）
 
@@ -140,7 +139,7 @@ Part Four (Total: 114 pages)
 
 7. [探索与发现](Chapter%2021_%20Exploration%20and%20Discovery.md)（13 页）
 
-Appendix (Total: 74 pages)
+## Appendix (Total: 74 pages)
 
 ## 附录（74 页）
 
@@ -172,7 +171,7 @@ Appendix (Total: 74 pages)
 
 7. [编程实现智能体](Appendix%20G%20-%20%20Coding%20agents.md)（7 页）
 
-[Conclusion,](https://docs.google.com/document/d/1NGzpg9VldtStb_7jRkXJYBaHFwPwJ7WN6ZcTr7dNSVA/edit?usp=sharing) 5 pages [final, last read done]   
+[Conclusion,](https://docs.google.com/document/d/1NGzpg9VldtStb_7jRkXJYBaHFwPwJ7WN6ZcTr7dNSVA/edit?usp=sharing) 5 pages [final, last read done]
 
 [结论](Conclusion.md)（5 页）
 
@@ -188,16 +187,14 @@ Appendix (Total: 74 pages)
 
 [常见问题解答](Frequently%20Asked%20Questions_%20Agentic%20Design%20Patterns.md)
 
-**Pre Print**: [*https://www.amazon.com/Agentic-Design-Patterns-Hands-Intelligent/dp/3032014018/*](https://www.amazon.com/Agentic-Design-Patterns-Hands-Intelligent/dp/3032014018/)   
+**Pre Print**: [*https://www.amazon.com/Agentic-Design-Patterns-Hands-Intelligent/dp/3032014018/*](https://www.amazon.com/Agentic-Design-Patterns-Hands-Intelligent/dp/3032014018/)
 
 **预印本**：[https://www.amazon.com/Agentic-Design-Patterns-Hands-Intelligent/dp/3032014018/](https://www.amazon.com/Agentic-Design-Patterns-Hands-Intelligent/dp/3032014018/)  
-
-![][image1]  
 
 ![封面图][image1]  
 
 [^1]:  All my royalties will be donated to Save the Children
 
-[^1]: 本书所有版税将捐赠给救助儿童会 (Save the Children)
+  本书所有版税将捐赠给救助儿童会 (Save the Children)
 
 [image1]: ../images/cover.png
