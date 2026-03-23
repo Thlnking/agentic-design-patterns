@@ -2,18 +2,16 @@
 
 # Agentic Design Patterns（中文翻译项目）
 
-## 👨‍💻 关于xindoo
+## 📌 Fork 说明
 
-**xindoo** - 本翻译项目的发起者和主要维护者
+本仓库是基于原始翻译项目进行的 fork 版本，当前维护和部署信息应以本仓库自身配置为准。
 
-- **GitHub**: [xindoo](https://github.com/xindoo)
-- **个人网站**: [zxs.io](https://zxs.io)
-- **博客**：[xindoo](https://blog.csdn.net/xindoo)
-- **个人简介**: 热衷于技术分享和开源贡献的开发者，专注于 AI 技术、系统架构、职业发展。 
+- **当前仓库**: [Thlnking/agentic-design-patterns](https://github.com/Thlnking/agentic-design-patterns)
+- **上游仓库**: [xindoo/agentic-design-patterns](https://github.com/xindoo/agentic-design-patterns)
 
 ## 📚 项目简介
 
-本项目是《Agentic Design Patterns》一书的中文翻译项目。该书系统介绍了 AI Agent 系统的各种设计模式，涵盖从基础到高级的 21 个核心模式，以及多个附录章节。
+本项目是《Agentic Design Patterns》一书的中文翻译项目。该书系统介绍了 AI Agent 系统的各种设计模式，涵盖从基础到高级的 21 个核心模式，以及多个附录章节。站点现已迁移为基于 VitePress 构建的静态站点，并部署到 GitHub Pages。
 
 ## 🎯 关于本书
 
@@ -71,15 +69,18 @@
 ```
 agentic-design-patterns/
 ├── README.md                    # 项目说明文档（本文件）
-├── SUMMARY.md                   # GitBook 目录文件
 ├── CONTRIBUTING.md              # 贡献指南
 ├── translation-guide.md         # 翻译规范指南
 ├── progress.md                  # 翻译进度追踪
 ├── glossary.md                  # 术语对照表
 ├── PROJECT_STRUCTURE.md         # 项目结构说明
-├── _config.yml                  # Jekyll 配置文件
-├── Gemfile                      # Ruby 依赖管理
+├── package.json                 # VitePress 与构建脚本
+├── package-lock.json            # Node 依赖锁文件
 ├── CNAME                        # 自定义域名配置
+├── scripts/
+│   └── prepare-vitepress.mjs    # 生成 VitePress 站点内容
+├── site/
+│   └── .vitepress/              # VitePress 配置与主题组件
 ├── chapters/                    # 翻译后的章节目录
 │   ├── README.md                # 章节说明
 │   ├── Agentic Design Patterns.md
@@ -97,18 +98,38 @@ agentic-design-patterns/
 │   ├── chapter-1/               # 第1章图片
 │   ├── chapter-2/               # 第2章图片
 │   └── ...                      # 其他章节图片
-├── _includes/                   # Jekyll 包含文件
-│   ├── navigation.html          # 导航菜单
-│   └── navigation-en.html       # 英文导航菜单
-└── _layouts/                    # Jekyll 布局文件
-    └── default.html             # 默认布局模板
+└── .github/
+    └── workflows/               # Pages 与 PDF/EPUB 工作流
 ```
 
 ## 🌐 在线访问
 
-本项目已部署到 GitHub Pages，可以在线阅读：
+本项目可部署到 GitHub Pages 或自定义域名进行在线阅读。
 
-**访问地址：** [https://adp.xindoo.xyz/](https://adp.xindoo.xyz/)
+**访问地址：** 部署后请替换为你自己的站点地址
+
+## 🛠️ 本地开发
+
+站点使用 VitePress 构建，内容源仍然是 `chapters/`、`original/` 和 `bilingual/` 三个目录。
+
+```bash
+# 安装依赖
+npm install
+
+# 启动本地开发服务
+npm run docs:dev
+
+# 构建静态站点
+npm run docs:build
+```
+
+说明：
+
+- 不需要直接编辑 `site/` 下生成的内容镜像
+- 请继续编辑 `chapters/`、`original/`、`bilingual/` 中的 Markdown 文件
+- 构建前会自动执行 `scripts/prepare-vitepress.mjs` 同步内容到 VitePress 站点目录
+- 站内搜索已使用 Pagefind 集成，`npm run docs:build` 会在构建后自动生成搜索索引
+- 中文搜索建议优先使用空格分词，或用引号进行精确短语匹配
 
 
 ## 📊 翻译进度
@@ -152,21 +173,21 @@ agentic-design-patterns/
 - [术语对照表](glossary.md) - 统一的技术术语翻译
 - [翻译指南](translation-guide.md) - 详细的翻译规范和注意事项
 - [项目结构说明](PROJECT_STRUCTURE.md) - 项目文件组织说明
-- [GitBook 目录](SUMMARY.md) - 在线书籍的完整目录结构
-- [Jekyll 配置](_config.yml) - GitHub Pages 网站配置
+- [VitePress 配置](site/.vitepress/config.mjs) - 站点导航与主题配置
+- [站点生成脚本](scripts/prepare-vitepress.mjs) - 内容同步与构建预处理
 - [翻译进度追踪](progress.md) - 实时更新翻译状态
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=xindoo/agentic-design-patterns&type=date&legend=top-left)](https://github.com/xindoo/agentic-design-patterns)
+[![Star History Chart](https://api.star-history.com/svg?repos=Thlnking/agentic-design-patterns&type=date&legend=top-left)](https://github.com/Thlnking/agentic-design-patterns)
 
 ## 📄 许可证
 
 本翻译项目遵循原书的许可证条款。翻译内容仅供学习交流使用。
 
 ## 联系我们
-邮箱: ixindoo@gmail.com  
-个人网站: [https://zxs.io/](https://zxs.io/)
+
+邮箱: 2927874032@qq.com
 
 ---
 

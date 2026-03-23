@@ -4,7 +4,7 @@
 
 ## 🎯 项目概览
 
-本项目是《Agentic Design Patterns》一书的中文翻译，涵盖21个核心AI Agent设计模式及7个附录章节。所有翻译内容将通过GitHub Pages在线发布。
+本项目是《Agentic Design Patterns》一书的中文翻译，涵盖21个核心AI Agent设计模式及7个附录章节。所有翻译内容通过 VitePress 构建，并发布到 GitHub Pages。
 
 **在线访问**: [https://adp.xindoo.xyz/](https://adp.xindoo.xyz/)
 
@@ -134,6 +134,15 @@ npx markdownlint-cli chapters/
 ```bash
 # 检查内部链接有效性
 npx markdown-link-check chapters/your-chapter.md
+```
+
+### 站点构建验证
+```bash
+# 安装站点依赖
+npm install
+
+# 构建 VitePress 站点
+npm run docs:build
 ```
 
 ## 📚 学习资源
