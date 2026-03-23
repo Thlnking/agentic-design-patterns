@@ -138,7 +138,7 @@ export default defineConfig({
       { text: "English", link: "/original/" },
       { text: "双语", link: "/bilingual/" },
       { text: "搜索", link: "/search" },
-      { text: "GitHub", link: "https://github.com/xindoo/agentic-design-patterns" }
+      { text: "GitHub", link: "https://github.com/Thlnking/agentic-design-patterns" }
     ],
     sidebar: {
       "/chapters/": zhSidebar,
@@ -146,7 +146,7 @@ export default defineConfig({
       "/bilingual/": bilingualSidebar
     },
     socialLinks: [
-      { icon: "github", link: "https://github.com/xindoo/agentic-design-patterns" }
+      { icon: "github", link: "https://github.com/Thlnking/agentic-design-patterns" }
     ],
     outline: {
       level: [2, 3],
