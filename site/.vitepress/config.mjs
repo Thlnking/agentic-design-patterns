@@ -117,6 +117,7 @@ const bilingualSidebar = sidebarFor("bilingual", "bilingual", {
 });
 
 export default defineConfig({
+  base: "/agentic-design-patterns/",
   title: "Agentic Design Patterns",
   description: "《Agentic Design Patterns》中文、英文与双语对照阅读站点",
   lang: "zh-CN",
