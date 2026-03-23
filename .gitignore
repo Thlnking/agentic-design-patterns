@@ -46,10 +46,16 @@ Desktop.ini
 build/
 dist/
 output/
+site/.vitepress/cache/
+site/index.md
+site/chapters/
+site/original/
+site/bilingual/
+site/images/
+site/public/
 
 # Node modules (如果使用 gitbook 等工具)
 node_modules/
-package-lock.json
 
 # Python (如果使用 mkdocs 等工具)
 __pycache__/
